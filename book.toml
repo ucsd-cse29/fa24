@@ -1,0 +1,14 @@
+[book]
+authors = ["Joe Politz"]
+language = "en"
+multilingual = false
+src = "src"
+title = "UCSD CSE29 Fall 2024"
+
+[output.html.playground]
+runnable = false
+
+[preprocessor.pagetoc]
+[output.html]
+additional-css = ["theme/pagetoc.css"]
+additional-js  = ["theme/pagetoc.js"]
