@@ -1,4 +1,4 @@
 # Summary
 
-[Software Tools & Techniques Lab](./index.md)
+[Systems Programming & Software Tools](./index.md)
 
