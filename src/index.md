@@ -62,5 +62,10 @@ Stay tuned for announcements about scheduling make-ups in finals week.
 
 We do this for you; as long as you submit a quiz, lecture handout, or do a lab participation in the first two weeks, we will mark you as commencing academic activity.
 
+**When are the midterms scheduled?**
 
+The midterms will be flexibly scheduled during the quarter using a testing center. More details will come; you will need to set aside some outside-of-class time to do them, but there is not a specific class-wide time you have to put on your calendar.
 
+**I have a conflict with the final exam time, what can I do?**
+
+The final exam will also be flexibly scheduled during finals week using a testing center. We will likely have times available during the officially scheduled block, but other times will be available as well.
