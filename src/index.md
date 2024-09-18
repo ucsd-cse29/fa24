@@ -184,7 +184,7 @@ categories to get an A, B, or C.
 - **A** achievement:
     - 8 or more lab participation (out of 10 labs)
     - At least 12 total assignment points (e.g. any scores that add up to 12: [3, 3, 2, 2, 2], [3, 3, 3, 2, 1], [3, 3, 3, 3, 0], etc)
-    - At least 5 total exam points (**Full Pass** on any 2 of the skill demonstrations, **Partial Pass** on the other)
+    - At least 5 total exam points (**Full Pass** on any 2 of the exams, **Partial Pass** on the other)
 - **B** achievement:
     - 6 or 7 lab participation
     - At least 10 total assignment points (e.g. any scores that add up to 10: [2, 2, 2, 2, 2], [3, 3, 3, 1, 0], etc)
