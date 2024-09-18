@@ -45,7 +45,7 @@ students present as well.
   - Free: [MIT Missing Semester](https://missing.csail.mit.edu/)
   - Not free but pretty cheap: [Julia Evans Zines](https://wizardzines.com/), especially [The Pocket Guide to Debugging](https://wizardzines.com/zines/debugging-guide/)
 
-## Schedule
+## <a name="schedule"></a> Schedule
 
 The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
@@ -59,7 +59,7 @@ you can see what's coming.
 
 
 
-## Staff Resources
+## <a name="staff-resources"></a> Staff Resources
 
 ### Office Hours Calendar
 
@@ -183,7 +183,7 @@ categories to get an A, B, or C.
 
 - **A** achievement:
     - 8 or more lab participation (out of 10 labs)
-    - At least 12 total assignment points (e.g. any scores that add up to 13: [3, 3, 2, 2, 2], [3, 3, 3, 2, 1], [3, 3, 3, 3, 0], etc)
+    - At least 12 total assignment points (e.g. any scores that add up to 12: [3, 3, 2, 2, 2], [3, 3, 3, 2, 1], [3, 3, 3, 3, 0], etc)
     - At least 5 total exam points (**Full Pass** on any 2 of the skill demonstrations, **Partial Pass** on the other)
 - **B** achievement:
     - 6 or 7 lab participation
@@ -205,9 +205,7 @@ participation, 12 assignment points, 5 exam points). If you submit no quizzes on
 time or don't get them done completely or correctly, you will get a `-`
 modifier.
 
-## Policy
-
-## Academic Integrity
+## Policies
 
 Individual assignments describe policies specific to the assignment. Some
 general policies for the course are here.
