@@ -239,11 +239,13 @@ Run all the commands from the earlier section again, while logged into `ieng6` i
 
 **Discuss and write down in notes**: For each command, compare its output to what you got in the Codespace. Discuss any differences you see. Which commands work identically? Which seem to have different behavior? Why might that be? What does it mean for a file to be “in” your Codespace vs. “in” your ieng6 account?
 
-## Build a C program (in both places)
+## Running C Programs
 
 Sometimes we will work in the Codespace, and other times it will be important to do work on `ieng6`. This mirrors common practice in industry and research labs, where you may do some development locally, while other times you have to configure, edit, or run programs on a specific machine. In this part of the lab we'll see how to build and run a C program (like the one from class) in both places.
 
 At this point you should have `hello.c` present in your Codespace and in your `ieng6` account.
+
+### Compiling and Running in Both Places 
 
 You can open more than one terminal in your Codespace, and in fact you can see more than one terminal at a time. There is a little icon in the top right of the terminal that looks like a square with a plus sign in it. Clicking that will open a new terminal. You can also drag the tab of a terminal to the side of the screen to create a new panel, and you can see both terminals at the same time. You may want to try that for this activity! New terminals in your Codespace will always open in the context of your Codespace, **not** logged into `ieng6`.
 
@@ -260,25 +262,61 @@ ls
 
 **Write down in notes**: What effect did the `gcc` command have? What did the `./hello` command do?
 
+Some definitions:
+- `gcc` is a compiler for C programs. It takes `.c` files (and other things we'll see later) as inputs, and generates **executable files** (like `hello`) as outputs.
+- An **executable file** is specially encoded with instructions for a specific (type of) machine. We won't talk in much detail about it in this course, but the way an executable file runs on a computer is one of the the main topics of CSE30. These files can be run without any other tools. When we run `hello` by writing `./hello`, we are directly telling the operating system to run the instructions in that file.
+
+### Making an Edit
+
 Next, in your Codespace editor, make an edit to `hello.c` to change the string message to one of your choice. Save the file, then rerun the commands above in **both** terminals.
 
 **Write down in notes**: What was the output in each terminal? What did you observe about the behavior of the program in each place?
 
-`gcc` is a compiler for C programs. It takes `.c` files (and other things we'll see later) as inputs, and generates **executable files** (like `hello`) as outputs.
+When you change the file in your Codespace, the file on `ieng6` **does not change**. You can use `cat` to verify this; the edit you made is only to the file stored in your Codespace. This is an important concept! Each computer has its own **filesystem** that stores files and folders. Each terminal is connected to one computer (and to one filesystem) at a time. Knowing which computer you're running commands on is really important for that reason!
 
-An **executable file** is specially encoded with instructions for a specific (type of) machine. We won't talk in much detail about it in this course, but the way an executable file runs on a computer is one of the the main topics of CSE30. These files can be run without any other tools. When we run `hello` by writing `./hello`, we are directly telling the operating system to run the instructions in that file.
+It's worth asking how we can get our edits onto `ieng6` to run the modified program there. There is a command, related to `ssh`, called `scp`, that does just that.
+
+From your terminal connected to your Codespace, run this command (replacing `yourusername` with your username as before; you will be prompted for your password again):
+
+```
+scp hello.c yourusername@ieng6.ucsd.edu:./
+```
+
+Then, in your terminal connected to `ieng6`, run the following commands:
+
+```
+cat hello.c
+gcc hello.c -o hello
+./hello
+```
+
+The command `scp` takes files and copies them to the computer and folder given by the second argument. The `:` is separating the username and name of the server from the path or folder to copy it into – `./` just means “the current folder”, which is the same folder you see when you log in. `scp` is a useful command for moving things around between computers. There are many other ways we could accomplish this, but this is one of the most direct.
 
 
-## What is the unbounded time exploration?
+**Write down in notes**: For each student, take a screenshot of successfully running the `scp` command and then using `cat` to see the new output on `ieng6`, and put it in the notes.
 
-telnet towel.blinkenlights.nl 23
+## Summary
 
-telnet  freechess.org
+- A **repository** is a place to store code; Github is a service for storing repositories
+- A **Codespace** is a web page that connects to a computer at Github that holds your repository and lets you run commands and edit your code
+- A **terminal** is a text-based interface to a computer.
+- We run **commands** in the terminal, which have **options** and **flags** and **arguments**. We can look up commands' behavior online or with `man`
+- **commands** are programs that can do all kinds of things, from file management (`ls`, `cat`, `cd`) to connecting to other computers (`curl`, `ssh`) to compiling and running programs (`gcc`, `./hello`)
+- We can connect to `ieng6`, which is a collection of computers at UCSD, using `ssh`. Many times we need to connect to other computers we will use `ssh`
+- Each computer has its own **filesystem**, which is a collection of files and folders. We saw the Codespace filesystem and the `ieng6` filesystem
+- We can compile C programs using `gcc` which creates **executable files**
+- We can run **executable files** with `./filename`
+- The `scp` command can be used to move files between computers (using the same login as `ssh`)
 
-Telnet servers
+## More Practice
 
-Telnet games
+These are open-ended exercises for you to try and discuss with your group. These are also great conversation-starters for office hours, deeper understanding with friends outside of class, or conceptual questions on Piazza. Feel free to take your results and **write down in notes** what you found!
 
-nc fibs.com 4321 (backgammon)
-
-nc mapscii.me 23 (world map)
+- Commit and push your changes to `hello.c` Github. Can you figure out how to download the code you wrote from Github to `ieng6` using `curl`? (Hint: inspect the URLs we shared for downloading class code)
+- Try creating a new `.c` file from scratch that prints something different. Compile and run it in both your Codespace and on `ieng6`, using your method of choice to move it to `ieng6`.
+- Try running the `scp` command without the `./` at the end of the path. What happens?
+- Use `scp` to copy a file into a different folder on `ieng6` (like the one you made with `mkdir`). What does the command look like?
+- Cause an error in `hello.c` (change the name of `main`, or drop a `"`, or otherwise cause an issue), then recompile and re-run. What does the `gcc` command output? What does the `./hello` command output? Why?
+- Try running `gcc` without the `-o hello` part. What happens? What is the name of the output file? Can you run it?
+- Try running `gcc` with the `-o` flag with a different name. What happens? What is the name of the output file? Can you run it?
+- Run `ls ..` after logging into `ieng6`. What do you see?
