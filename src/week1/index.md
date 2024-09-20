@@ -129,7 +129,7 @@ Try running the following commands in your Codespace terminal. To run a command,
 
 `ls myfirstfolder`
 
-**Discuss in your group and write down in notes**: For each complete command you just ran, write down your observations of what it did. Include both output you see at the terminal and any changes you see in the file navigation. Then, for the commands `ls`, `cd`, `pwd`, `touch`, `cat`, do your best to give a general description of the command. If you're not sure, that's okay! We'll talk more about all of these going forward, and after you are done trying this out, a staff member will add some definitions we have for them to your notes doc to make sure we have agreed-upon summaries.
+**Discuss in your group and write down in notes**: For each command you just ran, include both a copy-paste of output you see at the terminal and any changes you see in the file navigation as observations of the command's behavior. Then, for the commands `ls`, `cd`, `pwd`, `touch`, `cat`, do your best to give a general description of the command. If you're not sure, that's okay! We'll talk more about all of these going forward, and after you are done trying this out, a staff member will add some definitions we have for them to your notes doc to make sure we have agreed-upon summaries.
 
 ### Downloading a File From the Command Line
 
@@ -235,29 +235,39 @@ If, in this process, you run into errors and can't figure out how to proceed, as
 
 ### Running Commands, Remotely
 
+Run all the commands from the earlier section again, while logged into `ieng6` in the terminal. Include the `curl` commands as well.
 
-
- 
-
-
-
+**Discuss and write down in notes**: For each command, compare its output to what you got in the Codespace. Discuss any differences you see. Which commands work identically? Which seem to have different behavior? Why might that be? What does it mean for a file to be “in” your Codespace vs. “in” your ieng6 account?
 
 ## Build a C program (in both places)
 
-Give them Hello.c from class, build + run both in Codespace and on ieng6.
+Sometimes we will work in the Codespace, and other times it will be important to do work on `ieng6`. This mirrors common practice in industry and research labs, where you may do some development locally, while other times you have to configure, edit, or run programs on a specific machine. In this part of the lab we'll see how to build and run a C program (like the one from class) in both places.
 
-Do something to make it have different behavior on the two systems! (environment
-var, file, hostname, etc)
+At this point you should have `hello.c` present in your Codespace and in your `ieng6` account.
 
-`ls ..` to show username dirs on ieng6, different layout entirely in the codespace
+You can open more than one terminal in your Codespace, and in fact you can see more than one terminal at a time. There is a little icon in the top right of the terminal that looks like a square with a plus sign in it. Clicking that will open a new terminal. You can also drag the tab of a terminal to the side of the screen to create a new panel, and you can see both terminals at the same time. You may want to try that for this activity! New terminals in your Codespace will always open in the context of your Codespace, **not** logged into `ieng6`.
 
-**Write down in notes**: compare/contrast
+Open two terminals, one logged into `ieng6` and one in your Codespace.
 
-## Edit a C Program
+In both, run the following commands one at a time:
 
-fgets and/or CLI option
+```
+ls
+gcc hello.c -o hello
+ls
+./hello
+```
 
-**Write down in notes**: some code
+**Write down in notes**: What effect did the `gcc` command have? What did the `./hello` command do?
+
+Next, in your Codespace editor, make an edit to `hello.c` to change the string message to one of your choice. Save the file, then rerun the commands above in **both** terminals.
+
+**Write down in notes**: What was the output in each terminal? What did you observe about the behavior of the program in each place?
+
+`gcc` is a compiler for C programs. It takes `.c` files (and other things we'll see later) as inputs, and generates **executable files** (like `hello`) as outputs.
+
+An **executable file** is specially encoded with instructions for a specific (type of) machine. We won't talk in much detail about it in this course, but the way an executable file runs on a computer is one of the the main topics of CSE30. These files can be run without any other tools. When we run `hello` by writing `./hello`, we are directly telling the operating system to run the instructions in that file.
+
 
 ## What is the unbounded time exploration?
 
