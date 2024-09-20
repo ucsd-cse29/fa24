@@ -77,21 +77,170 @@ In this intro, you've:
 
 You'll use all of this setup many times throughout the quarter, and likely the same or similar steps thousands of times throughout your programming career! 🚀
 
-## ieng6 login
+## Terminal and ieng6 login
+
+A working systems programmer spends a fair amount of time at the **terminal** – a text-based interface to a computer. In this course we'll make heavy use of the terminal, both for running programs and for interacting with the system.
+
+In your Codespace, you can open a Terminal by clicking the `Terminal` menu and choosing `New Terminal`. This will open a terminal window at the bottom of the screen. You can also press `Ctrl-\`` (hold down the Control key and press backtick, the key to the left of 1 on the keyboard).
+
+### Navigation Commands
+
+Try running the following commands in your Codespace terminal. To run a command, type it in and press enter.
+
+`pwd`
+
+`ls`
+
+`ls .`
+
+`cat README.md`
+
+`cat README`
+
+`cat does-not-exist`
+
+`mkdir myfirstfolder`
+
+`cd myfirstfolder`
+
+`ls`
+
+`ls .`
+
+`pwd`
+
+`touch file1.txt`
+
+`touch file2.txt`
+
+`ls`
+
+`rm file2.txt`
+
+`ls`
+
+`ls ..`
+
+`cd ..`
+
+`pwd`
+
+`ls`
+
+`ls myfirstfolder`
+
+**Discuss in your group and write down in notes**: For each complete command you just ran, write down your observations of what it did. Include both output you see at the terminal and any changes you see in the file navigation. Then, for the commands `ls`, `cd`, `pwd`, `touch`, `cat`, do your best to give a general description of the command. If you're not sure, that's okay! We'll talk more about all of these going forward, and after you are done trying this out, a staff member will add some definitions we have for them to your notes doc to make sure we have agreed-upon summaries.
+
+### Downloading a File From the Command Line
+
+Run the following command:
+
+```
+curl <fill link to .c file from class>
+```
+
+You should see the contents of an example from class. Then run this command:
+
+```
+curl -o hello.c <fill link to .c file from class>
+```
+
+You should see the file `hello.c` from class downloaded and saved into your Codespace. You can observe it in the file navigation, and with `ls` and `cat` (try all of them!).
+
+Try opening the link from above in your browser.
+
+`curl` takes a URL (a link) and downloads the contents. The optional `-o somefile` **command-line option** or **command-line flag** specifies an output file to save the contents to.
+
+**Definition**: A **command-line option** or **command-line flag** is a way to give extra information to a program. Options are usually specified with a dash (`-`) followed by a letter or word. For example, `-o` is an option for `curl` that specifies an output file. The full list of options and flags is usually available by doing a search for the program online, or by using the command `man` (short for “manual”, nothing to do with dudes). Try running `man curl` at the terminal (the result may “take over” your terminal, you can use the up and down arrows to scroll and `q` to get back to the command prompt).
+
+### Logging into `ieng6`
+
+As a student, you are assigned an account on the `ieng6` server hosted by UCSD. These are similar to accounts you might get on other systems at other institutions (or a future job). We’ll see how to use your machine to connect to a remote computer over the Internet to do work there.
+
+Your account name is the same account name as the one that’s used for your school Google account, i.e. it is the string that precedes “@ucsd.edu” in your school email address. In case you need to check the status of your student account, refer to the [UCSD Student Account Lookup page](https://sal.ucsd.edu/).
+
+Next run this command (with `yourusername` replaced by your actual username):
+
+```
+ssh yourusername@ieng6.ucsd.edu
+```
+
+Since this is likely the first time you’ve connected to this server, you will probably get a message like this:
+
+```
+$ ssh yourusername@ieng6.ucsd.edu
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Copy and paste the one of the corresponding listed public key fingerprints and press enter.
+
+TODO (staff, check these)
+
+- If you see the phrase **ED25519 key fingerprint** answer with: SHA256:8vAtB6KpnYXm5dYczS0M9sotRVhvD55GYz8EjN1DYgs
+- If you see the phrase **ECDSA key fingerprint** answer with: SHA256:/bQ70BSkHU8AEUqommBUhdAg0M4GaFIHLKq0YQyKvmw
+- If you see the phrase **RSA key fingerprint** answer with: SHA256:npmS8Gk0l+zAXD0nNGUxr7hLeYPn7zzhYWVKxlfNaeQ
+
+(Getting the fingerprint from a trusted source is the best thing to do here. You can also just type “yes”, as it's pretty unlikely anything nefarious is going on. If you get this message when you're connecting to a server you connect to often, it could mean someone is trying to listen in on or control the connection. This answer is a decent description of what's going on and how you might calibrate your own risk assessment: [Ben Voigt's answer](https://superuser.com/questions/421074/ssh-the-authenticity-of-host-host-cant-be-established/421084#421084).)
+
+After this, you get a prompt to enter your password. This is the same password you use to log into your student account on other websites, like Canvas and Tritonlink. The terminal itself does not show what you type when you enter your password. This is conventionally done for your own security, so that others looking at your screen don’t see it. Just trust that it gets inputted when you type.
+
+Now your terminal is connected to a computer in the CSE basement, and any commands you run will run on that computer! We call your computer the client and the computer in the basement the server based on how you are connected.
+
+The whole interaction will look something like this:
+
+```
+# On your client
+$ ssh yourusername@ieng6.ucsd.edu
+The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+Password: 
+# Now on remote server
+Last login: Tue Oct  1 14:03:05 2024 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
+quota: No filesystem specified.
+Hello user, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   23:25:01   0  0.08,  0.17,  0.11
+ieng6-202   23:25:01   1  0.09,  0.15,  0.11
+ieng6-203   23:25:01   1  0.08,  0.15,  0.11
+
+To begin work for one of your courses [ cs15lwi24 ], type its name
+at the command prompt.  (For example, "cs15lwi24", without the quotes).
+
+To see all available software packages, type "prep -l" at the command prompt,
+or "prep -h" for more options
+```
+
+Then, execute the following command:
+
+```
+cs15lfa24
+```
+
+You should get the following output:
+
+```
+Tue Oct 01, 2024 11:28pm - Prepping cs15lfa24
+```
+
+Now your terminal is connected to a computer in the CSE basement, and any commands you run will run on that computer! We call your computer the client and the computer in the basement the server based on how you are connected.
+
+If, in this process, you run into errors and can't figure out how to proceed, ask! When you ask, take a screenshot of your problem and add it to your group's running notes document, then describe what the fix was. If you don't know how to take a screenshot, ask!
+
+### Running Commands, Remotely
 
 
 
+ 
 
 
-Log into ieng6 from Github codespace with ssh from that terminal
 
-**Write down in notes**: screenshots
-
-## Run simple commands
-
-cat, curl, ls, cd, mkdir, pwd and maybe a few others
-
-**Write down in notes**: some descriptions
 
 ## Build a C program (in both places)
 
