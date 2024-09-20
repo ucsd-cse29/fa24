@@ -48,11 +48,38 @@ This will open a new Codespace (sometimes it takes a minute to start up), which 
 
 ... FILL SCREENSHOT ...
 
-(The cute invented name will be randomly generated for each new Codespace you make.)
+(A cute name will be randomly generated for each new Codespace you make.)
 
+The `README` file you made can be seen in the file navigation on the left. You can click on it to open it in a new editor tab (it may have opened by default when the Codespace started, as well). You can type into it to make edits.
 
+**Do now**: Type some edits into the `README` file. Then, open a *new tab* and go find the repository again from your Github page. Do you see the edits to the file there?
+
+**Write down in your Google Doc**: For each student, a screenshot of the edited text in your Codespace, and a screenshot of the repository on Github showing the contents of the README.
+
+To propagate the changes from our Codespace to the repository, we need to **commit** and **push** them. We'll talk in detail about these in future labs and lectures; for now we'll just show you how in the Codespace interface and defer explanations to later.
+
+On the left sidebar there is a “Source Control” icon. Click on this, you'll see a `M` next to your README file listing, which means “modified”. Click on the `+` next to the `M` to stage the changes. Then, write a short message in the text box (something simple like “Edited README” suffices). Finally, click the checkmark icon to commit the changes.
+
+Then, click the three dots next to the checkmark and choose “Push”. This will send the changes to the repository on Github.
+
+**Write down in your Google Doc**: For each student, a screenshot of the repository on Github showing the contents of the README including the edits.
+
+### Github Codespaces Summary
+
+In this intro, you've:
+
+- Set up your Github account
+- Created a repository on Github
+- Created a file through the Github editing interface
+- Created a Codespace
+- Edited the file in the Codespace
+- Committed and pushed the changes to your repository
+
+You'll use all of this setup many times throughout the quarter, and likely the same or similar steps thousands of times throughout your programming career! 🚀
 
 ## ieng6 login
+
+
 
 
 
