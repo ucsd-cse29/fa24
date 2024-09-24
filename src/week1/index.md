@@ -136,13 +136,13 @@ Try running the following commands in your Codespace terminal. To run a command,
 Run the following command:
 
 ```
-curl <fill link to .c file from class>
+curl https://raw.githubusercontent.com/ucsd-cse29/fa24/refs/heads/main/src/lec/week1/hello.c
 ```
 
 You should see the contents of an example from class. Then run this command:
 
 ```
-curl -o hello.c <fill link to .c file from class>
+curl -o hello.c https://raw.githubusercontent.com/ucsd-cse29/fa24/refs/heads/main/src/lec/week1/hello.c
 ```
 
 You should see the file `hello.c` from class downloaded and saved into your Codespace. You can observe it in the file navigation, and with `ls` and `cat` (try all of them!).
