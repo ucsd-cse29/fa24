@@ -14,17 +14,17 @@
 
 **This page is under development; it will be official and finalized by the first day of class**
 
-CSE 29 introduces you to an exciting range of materials from the broad field of systems programming, including 1) the basics of how programs execute on a computer, 2) programming in C with direct access to memory and system calls, 3) software tools to manage and interact with code and programs. All very cool stuff that every programmer should know!
+CSE 29 introduces you to the broad field of systems programming, including 1) the basics of how programs execute on a computer, 2) programming in C with direct access to memory and system calls, 3) software tools to manage and interact with code and programs. All very cool stuff that makes every programmer better!
 
 ## <a name="basics"></a> Basics
 
-- Lecture:
-    - Aaron: 12pm (noon) [Solis Lecture Hall](https://map.concept3d.com/?id=1005#!m/237105?share) 104
-    - Joe: 10am [Catalyst Lecture Hall](https://map.concept3d.com/?id=1005#!m/576554?share) 0125
-- Discussions (attend either or both):
+- Lecture (attend the one you're enrolled in):
+    - Joe/A section: 10am [Catalyst Lecture Hall](https://map.concept3d.com/?id=1005#!m/576554?share) 0125
+    - Aaron/B section: 12pm (noon) [Solis Lecture Hall](https://map.concept3d.com/?id=1005#!m/237105?share) 104
+- Discussions (attend either):
     - Wed 8am [Warren Lecture Hall](https://map.concept3d.com/?id=1005#!m/246292?share) 2001
     - Fri 4pm [Solis Lecture Hall](https://map.concept3d.com/?id=1005#!m/237105?share) 104
-- Labs: Tuesdays (check your schedule!). Either B260 or B270
+- Labs: Tuesdays (check your schedule!). Either B260 or B270 in the [CSE building](https://map.concept3d.com/?id=1005#!m/164780?share)
 - Exams: [AP&M B349](https://map.concept3d.com/?id=1005#!m/167186?share), flexible scheduling in weeks 3, 5, and 8
 - Final exam: [AP&M B349](https://map.concept3d.com/?id=1005#!m/167186?share), flexible scheduling in week 10
 - Professor office hours – Joe and Aaron each have 2 hours. Come to either and
@@ -57,7 +57,12 @@ you can see what's coming.
 
 ### Week 0 – Welcome!
 
+**Announcements**:
 
+- Lab attendance is **required** and a lot happens there, make sure to go to lab
+- Submit the [welcome survey](FILL) before lab on Tuesday of week 1
+- Assignments, quizzes, and other things with deadlines will start in week 1
+- No discussion on Friday of week 0 (discussion starts in week 1)
 
 ## <a name="staff-resources"></a> Staff Resources
 
@@ -124,7 +129,7 @@ you'll put information about who or what helped you with the assignment, and in
 
 For each assignment, we will give a **0-3** score along with feedback:
 
-- **3** for a complete submission with high code and writing quality with few mistakes, and no critical errors
+- **3** for a complete submission with high code and writing quality with few mistakes, and no significant errors
 - **2** for a complete submission with some mistakes or some unclear writing
 - **1** for a submission missing key components, or with clear inaccuracies in multiple components
 - **0** for no submission or a submission unrecognizable as a partial or complete submission
