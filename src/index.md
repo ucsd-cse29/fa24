@@ -161,6 +161,8 @@ course).  No study aids or devices are allowed to be used in the testing center.
 You will need only a photo ID and something to write with (scratch paper is
 available on request).
 
+The Triton Testing Center has shared a [document of rules and tips](/images/Helpful_Tips_CBTF.pdf) for using the testing center.
+
 The exams will be administered through 
 [PrairieLearn](https://www.prairielearn.com/about); we will give you practice
 exams and exercises so you can get used to the format we'll use before you take
@@ -306,4 +308,4 @@ The midterms will be flexibly scheduled during the quarter using a testing cente
 
 **I have a conflict with the final exam time, what can I do?**
 
-The final exam will also be flexibly scheduled during week 10 using a testing center.
+The final exam will also be flexibly scheduled during week 10 using the testing center.
