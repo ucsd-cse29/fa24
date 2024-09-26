@@ -161,7 +161,7 @@ course).  No study aids or devices are allowed to be used in the testing center.
 You will need only a photo ID and something to write with (scratch paper is
 available on request).
 
-The Triton Testing Center has shared a [document of rules and tips](/images/Helpful_Tips_CBTF.pdf) for using the testing center.
+The Triton Testing Center has shared a [document of rules and tips](./images/Helpful_Tips_CBTF.pdf) for using the testing center.
 
 The exams will be administered through 
 [PrairieLearn](https://www.prairielearn.com/about); we will give you practice
@@ -177,7 +177,7 @@ We don't have a traditionally-scheduled final exam for this course (you can
 ignore the block provided in Webreg).  Instead, in week 10, you'll have the
 opportunity to retake **up to two** of the exams from during the quarter to
 improve your score up to a **Full Pass** regardless of the score on the first
-attempt. The retakes may be slightly different than the original exam, but will
+attempt. The retakes may be different than the original exam, but will
 test the same learning outcomes. This is also the only make-up option for missed
 exams during the quarter: if you miss an exam for any reason it will be scored
 as 0, and you can use one of your retake opportunities on that exam.
