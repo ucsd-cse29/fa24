@@ -28,9 +28,9 @@ From your Github profile page, click the `+` in the upper right to make a new **
 
 There are many ways to interact with a repository; we'll see a few today and many more throughout the quarter. After you create the repository, you'll see a page like this:
 
-... FILL SCREENSHOT ...
+![image](./assets/new_repo.png)
 
-For a first step, you'll make a README file directly on `github.com`. Click the `Add a README` button, and you'll be taken to an editor where you can write some text. You can write anything you like for this first test; when you're done, click the `Commit new file` button at the bottom.
+For a first step, you'll make a README file directly on `github.com`. Click the `README` link on your empty repository page and you'll be taken to an editor where you can write some text. You can write anything you like for this first section; when you're done, click the `Commit changes...` button.
 
 **Write down in your Google Doc**:
 
@@ -40,17 +40,17 @@ For each student, a screenshot of their repository after adding the README file.
 
 Github has a feature called [Codespaces](https://docs.github.com/en/codespaces/overview) that provide an online environment for the full development process – writing code, running programs, and managing a repository. We'll use this feature throughout the course to have a standardized programming environment for everyone; Codespaces is also similar to many production environments in tech companies and research labs.
 
-For this lab, we'll create a Codespace to do our work. Click the `Code` button on your repository page, and then click the `New Codespace` button:
+For this lab, we'll create a Codespace to do our work. Click the `Code` button on your repository page, and then click the `Create codespace on main` button:
 
-... FILL SCREENSHOT ...
+![image](./assets/new_codespace.png)
 
 This will open a new Codespace (sometimes it takes a minute to start up), which will look like this:
 
-... FILL SCREENSHOT ...
+![image](./assets/codespace_screen.png)
 
-(A cute name will be randomly generated for each new Codespace you make.)
+(A cute name will be randomly generated for each new Codespace you make. Check out the URL to see what name you got!)
 
-The `README` file you made can be seen in the file navigation on the left. You can click on it to open it in a new editor tab (it may have opened by default when the Codespace started, as well). You can type into it to make edits.
+The `README` file you made can be seen in the file navigation on the left. You can click on it to open it in a new editor tab (it may have opened by default when the Codespace started, as well). You can type into it to make edits. You may need to double click on the file in the file navigation to open it in the editor.
 
 **Do now**: Type some edits into the `README` file. Then, open a *new tab* and go find the repository again from your Github page. Do you see the edits to the file there?
 
@@ -58,7 +58,7 @@ The `README` file you made can be seen in the file navigation on the left. You c
 
 To propagate the changes from our Codespace to the repository, we need to **commit** and **push** them. We'll talk in detail about these in future labs and lectures; for now we'll just show you how in the Codespace interface and defer explanations to later.
 
-On the left sidebar there is a “Source Control” icon. Click on this, you'll see a `M` next to your README file listing, which means “modified”. Click on the `+` next to the `M` to stage the changes. Then, write a short message in the text box (something simple like “Edited README” suffices). Finally, click the checkmark icon to commit the changes.
+On the left sidebar there is a *“Source Control”* icon. Click on this, you'll see a `M` next to your README file listing, which means “modified”. Click on the `+` next to the `M` to stage the changes. Then, write a short message in the text box (something simple like “Edited README” suffices). Finally, click the checkmark icon to commit the changes.
 
 Then, click the three dots next to the checkmark and choose “Push”. This will send the changes to the repository on Github.
 
@@ -81,7 +81,7 @@ You'll use all of this setup many times throughout the quarter, and likely the s
 
 A working systems programmer spends a fair amount of time at the **terminal** – a text-based interface to a computer. In this course we'll make heavy use of the terminal, both for running programs and for interacting with the system.
 
-In your Codespace, you can open a Terminal by clicking the `Terminal` menu and choosing `New Terminal`. This will open a terminal window at the bottom of the screen. You can also press `Ctrl-\`` (hold down the Control key and press backtick, the key to the left of 1 on the keyboard).
+In your Codespace, you can open a Terminal by clicking the `Terminal` menu and choosing `New Terminal`. This will open a terminal window at the bottom of the screen. A terminal may already be open at the bottom of the screen from when you created the codespace, if not you can also press `` Ctrl+Shift+` `` to open a new terminal (hold down the Control key and press backtick, the key to the left of 1 on the keyboard).
 
 ### Navigation Commands
 
@@ -176,8 +176,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 Copy and paste the one of the corresponding listed public key fingerprints and press enter.
 
-TODO (staff, check these)
-
+<!-- TODO (staff, check these) -- CHECKED and confirmed! -->
 - If you see the phrase **ED25519 key fingerprint** answer with: SHA256:8vAtB6KpnYXm5dYczS0M9sotRVhvD55GYz8EjN1DYgs
 - If you see the phrase **ECDSA key fingerprint** answer with: SHA256:/bQ70BSkHU8AEUqommBUhdAg0M4GaFIHLKq0YQyKvmw
 - If you see the phrase **RSA key fingerprint** answer with: SHA256:npmS8Gk0l+zAXD0nNGUxr7hLeYPn7zzhYWVKxlfNaeQ
@@ -220,13 +219,13 @@ or "prep -h" for more options
 Then, execute the following command:
 
 ```
-cs15lfa24
+cs29fa24
 ```
 
 You should get the following output:
 
 ```
-Tue Oct 01, 2024 11:28pm - Prepping cs15lfa24
+Tue Oct 01, 2024 11:28pm - Prepping cs29fa24
 ```
 
 Now your terminal is connected to a computer in the CSE basement, and any commands you run will run on that computer! We call your computer the client and the computer in the basement the server based on how you are connected.
