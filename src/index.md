@@ -57,12 +57,14 @@ you can see what's coming.
 
 ### Week 0 – Welcome!
 
-**Announcements**:
+- **Resources**
+    - [Repository for today](https://github.com/ucsd-cse29/fa24-01-w1f-hello)
 
-- Lab attendance is **required** and a lot happens there, make sure to go to lab
-- Submit the [welcome survey](FILL) before lab on Tuesday of week 1
-- Assignments, quizzes, and other things with deadlines will start in week 1
-- No discussion on Friday of week 0 (discussion starts in week 1)
+- **Announcements**:
+    - Lab attendance is **required** and a lot happens there, make sure to go to lab
+    - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1
+    - Assignments, quizzes, and other things with deadlines will start in week 1
+    - No discussion on Friday of week 0 (discussion starts in week 1)
 
 ## <a name="staff-resources"></a> Staff Resources
 
