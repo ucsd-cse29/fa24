@@ -32,8 +32,8 @@ ask anything you need. Overall, the afternoon times are only for CSE29
 questions, and the morning times are for general advising and may have non-CSE29
 students present as well.
     - Aaron:
-        - Tuesday 10-11am (prioritizes general advising, CSE office #3120)
-        - Tuesday 3-4pm (prioritizes CSE29, CSE lab B250)
+        - Tuesday 10-11am (prioritizes CSE29, CSE lab B250)
+        - Tuesday 3-4pm (prioritizes general advising, CSE office #3120)
     - Joe:
         - Tuesday 9-10am (prioritizes general advising, CSE office #3206)
         - Tuesday 1-2pm (prioritizes CSE29, CSE lab B250)
