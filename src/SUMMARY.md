@@ -8,8 +8,8 @@
 
 # Assignments
 
-- PA1 coming soon!
+- [PA1 coming soon!]()
 
 # Quizzes
 
-- Quiz 1 coming soon!
+- [Quiz 1 coming soon!]()
