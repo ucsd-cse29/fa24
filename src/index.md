@@ -49,9 +49,7 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
-### Week 2 – Bitwise Representations
-
-### Week 1 – Strings and Memory (in C)
+### Week 1 – Strings, Memory and Bitwise Representations (in C)
 
 ### Week 0 – Welcome!
 
