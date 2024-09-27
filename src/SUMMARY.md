@@ -5,3 +5,11 @@
 # Labs
 
 - [Week 1 Lab](./week1/index.md)
+
+# Assignments
+
+- PA1 coming soon!
+
+# Quizzes
+
+- Quiz 1 coming soon!
