@@ -12,8 +12,6 @@
 [Grading](#grading) -
 [Policies](#policy)
 
-**This page is under development; it will be official and finalized by the first day of class**
-
 CSE 29 introduces you to the broad field of systems programming, including 1) the basics of how programs execute on a computer, 2) programming in C with direct access to memory and system calls, 3) software tools to manage and interact with code and programs. All very cool stuff that makes every programmer better!
 
 ## <a name="basics"></a> Basics
