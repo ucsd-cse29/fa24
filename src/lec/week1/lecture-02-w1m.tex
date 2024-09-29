@@ -1,0 +1,42 @@
+\documentclass[12pt, oneside, landscape]{article}
+
+\include{header}
+
+\begin{document}
+\lstinputlisting{hellobin.c}
+
+\begin{shell}
+$ gcc hellobin.c -o hellobin
+$ ./hellobin
+Hello!
+Hello!
+Hello!
+H e l
+72 72 72
+H H H
+\end{shell}
+
+\newpage
+
+\lstinputlisting{strlen.c}
+
+\begin{shell}
+$ gcc strlen.c -o strlen
+$ ./strlen
+12
+5
+6
+\end{shell}
+
+\vspace{8em}
+
+
+\lstinputlisting{adjacent.c}
+
+\begin{shell}
+$ gcc adjacent.c -o adjacent
+$ ./adjacent
+\end{shell}
+
+
+\end{document}
