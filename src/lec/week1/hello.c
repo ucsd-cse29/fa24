@@ -1,6 +1,4 @@
-#include <unistd.h>
 #include <stdio.h>
-#include <string.h>
 
 int main() {
   char hello[] = "Hello!"; 
@@ -8,4 +6,6 @@ int main() {
 
   puts(hello);
   puts(hello2);
+
+  return 0;
 }
