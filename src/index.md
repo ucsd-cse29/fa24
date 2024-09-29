@@ -55,7 +55,8 @@ you can see what's coming.
 
 - **Resources**
     - [Repository for today](https://github.com/ucsd-cse29/fa24-01-w1f-hello)
-    - [Slides for Aaron's Lecture](https://www.dropbox.com/scl/fi/vmk3dvxjtzwd5efb2v0v2/29-fa24-l1.pdf?rlkey=2400w2o46cptfmvud5kuz7l72&dl=0)
+    - [Slides from Aaron's Lecture](https://www.dropbox.com/scl/fi/vmk3dvxjtzwd5efb2v0v2/29-fa24-l1.pdf?rlkey=2400w2o46cptfmvud5kuz7l72&dl=0)
+    - [Notes from Joe's Lecture](https://drive.google.com/file/d/1IKHNlU8SrEyw4HtZApiIm7SoCBMPskb7/view?usp=sharing)
 
 - **Announcements**:
     - Lab attendance is **required** and a lot happens there, make sure to go to lab
