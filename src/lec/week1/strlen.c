@@ -5,14 +5,16 @@
 int main() {
   char hello[] = "Hello class!";
   char apple[] = "apple";
+  char hello_0[] = "Hello\0class!";
 
-  printf("%ld\n", mystrlen(hello));
-  printf("%ld\n", mystrlen(apple));
+  printf("%ld\n", strlen(hello));
+  printf("%ld\n", strlen(apple));
 
-  hello[6] = 0;
+  printf("%s, length: %ld\n", hello_0, strlen(hello_0));
 
-  printf("%ld\n", mystrlen(hello));
-  printf("%s\n", hello);
+  hello[7] = 0;
+
+  printf("%s, length: %ld\n", hello, strlen(hello));
 
   return 0;
 }
