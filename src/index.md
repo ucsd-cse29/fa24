@@ -54,6 +54,7 @@ you can see what's coming.
 - **Resources**
   - [Monday Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings)
   - [Monday Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf)
+  - [Monday Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/lec/week1/29-fa24-l2.pdf)
   - [The UNIX Command Line](https://diveintosystems.org/book/Appendix2/cmdln_basics.html)
   - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
 
