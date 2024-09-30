@@ -65,7 +65,7 @@ you can see what's coming.
 
 - **Resources**
     - [Repository for today](https://github.com/ucsd-cse29/fa24-01-w1f-hello)
-    - [Slides from Aaron's Lecture](https://github.com/ucsd-cse29/fa24/src/lec/week0/29-fa24-l1.pdf)
+    - [Slides from Aaron's Lecture](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
     - [Notes from Joe's Lecture](https://drive.google.com/file/d/1IKHNlU8SrEyw4HtZApiIm7SoCBMPskb7/view?usp=sharing)
 
 - **Announcements**:
