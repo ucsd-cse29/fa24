@@ -6,7 +6,33 @@ In this class, you are assigned to lab sections, in which you will be in the CSE
 
 Labs are graded by participation, based on your attendance and engagement with the lab activity. Throughout the lab, you will fill in a shared Google Doc with notes and results from what you try and learn. This will be shared with the group of students around you so you have a collective record of your activities (and so we can comment on your progress!)
 
-Your TA lab lead will share the link to the Google Doc with you at the beginning of the lab.
+Your TA lab lead will share the link to the Google Docs with you at the beginning of the lab.
+
+## Meet your Group!
+
+We will split into groups of 6-8 students for discussion. For week 1, you may sit
+wherever you want and choose who you want to work with. Starting week 2, we will have
+assigned seating and groups. These
+groups will be somewhat stable throughout the quarter, though some small changes
+will likely happen. You will have a tutor or TA assigned to your group for help
+and discussion.
+
+Your discussion leader (the tutor/TA in your lab) will share a Google Doc with
+your group where you can fill in notes as you work; this document is only for
+your group. Your discussion leader will _not_ take notes for you. 
+
+**Write down in notes**: In your groups, share, and note in the running notes
+document (discussion leaders, you answer these as well!):
+
+- How you'd like people to refer to you (pronounce your name/nickname, pronouns
+like he/her/they, etc)
+- Your major
+- One of:
+    - A UCSD student organization you're a member of or interested in
+    - Your favorite place you've found on campus so far
+    - A useful campus shortcut or trick you know
+- Your answer to the following question. Discuss why you chose that answer.
+![image](./assets/rulers.png)
 
 ## Github
 
@@ -307,6 +333,10 @@ The command `scp` takes files and copies them to the computer and folder given b
 - We can run **executable files** with `./filename`
 - The `scp` command can be used to move files between computers (using the same login as `ssh`)
 
+## Before you leave - Lab Group Preference Form
+
+Please go ahead and fill out this Google form before you leave, this will help us create the seating chart for next week. [Link to Google form](https://forms.gle/cb2aT44U2oEAtst36)
+
 ## More Practice
 
 These are open-ended exercises for you to try and discuss with your group. These are also great conversation-starters for office hours, deeper understanding with friends outside of class, or conceptual questions on Piazza. Feel free to take your results and **write down in notes** what you found!
@@ -319,3 +349,5 @@ These are open-ended exercises for you to try and discuss with your group. These
 - Try running `gcc` without the `-o hello` part. What happens? What is the name of the output file? Can you run it?
 - Try running `gcc` with the `-o` flag with a different name. What happens? What is the name of the output file? Can you run it?
 - Run `ls ..` after logging into `ieng6`. What do you see?
+
+
