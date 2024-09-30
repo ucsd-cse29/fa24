@@ -51,12 +51,18 @@ you can see what's coming.
 
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
 
-- **Resources**
-  - [Monday Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings)
-  - [Monday Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf)
-  - [Monday Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/lec/week1/29-fa24-l2.pdf)
+- **Readings**
   - [The UNIX Command Line](https://diveintosystems.org/book/Appendix2/cmdln_basics.html)
   - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
+- **Lecture Materials**
+  - **Monday**
+    - [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings)
+    - [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf)
+    - [Annotated Handout (Joe's Lecture)](https://drive.google.com/file/d/1dQQDNQQDg4lhZcI5nvBxtgdjASR10sZk/view?usp=share_link)
+    - [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/lec/week1/29-fa24-l2.pdf)
+  - **Wednesday**
+  - **Friday**
+
 
 - **Announcements**:
     - Lab attendance is **required** and a lot happens there, make sure to go to lab
@@ -64,10 +70,11 @@ you can see what's coming.
 
 ### Week 0 – Welcome!
 
-- **Resources**
-    - [Repository for today](https://github.com/ucsd-cse29/fa24-01-w1f-hello)
-    - [Slides from Aaron's Lecture](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
-    - [Notes from Joe's Lecture](https://drive.google.com/file/d/1IKHNlU8SrEyw4HtZApiIm7SoCBMPskb7/view?usp=sharing)
+- **Lecture Materials**
+    - **Friday**
+      - [Repository](https://github.com/ucsd-cse29/fa24-01-w1f-hello)
+      - [Annotated Handout (Joe's Lecture)](https://drive.google.com/file/d/1IKHNlU8SrEyw4HtZApiIm7SoCBMPskb7/view?usp=sharing)
+      - [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
 
 - **Announcements**:
     - Lab attendance is **required** and a lot happens there, make sure to go to lab
