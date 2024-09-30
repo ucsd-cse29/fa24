@@ -51,6 +51,16 @@ you can see what's coming.
 
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
 
+- **Resources**
+  - [Monday Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings)
+  - [Monday Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf)
+  - [The UNIX Command Line](https://diveintosystems.org/book/Appendix2/cmdln_basics.html)
+  - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
+
+- **Announcements**:
+    - Lab attendance is **required** and a lot happens there, make sure to go to lab
+    - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1
+
 ### Week 0 – Welcome!
 
 - **Resources**
