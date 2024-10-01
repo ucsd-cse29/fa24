@@ -225,7 +225,7 @@ RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 Password: 
 # Now on remote server
-Last login: Tue Oct  1 14:03:05 2024 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
+Last login: Tue Oct 1 14:03:05 2024 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
 quota: No filesystem specified.
 Hello user, you are currently logged into ieng6-203.ucsd.edu
 
@@ -237,8 +237,8 @@ ieng6-201   23:25:01   0  0.08,  0.17,  0.11
 ieng6-202   23:25:01   1  0.09,  0.15,  0.11
 ieng6-203   23:25:01   1  0.08,  0.15,  0.11
 
-To begin work for one of your courses [ cs15lwi24 ], type its name
-at the command prompt.  (For example, "cs15lwi24", without the quotes).
+To begin work for one of your courses [ cs29fa24 ], type its name
+at the command prompt.  (For example, "cs29fa24", without the quotes).
 
 To see all available software packages, type "prep -l" at the command prompt,
 or "prep -h" for more options
