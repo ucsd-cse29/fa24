@@ -31,8 +31,10 @@ like he/her/they, etc)
     - A UCSD student organization you're a member of or interested in
     - Your favorite place you've found on campus so far
     - A useful campus shortcut or trick you know
-- Your answer to the following question. Discuss why you chose that answer.
-![image](./assets/rulers.png)
+- Your answer to the following question. Get to know your fellow group members!
+  
+If you could wake up tomorrow and be any (non-human) animal, what animal would you choose to be and why? Would you want to be a pet or be free?
+Have you had any pets growing up?
 
 ## Github
 
