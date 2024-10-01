@@ -6,7 +6,7 @@ In this class, you are assigned to lab sections, in which you will be in the CSE
 
 Labs are graded by participation, based on your attendance and engagement with the lab activity. Throughout the lab, you will fill in a shared Google Doc with notes and results from what you try and learn. This will be shared with the group of students around you so you have a collective record of your activities (and so we can comment on your progress!)
 
-Your TA lab lead will share the link to the Google Docs with you at the beginning of the lab.
+Your TA/tutor will share the link to the Google Docs with you at the beginning of the lab. When the lab prompts you to write something in the Google doc, be sure to put your name next to your contributions so that we can confirm your participation!
 
 ## Meet your Group!
 
