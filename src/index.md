@@ -110,7 +110,7 @@ participation in these discussions for credit. Note that you must
 **participate**, not merely **attend**, for credit.
 
 If you miss lab, you'll still be held accountable for understanding the
-relevant material via Skill Demonstrations and Lab Reports. You can miss 2 labs
+relevant material via Exams and Assignments. You can miss 2 labs
 without it impacting your grade (see [Grading](#grading) below). There is no
 way to make up a lab, even for illness, travel, or emergencies. Our preference
 would be to require all 10 labs for an A, and have some kind of excused
@@ -298,7 +298,7 @@ Attend and complete all the work required while waitlisted (this is consistent w
 
 **I missed lab, what should I do?**
 
-You cannot makeup missed lab credit (but have a few “allowed” misses). Make sure you understand the material from lab because it will be used on skill demos and lab reports; try to do the parts that don't involve discussion on your own, and review your group's lab notes.
+You cannot makeup missed lab credit (but have a few “allowed” misses). Make sure you understand the material from lab because it will be used on exams and assignments; try to do the parts that don't involve discussion on your own, and review your group's lab notes.
 
 **I missed a quiz deadline, what should I do?**
 
