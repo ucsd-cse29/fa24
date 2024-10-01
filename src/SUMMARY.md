@@ -12,4 +12,4 @@
 
 # Quizzes
 
-- [Quiz 1 coming soon!]()
+- [Quiz 1](https://us.prairielearn.com/pl/course_instance/160202)
