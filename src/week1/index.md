@@ -250,7 +250,7 @@ Then, execute the following commands:
 export MODULEPATH=/home/linux/ieng6/cs29fa24/public/modulefiles:/public/modulefiles
 ```
 ```
-cs29fa24
+module load cs29fa24
 ```
 
 You should get the following output:
@@ -309,7 +309,7 @@ It's worth asking how we can get our edits onto `ieng6` to run the modified prog
 From your terminal connected to your Codespace, run this command (replacing `yourusername` with your username as before; you will be prompted for your password again):
 
 ```
-scp hello.c YOURUSERNAME@ieng6.ucsd.edu:/home/linux/ieng6/cs29fa24/YOURUSERNAME
+scp hello.c YOURUSERNAME@ieng6.ucsd.edu:./
 ```
 
 Then, in your terminal connected to `ieng6`, run the following commands:
@@ -320,7 +320,7 @@ gcc hello.c -o hello
 ./hello
 ```
 
-The command `scp` takes files and copies them to the computer and folder given by the second argument. The `:` is separating the username and name of the server from the path or folder to copy it into – `./` just means “the current folder”, which is the same folder you see when you log in. `scp` is a useful command for moving things around between computers. There are many other ways we could accomplish this, but this is one of the most direct.
+The command `scp` takes files and copies them to the computer and folder given by the second argument. The `:` is separating the username and name of the server from the path or folder to copy it into – `./` just means “your home directory”, which is the same folder you see when you log in. `scp` is a useful command for moving things around between computers. There are many other ways we could accomplish this, but this is one of the most direct.
 
 
 **Write down in notes**: For each student, take a screenshot of successfully running the `scp` command and then using `cat` to see the new output on `ieng6`, and put it in the notes.
