@@ -308,7 +308,7 @@ It's worth asking how we can get our edits onto `ieng6` to run the modified prog
 From your terminal connected to your Codespace, run this command (replacing `yourusername` with your username as before; you will be prompted for your password again):
 
 ```
-scp hello.c yourusername@ieng6.ucsd.edu:./
+scp hello.c yourusername@ieng6.ucsd.edu:/home/linux/ieng6/cs29fa24/<your_username>
 ```
 
 Then, in your terminal connected to `ieng6`, run the following commands:
