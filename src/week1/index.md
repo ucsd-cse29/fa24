@@ -82,7 +82,7 @@ The `README` file you made can be seen in the file navigation on the left. You c
 
 **Do now**: Type some edits into the `README` file. Then, open a *new tab* and go find the repository again from your Github page. Do you see the edits to the file there?
 
-**Write down in your Google Doc**: For each student, a screenshot of the edited text in your Codespace, and a screenshot of the repository on Github showing the contents of the README.
+**Write down in your Google Doc**: For each student, a screenshot of the edited text in your Codespace, and a screenshot of the repository on Github showing the contents of the README. (NOTE: there will be a difference in these two screenshots!)
 
 To propagate the changes from our Codespace to the repository, we need to **commit** and **push** them. We'll talk in detail about these in future labs and lectures; for now we'll just show you how in the Codespace interface and defer explanations to later.
 
