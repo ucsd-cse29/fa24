@@ -244,9 +244,11 @@ To see all available software packages, type "prep -l" at the command prompt,
 or "prep -h" for more options
 ```
 
-Then, execute the following command:
+Then, execute the following commands:
 
 ```
+export MODULEPATH=/home/linux/ieng6/cs29fa24/public/modulefiles:/public/modulefiles
+
 cs29fa24
 ```
 
