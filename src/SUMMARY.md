@@ -8,8 +8,8 @@
 
 # Assignments
 
-- [PA1](https://github.com/ucsd-cse29/pa1-utf8)
+- [PA1](https://github.com/ucsd-cse29/pa1-utf8/)
 
 # Quizzes
 
-- [Quiz 1](https://us.prairielearn.com/pl/course_instance/160202)
+- [Quiz 1](https://us.prairielearn.com/pl/course_instance/160202/)
