@@ -63,6 +63,10 @@ you can see what's coming.
                 | [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf)
   - **Friday**
 
+- **Discussion Materials**
+  - **Wednesday** [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing) |
+                  [Code Sample](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c)
+
 
 - **Announcements**:
     - PA 1 is available on [Github](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10pm.
