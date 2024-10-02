@@ -58,9 +58,10 @@ you can see what's coming.
   - **Monday** [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) | 
                [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
                [Annotated Handout](https://drive.google.com/file/d/1dQQDNQQDg4lhZcI5nvBxtgdjASR10sZk/view?usp=share_link) |
-               [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
+               [Slides (Aaron's Lecture) ](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
   - **Wednesday** [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits)
-                | [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf)
+                | [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) |
+                  [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
   - **Friday**
 
 - **Discussion Materials**
