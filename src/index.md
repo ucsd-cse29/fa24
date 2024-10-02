@@ -55,14 +55,12 @@ you can see what's coming.
   - [The UNIX Command Line](https://diveintosystems.org/book/Appendix2/cmdln_basics.html)
   - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
 - **Lecture Materials**
-  - **Monday**
-    - [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings)
-    - [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf)
-    - [Annotated Handout (Joe's Lecture)](https://drive.google.com/file/d/1dQQDNQQDg4lhZcI5nvBxtgdjASR10sZk/view?usp=share_link)
-    - [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
-  - **Wednesday**
-    - [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits)
-    - [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf)
+  - **Monday** [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) | 
+               [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
+               [Annotated Handout](https://drive.google.com/file/d/1dQQDNQQDg4lhZcI5nvBxtgdjASR10sZk/view?usp=share_link) |
+               [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
+  - **Wednesday** [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits)
+                | [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf)
   - **Friday**
 
 
