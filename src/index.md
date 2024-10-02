@@ -61,7 +61,7 @@ you can see what's coming.
                [Slides (Aaron's Lecture) ](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
   - **Wednesday** [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits)
                 | [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) |
-                  [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
+                  [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf)
   - **Friday**
 
 - **Discussion Materials**
