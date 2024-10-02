@@ -8,7 +8,7 @@
 
 # Assignments
 
-- [PA1 coming soon!]()
+- [PA1](https://github.com/ucsd-cse29/pa1-utf8)
 
 # Quizzes
 

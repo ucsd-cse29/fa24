@@ -67,6 +67,7 @@ you can see what's coming.
 
 
 - **Announcements**:
+    - PA 1 is available on [Github](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10pm.
     - Quiz 1 is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 8 at 8am.
     - Lab attendance is **required** and a lot happens there, make sure to go to lab
     - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1
