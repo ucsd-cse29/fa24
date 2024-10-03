@@ -55,26 +55,40 @@ you can see what's coming.
   - [The UNIX Command Line](https://diveintosystems.org/book/Appendix2/cmdln_basics.html)
   - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
 - **Lecture Materials**
-  - **Monday:** [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) | 
-               [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
-               [Annotated Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/annotated-lecture-02-w1m.pdf) |
-               [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits) |
+  - **Monday:** 
+    - [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) 
+    - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
+                      [Annotated Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/annotated-lecture-02-w1m.pdf) |
+                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/1)
+    - <u>Aaron's Lecture:</u> 
+                      [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf) |
+                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/1)
+  - **Wednesday:** 
+    - [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits) 
+    - <u>Joe's Lecture:</u> 
                   [Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) | 
                   [Annotated Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/annotated-lecture-03-w1w.pdf) |
-                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf)
-  - **Friday:**   [Repository](https://github.com/ucsd-cse29/fa24-04-w1f-utf8) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/2)
+    - <u>Aaron's Lecture:</u> 
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/2)
+  - **Friday:**   
+    - [Repository](https://github.com/ucsd-cse29/fa24-04-w1f-utf8)
+    - <u>Joe's Lecture:</u> 
                   [Handout](https://github.com/ucsd-cse29/fa24-04-w1f-utf8/blob/main/lecture-04-w1f.pdf) | 
                   Annotated Handout |
-                  Slides
+                  Recording
+    - <u>Aaron's Lecture:</u> 
+                  Slides |
+                  Recording
 
 - **Discussion Materials**
-  - **Wednesday:** [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing) |
-                  [Code Sample](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c)
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c) | [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing)
+                  
 
 
 - **Announcements**:
-    - PA 1 is available on [Github](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10pm.
+    - PA 1 is available on [GitHub](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10pm.
     - Quiz 1 is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 8 at 8am.
     - Lab attendance is **required** and a lot happens there, make sure to go to lab
     - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1
@@ -82,9 +96,12 @@ you can see what's coming.
 ### Week 0 – Welcome!
 
 - **Lecture Materials**
-    - **Friday:** [Repository](https://github.com/ucsd-cse29/fa24-01-w1f-hello) |
-                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-01-w0f-hello/blob/main/annotated-lecture-01-w0f.pdf) | 
-                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
+    - **Friday:** 
+      - [Repository](https://github.com/ucsd-cse29/fa24-01-w1f-hello)
+      - <u>Joe's Lecture:</u> 
+                    [Annotated Handout](https://github.com/ucsd-cse29/fa24-01-w0f-hello/blob/main/annotated-lecture-01-w0f.pdf) 
+      - <u>Aaron's Lecture:</u> 
+                    [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
 
 - **Announcements**:
     - Lab attendance is **required** and a lot happens there, make sure to go to lab
