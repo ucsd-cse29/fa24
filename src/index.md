@@ -55,17 +55,18 @@ you can see what's coming.
   - [The UNIX Command Line](https://diveintosystems.org/book/Appendix2/cmdln_basics.html)
   - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
 - **Lecture Materials**
-  - **Monday** [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) | 
+  - **Monday:** [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) | 
                [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
-               [Annotated Handout](https://drive.google.com/file/d/1dQQDNQQDg4lhZcI5nvBxtgdjASR10sZk/view?usp=share_link) |
-               [Slides (Aaron's Lecture) ](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
-  - **Wednesday** [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits)
-                | [Handout (Joe's Lecture)](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) |
-                  [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf)
-  - **Friday**
+               [Annotated Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/annotated-lecture-02-w1m.pdf) |
+               [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf)
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits) |
+                  [Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) | 
+                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/annotated-lecture-03-w1w.pdf) |
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf)
+  - **Friday:**
 
 - **Discussion Materials**
-  - **Wednesday** [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing) |
+  - **Wednesday:** [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing) |
                   [Code Sample](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c)
 
 
@@ -78,10 +79,9 @@ you can see what's coming.
 ### Week 0 – Welcome!
 
 - **Lecture Materials**
-    - **Friday**
-      - [Repository](https://github.com/ucsd-cse29/fa24-01-w1f-hello)
-      - [Annotated Handout (Joe's Lecture)](https://drive.google.com/file/d/1IKHNlU8SrEyw4HtZApiIm7SoCBMPskb7/view?usp=sharing)
-      - [Slides (Aaron's Lecture)](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
+    - **Friday:** [Repository](https://github.com/ucsd-cse29/fa24-01-w1f-hello) |
+                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-01-w0f-hello/blob/main/annotated-lecture-01-w0f.pdf) | 
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
 
 - **Announcements**:
     - Lab attendance is **required** and a lot happens there, make sure to go to lab
