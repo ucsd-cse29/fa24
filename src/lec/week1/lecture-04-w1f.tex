@@ -1,6 +1,15 @@
 \documentclass[12pt, oneside, landscape]{article}
+\usepackage{fontspec}
 
 \usepackage{emoji}
+
+
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+\newfontfamily\HiraginoSans{Hiragino Sans}
+
 
 
 \include{header}
@@ -8,9 +17,21 @@
 
 \begin{document}
 
-\lstinputlisting{lowercase.c}
+\lstinputlisting{inspect.c}
+\begin{shell}[linewidth=60em]
+$ gcc inspect.c -o inspect
+$ ./inspect
+José, length 5: J (74 0b01001010) o (111 0b01101111) s (115 0b01110011) (*@^^^^fffd@*) (195 0b11000011) (*@^^^^fffd@*) (169 0b10101001)
+$ ./inspect
+(*@{\HiraginoSans ピカチュウ}@*)
+(*@{\HiraginoSans ピカチュウ}@*) length 15: (*@^^^^fffd@*) (227 0b11100011) (*@^^^^fffd@*) (131 0b10000011) (*@^^^^fffd@*) (148 0b10010100) // ... continues
+$ ./inspect
+(*@\emoji{crab}@*)
+(*@\emoji{crab}@*), length 4: (*@^^^^fffd@*) (240 0b00000000) (*@$^^^^fffd$@*) (159 0b11111111) (*@$^^^^fffd$@*) (166 0b00000000) (*@$^^^^fffd$@*) (128 0b00000000)
+\end{shell}
 
-\vspace{5em}
+
+\newpage
 
 
 
