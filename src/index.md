@@ -63,7 +63,10 @@ you can see what's coming.
                   [Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) | 
                   [Annotated Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/annotated-lecture-03-w1w.pdf) |
                   [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf)
-  - **Friday:**
+  - **Friday:**   [Repository](https://github.com/ucsd-cse29/fa24-04-w1f-utf8) |
+                  [Handout](https://github.com/ucsd-cse29/fa24-04-w1f-utf8/blob/main/lecture-04-w1f.pdf) | 
+                  [Annotated Handout]() |
+                  [Slides]()
 
 - **Discussion Materials**
   - **Wednesday:** [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing) |
