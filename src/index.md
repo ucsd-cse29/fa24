@@ -79,7 +79,7 @@ you can see what's coming.
                   Annotated Handout |
                   Recording
     - <u>Aaron's Lecture:</u> 
-                  Slides |
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l4.pdf) |
                   Recording
 
 - **Discussion Materials**
