@@ -76,11 +76,11 @@ you can see what's coming.
     - [Repository](https://github.com/ucsd-cse29/fa24-04-w1f-utf8)
     - <u>Joe's Lecture:</u> 
                   [Handout](https://github.com/ucsd-cse29/fa24-04-w1f-utf8/blob/main/lecture-04-w1f.pdf) | 
-                  Annotated Handout |
-                  Recording
+                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-04-w1f-utf8/blob/main/annotated-lecture-04-w1f.pdf) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/3)
     - <u>Aaron's Lecture:</u> 
                   [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l4.pdf) |
-                  Recording
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/3)
 
 - **Discussion Materials**
   - **Wednesday:** [Repository](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c) | [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing)
