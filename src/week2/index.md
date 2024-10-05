@@ -115,6 +115,21 @@ effect.
 
 (Here we should be able to surface common issues to the TAs and see if there's something worth saying globally/etc)
 
+### Signing Up for An Exam Slot
+
+Next week (week 3) is the first exam. It will have questions in the same
+platform you've seen in the PrairieLearn quizzes. You need to sign up for an
+_exam slot_ during week 3, which you can do at: FILL
+
+This document is the Triton Testing Center's guide: FILL
+
+You should **not** use lecture or lab time to take the exam; next week will be a
+normal week of lecture, lab, quiz, and so on with the added exam at some time
+outside of class.
+
+(You can do this outside of lab time, too, but we wanted to make a point to
+remind you during lab!)
+
 
 ### Ideas for students who (say they) are done:
 
