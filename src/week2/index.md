@@ -18,52 +18,119 @@ like he/her/they, etc)
 
 FILL another icebreaker
 
-## This Week
+## Testing
 
-This week's lab will be focused on PA1, in a few different ways. The main
-activity is around writing *good tests*, with some other activities around
-managing your code repository.
+The main activity is around writing *good tests*, with some other activities
+around managing your code repository.
 
-### What Makes Tests Good?
+### Some Tests are Always Better Than None
 
 We ask you for [a few categories of tests in
 PA1](https://github.com/ucsd-cse29/pa1-utf8/blob/main/README.md#testing), which
-make sure some basic (and not-so-basic) functionality is working. However, these
-don't cover all the cases.
+make sure some basic (and not-so-basic) functionality is working. Each of these
+has a few ways to write it, and you should definitely write *more* tests than these.
 
-But what does it mean to “cover all the cases”? In general, there is no
-theoretical limit to the number of strings we can create, so we can't
-_exhaustively_ test all possible inputs. So we can't say “cover all the
-cases” means that we write a test for every possible string.
+**Write down in notes**: To get started, _everyone_ in your group should put a
+*test into the shared doc.
+A test for this assignment includes *both* the input file and the `.expect`
+file. You shouldn't pick the simplest test you wrote; pick one you think is
+particularly interesting. If you haven't written any tests yet, write an
+interesting!
+
+Then, add all the tests from your group to your PA's tests and try them on your
+implementation, and show what happens for each.
+
+If you haven't started yet, this is a great time to get your repository set up,
+get those tests in, and make sure you know how to run the tests. The program
+that reads from input from the first quiz, or the [programs from
+discussion](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c),
+are great starting points.
+
+**Write down in notes**: When your group runs the tests on one another's
+implementations, what happens? Did your test find a bug in anyone else's
+implementation? Did someone else's test find a bug in yours? (Does this whole
+experience just make you extremely motivated to start early next time 😬?)
+
+### What Makes Tests Good?
+
+That process, and your own work before today, gave you a few example tests.
+These aren't thorough enough to test everything that needs to be covered by the
+program. But what does it mean to “cover all the cases”? In general, there is no
+theoretical limit to the number of strings we can create, so we can't test all
+possible inputs (also called _exhaustive_ testing). So we can't say “cover all
+the cases” means that we write a test for every possible string.
 
 Another way to think of this is in terms of _implementations_. There are many
 correct and many incorrect (or incomplete) versions of the UTF analyzer that we
 can imagine. Some of them are yours! Each test we write would _pass_ or _fail_
 on each of these implementations. If it _passes_ on an _incorrect_
-implementation, we might say that test doesn't “notice” or “witness” that
+implementation, we could say that test doesn't “notice” or “witness” that
 implementation being wrong. If it _fails_ on an _incorrect_ implementation
 (while _passing_ on all the _correct_ ones), that's great! It means it is a
-high-quality test that tells us something about a bug in an implementation.
+high-quality test that tells us something about a bug in an that incorrect
+implementation.
 
 Then, a way of thinking about “covering all the cases” is “how many bad
 implementations would these tests catch?” Of course, there are infinitely many
-bad implementations, so in general we can't expect perfection. But most
-incorrect implementations are close to correct ones, and targeting tests at
-common mistakes that might be made is a useful way to organize our thinking.
+bad implementations (just like there are infinitely many strings), so in general
+we can't expect perfection. But most incorrect implementations are close to
+correct ones (they just have a bug or two), and targeting tests at common
+mistakes that might be made is a useful way to organize our thinking.
 
 To that end, we've handwritten some bad implementations of the UTF8 analyzer.
 Your job as a group will be to write a set of tests where some test _fails_ on
 each of the bad implementations (while still being a correct test).
 
-You can get started by making a private copy of this repository: FILL
+Your lab leader will share a repository with you that all of you can use for
+this lab (it will be public and you'll be able to access it later). (Tutors/TAs
+– need to copy the base repo and share it with the Github accounts of the
+students in groups; maybe if we have seating charts we can do this before lab?
+Create it in the ucsd-cse15l-fa24 org.)
 
-Make just _one_ copy, and add all the members of your group to it.
+Everyone should be able to make *their own* Codespace from this repository – the
+Codespace is just for you, the repository is shared with your whole group. In
+the Codespace, spend a few minutes writing some tests and trying them out
+against the provided implementations. All of them are _mostly_ right, but have
+some specific bugs related to their names. We made one _very_ obviously wrong;
+it simply always returns `1` for `is_ascii`, so any test with a non-ASCII
+character will fail.
 
-FILL logistics details of writing the tests and checking what they do
+```
+$ cat tests/crab.txt
+🦀
+$ ./always-ascii < tests/crab.txt
+Enter a UTF-8 encoded string: Valid ASCII: true
+... other output
+```
 
+If you run with the testing script, you'll see the failure:
 
+```
+$ ./test_script always-ascii 
+Test ./tests/crab.txt passed.
 
-### Managing Your Repository
+Test ./tests/invalid_and_uppercased_ascii_test.txt failed.
+Expected line not found in output:
+Valid ASCII: false
+
+Test ./tests/is_valid_ascii_test.txt passed.
+```
+
+Your task (as a group) is to write tests to make *all* of these bad
+implementations fail using correct tests (e.g. tests that ought to pass on any
+correct implementation).
+
+Do some work in your individual Codespaces, then commit and sync your tests.
+Make sure to pick unique names for your test files (consider prefixing with your
+username) so that the filenames don't conflict.
+
+Can you trigger the bugs in _all_ the bad implementations?
+
+## Managing Your Repository
+
+The rest of the lab will have you work on your own repository for PA1 and make
+progress on the PA. We have some advice about managing your repository that we
+want you to try.
 
 We recommend making commits, and pushing, to your repository whenever you get to
 a useful working checkpoint. That could mean that you got a new test to pass,
@@ -100,7 +167,7 @@ the list of files to add or change.
   It's really useful to keep repositories organized and tidy. `.gitignore` is one way to do that, separating the source code of a project from other “build artifacts” that are temporarily important but shouldn't be tracked and saved in the same way as code.
 
 
-### Working on the PA
+## Working on the PA
 
 Armed with your thorough tests, spend some time working on the PA. You might
 choose to just include some of the tests you've written in your own code at
