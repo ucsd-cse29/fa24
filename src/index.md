@@ -66,6 +66,8 @@ you can see what's coming.
   - **Monday**
     - [Repository](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign)
     - <u>Joe's Lecture:</u>: [Handout](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign/blob/main/lecture-05-w2m.pdf)
+    - <u>Aaron's Lecture:</u> 
+        [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week2/29-fa24-l5.pdf)
 
 
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
