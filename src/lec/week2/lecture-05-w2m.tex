@@ -1,0 +1,45 @@
+\documentclass[12pt, oneside, landscape]{article}
+\usepackage{fontspec}
+
+\usepackage{emoji}
+
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+\newfontfamily\HiraginoSans{Hiragino Sans}
+
+
+\include{header}
+
+\usepackage{verbatim}
+
+\begin{document}
+\lstinputlisting{numbers.c}
+\begin{shell}
+$ gcc numbers.c -o numbers
+$ ./numbers 
+is_ascii(a 97) = true
+is_ascii((*@^^^^fffd@*) -128) = true
+is_ascii( 127) = true
+is_ascii( 0) = true
+is_ascii( 1) = true
+is_ascii( 2) = true
+... lots of output ... 
+is_ascii(z 122) = true
+is_ascii({ 123) = true
+is_ascii(| 124) = true
+is_ascii(} 125) = true
+is_ascii(~ 126) = true
+is_ascii( 127) = true
+is_ascii((*@^^^^fffd@*) -128) = true
+is_ascii((*@^^^^fffd@*) -127) = true
+... lots more output
+is_ascii((*@^^^^fffd@*) -1) = true
+\end{shell}
+
+\newpage
+
+\lstinputlisting{code_point_at.c}
+
+\end{document}
