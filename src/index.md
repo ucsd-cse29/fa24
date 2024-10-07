@@ -53,6 +53,7 @@ you can see what's coming.
 
 - **Announcements**
   - [PA1](https://github.com/ucsd-cse29/pa1-utf8) is due this Thursday, Oct 10, at 10:10pm (that's 10/10 at 10:10pm)
+  - The week 2 lab will use some of your work so far on PA1. You don't need to be done or mostly done, but you will get the most out of lab if you have *started*.
   - Reservations are open for exam slots on [PrairieTest](https://us.prairietest.com/), log in with your `@ucsd.edu` account
     - This week you can reserve a spot for a practice exam just to get used to finding the lab, signing in, etc. It is **not** a CSE29-specific practice, just a general tutorial in using the testing center
     - This week you *must* reserve a spot for our first test in the class, which happens next week. The format will be similar to the quizzes; admininstered through PrairieLearn with a mix of conceptual/mechanical questions and coding questions.
