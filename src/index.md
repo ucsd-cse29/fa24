@@ -56,25 +56,35 @@ you can see what's coming.
   - The week 2 lab will use some of your work so far on PA1. You don't need to be done or mostly done, but you will get the most out of lab if you have *started*.
   - Reservations are open for exam slots on [PrairieTest](https://us.prairietest.com/), log in with your `@ucsd.edu` account
     - This week you can reserve a spot for a practice exam just to get used to finding the lab, signing in, etc. It is **not** a CSE29-specific practice, just a general tutorial in using the testing center
-    - This week you *must* reserve a spot for our first test in the class, which happens next week. The format will be similar to the quizzes; admininstered through PrairieLearn with a mix of conceptual/mechanical questions and coding questions.
+    - This week you *must* reserve a spot for our first test in the class, which happens next week. The format will be similar to the quizzes; administered through PrairieLearn with a mix of conceptual/mechanical questions and coding questions.
     - Reservations are open until the end of the quarter for the remaining tests if you want to reserve your time now.
 
 - **Readings**
   - [Binary and Data Representaion (Sec 4.1-4.6)](https://diveintosystems.org/book/C4-Binary/bases.html)
 
 - **Lecture Materials**
-  - **Monday**
+  - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign)
-    - <u>Joe's Lecture:</u>: [Handout](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign/blob/main/lecture-05-w2m.pdf)
+    - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign/blob/main/lecture-05-w2m.pdf) |
+                      [Annotated Handout](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign/blob/main/annotated-lecture-05-w2m.pdf) |
+                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/4)
     - <u>Aaron's Lecture:</u> 
-        [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week2/29-fa24-l5.pdf)
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week2/29-fa24-l5.pdf) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/4)
 
 
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
 
+- **Announcements**
+    - PA 1 is available on [GitHub](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10pm.
+    - Quiz 1 is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 8 at 8am.
+    - Lab attendance is **required** and a lot happens there, make sure to go to lab.
+    - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1.
+
 - **Readings**
   - [The UNIX Command Line](https://diveintosystems.org/book/Appendix2/cmdln_basics.html)
   - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
+
 - **Lecture Materials**
   - **Monday:** 
     - [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) 
@@ -105,16 +115,14 @@ you can see what's coming.
 
 - **Discussion Materials**
   - **Wednesday:** [Repository](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c) | [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing)
-                  
-
-
-- **Announcements**:
-    - PA 1 is available on [GitHub](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10pm.
-    - Quiz 1 is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 8 at 8am.
-    - Lab attendance is **required** and a lot happens there, make sure to go to lab
-    - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1
 
 ### Week 0 – Welcome!
+
+- **Announcements**
+    - Lab attendance is **required** and a lot happens there, make sure to go to lab.
+    - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1.
+    - Assignments, quizzes, and other things with deadlines will start in week 1.
+    - No discussion on Friday of week 0 (discussion starts in week 1).
 
 - **Lecture Materials**
     - **Friday:** 
@@ -123,12 +131,6 @@ you can see what's coming.
                     [Annotated Handout](https://github.com/ucsd-cse29/fa24-01-w0f-hello/blob/main/annotated-lecture-01-w0f.pdf) 
       - <u>Aaron's Lecture:</u> 
                     [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
-
-- **Announcements**:
-    - Lab attendance is **required** and a lot happens there, make sure to go to lab
-    - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1
-    - Assignments, quizzes, and other things with deadlines will start in week 1
-    - No discussion on Friday of week 0 (discussion starts in week 1)
 
 ## <a name="staff-resources"></a> Staff Resources
 
