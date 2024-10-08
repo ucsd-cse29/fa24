@@ -16,8 +16,8 @@ like he/her/they, etc)
     - A useful campus shortcut or trick you know
 - Your answer to the following question. Get to know your fellow group members!
 
-Pick a song as the soundtrack of your life! Why you did you choose this song?
-What’s your favorite genre? Who’s your favorite artist?
+    - Pick a song as the soundtrack of your life! Why you did you choose this song?
+      What’s your favorite genre? Who’s your favorite artist?
 
 ## Testing
 
