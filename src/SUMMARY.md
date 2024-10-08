@@ -5,4 +5,5 @@
 # Labs
 
 - [Week 1 Lab](./week1/index.md)
+- [Week 2 Lab](./week2/index.md)
 
