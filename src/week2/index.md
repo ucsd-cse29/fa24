@@ -100,15 +100,16 @@ character will fail.
 ```
 $ cat tests/crab.txt
 🦀
-$ ./always-ascii < tests/crab.txt
-Enter a UTF-8 encoded string: Valid ASCII: true
+$ ./bin/always_ascii < tests/crab.txt
+Enter a UTF-8 encoded string:
+Valid ASCII: true
 ... other output
 ```
 
 If you run with the testing script, you'll see the failure:
 
 ```
-$ ./test_script always-ascii 
+$ ./test_script bin/always_ascii 
 Test ./tests/crab.txt passed.
 
 Test ./tests/invalid_and_uppercased_ascii_test.txt failed.
@@ -141,8 +142,8 @@ on.  We also recommend using `.gitignore` to manage files that are created by
 the compiler (but shouldn't be in version control).
 
 - Practice creating a small commit in lab – add a test and/or some small amount
-of code, and make a commit and push. Put a screenshot of the commit that you
-pushed to Github into your notes document.
+of code, and make a commit and push. **In your notes document:** put a screenshot
+of the commit that you pushed to Github.
 
   - If you've been working this way all along, you can just share a small commit
   you made earlier.
