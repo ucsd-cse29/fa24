@@ -16,7 +16,8 @@ like he/her/they, etc)
     - A useful campus shortcut or trick you know
 - Your answer to the following question. Get to know your fellow group members!
 
-FILL another icebreaker
+Pick a song as the soundtrack of your life! Why you did you choose this song?
+What’s your favorite genre? Who’s your favorite artist?
 
 ## Testing
 
@@ -25,26 +26,23 @@ around managing your code repository.
 
 ### Some Tests are Always Better Than None
 
-We ask you for [a few categories of tests in
-PA1](https://github.com/ucsd-cse29/pa1-utf8/blob/main/README.md#testing), which
-make sure some basic (and not-so-basic) functionality is working. Each of these
+We ask you for [a few categories of tests in PA1](https://github.com/ucsd-cse29/pa1-utf8/blob/main/README.md#testing), which make sure some basic (and not-so-basic) functionality is working. Each of these
 has a few ways to write it, and you should definitely write *more* tests than these.
 
 **Write down in notes**: To get started, _everyone_ in your group should put a
-*test into the shared doc.
+*test* into the shared doc (there should be an example of what one should look like in the doc already!).
 A test for this assignment includes *both* the input file and the `.expect`
 file. You shouldn't pick the simplest test you wrote; pick one you think is
 particularly interesting. If you haven't written any tests yet, write an
-interesting!
+interesting test!
 
 Then, add all the tests from your group to your PA's tests and try them on your
 implementation, and show what happens for each.
 
-If you haven't started yet, this is a great time to get your repository set up,
+If you haven't started yet, this is a great time to get your [repository](https://github.com/ucsd-cse29/pa1-utf8) set up,
 get those tests in, and make sure you know how to run the tests. The program
 that reads from input from the first quiz, or the [programs from
-discussion](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c),
-are great starting points.
+discussion](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c), are great starting points.
 
 **Write down in notes**: When your group runs the tests on one another's
 implementations, what happens? Did your test find a bug in anyone else's
@@ -180,13 +178,12 @@ PA. The conceptual knowledge pays off later in the course, on exams, and in your
 career, getting the code complete for a PA without understanding it has little
 effect.
 
-(Here we should be able to surface common issues to the TAs and see if there's something worth saying globally/etc)
 
 ### Signing Up for An Exam Slot
 
 Next week (week 3) is the first exam. It will have questions in the same
 platform you've seen in the PrairieLearn quizzes. You need to sign up for an
-_exam slot_ during week 3, which you can do at: FILL
+_exam slot_ during week 3, which you can do [HERE](https://us.prairietest.com/)
 
 This document is the Triton Testing Center's guide: FILL
 
