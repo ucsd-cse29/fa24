@@ -192,7 +192,7 @@ My 🐩’s name is Erdős.
 $ ./utf8analyzer < utf8test.txt
 Enter a UTF-8 encoded string: 
 Valid ASCII: false
-Uppercased ASCII: MY 🐩’S NAME IS ERDőS.
+Uppercased ASCII: "MY 🐩’S NAME IS ERDőS."
 Length in bytes: 27
 Number of code points: 21
 Bytes per code point: 1 1 1 4 3 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1
