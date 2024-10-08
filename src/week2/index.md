@@ -210,5 +210,5 @@ includes accented characters. Can you find a library or tool that would help?
 How do you think that works in software tools like autocorrect that
 capitalize the first letter of a sentence?
 
-<!--> - DON'T go over the design questions. Leave those to them. I don't want to give
+<!-- - DON'T go over the design questions. Leave those to them. I don't want to give
 accidentally “official”-seeming answers to those. -->
