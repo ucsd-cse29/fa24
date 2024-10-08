@@ -9,6 +9,7 @@ document (discussion leaders, you answer these as well!):
 
 - How you'd like people to refer to you (pronounce your name/nickname, pronouns
 like he/her/they, etc)
+- Your github username
 - Your major
 - One of these that you didn't share in week 1:
     - A UCSD student organization you're a member of or interested in
