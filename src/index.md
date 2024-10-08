@@ -35,7 +35,7 @@ students present as well.
     - Joe:
         - Tuesday 9-10am (prioritizes general advising, CSE office #3206)
         - Tuesday 1-2pm (prioritizes CSE29, CSE lab B250)
-
+- TA office hours – See the [office hours calendar](https://ucsd-cse29.github.io/fa24/index.html#office-hours-calendar)
 - Podcasts: [podcast.ucsd.edu](https://podcast.ucsd.edu)
 - Q&A forum: [Piazza](https://piazza.com/ucsd/fall2024/cse29/home)
 - Gradescope: [https://www.gradescope.com](https://www.gradescope.com)
