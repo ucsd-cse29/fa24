@@ -201,17 +201,17 @@ outside of class.
 remind you during lab!)
 
 
-### Ideas for students who (say they) are done:
+### If you are done early:
 
-- Implement a Zalgo text generator (https://zalgo.org). You can tell them to do
-their own research to figure out how that works.
+- Implement a Zalgo text generator (https://zalgo.org). Do
+your own research to figure out how that works.
 - Implement `reverse` that takes an argument buffer to store the reversed
 string. If they do that, then they should do `reverse_in_place` that uses as
 little extra memory as possible and reverses in place.
-- Research how they'd go about implementing `uppercase`/`lowercase` that
-includes accented characters. Can they find a library or tool that would help
-them? How do they think that works in software tools like autocorrect that
+- Research how to go about implementing `uppercase`/`lowercase` that
+includes accented characters. Can you find a library or tool that would help? 
+How do you think that works in software tools like autocorrect that
 capitalize the first letter of a sentence?
 
-- DON'T go over the design questions. Leave those to them. I don't want to give
-accidentally “official”-seeming answers to those.
+<!--> - DON'T go over the design questions. Leave those to them. I don't want to give
+accidentally “official”-seeming answers to those. -->
