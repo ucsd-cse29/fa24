@@ -108,7 +108,9 @@ If you run with the testing script, you'll see the failure:
 
 ```
 $ ./test_script bin/always_ascii 
-Test ./tests/crab.txt passed.
+Test ./tests/crab.txt failed.
+Expected line not found in output:
+Valid ASCII: false
 
 Test ./tests/invalid_and_uppercased_ascii_test.txt failed.
 Expected line not found in output:
