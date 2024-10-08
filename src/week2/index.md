@@ -85,10 +85,7 @@ Your job as a group will be to write a set of tests where some test _fails_ on
 each of the bad implementations (while still being a correct test).
 
 Your lab leader will share a repository with you that all of you can use for
-this lab (it will be public and you'll be able to access it later). (Tutors/TAs
-– need to copy the base repo and share it with the Github accounts of the
-students in groups; maybe if we have seating charts we can do this before lab?
-Create it in the ucsd-cse29-fa24 org. Starter repo is [https://github.com/ucsd-cse29/lab2-starter/](https://github.com/ucsd-cse29/lab2-starter/))
+this lab (it will be public and you'll be able to access it later).
 
 Everyone should be able to make *their own* Codespace from this repository – the
 Codespace is just for you, the repository is shared with your whole group. In
