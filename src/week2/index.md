@@ -190,7 +190,7 @@ Next week (week 3) is the first exam. It will have questions in the same
 platform you've seen in the PrairieLearn quizzes. You need to sign up for an
 _exam slot_ during week 3, which you can do [HERE](https://us.prairietest.com/)
 
-This document is the Triton Testing Center's guide: FILL
+This document is the Triton Testing Center's guide: [https://tritontesting.ucsd.edu/for-students/scheduling-a-test.html](https://tritontesting.ucsd.edu/for-students/scheduling-a-test.html)
 
 You should **not** use lecture or lab time to take the exam; next week will be a
 normal week of lecture, lab, quiz, and so on with the added exam at some time
