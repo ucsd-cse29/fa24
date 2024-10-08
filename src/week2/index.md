@@ -44,6 +44,10 @@ get those tests in, and make sure you know how to run the tests. The program
 that reads from input from the first quiz, or the [programs from
 discussion](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c), are great starting points.
 
+(NOTE: Google docs will automatically turn typed ASCII quotes (",') to 
+directional quotes (“,”), so be careful when copying quotes out of a google 
+doc into code / test files. You can turn this off in Tools>Preferences>Use Smart Quotes)
+
 **Write down in notes**: When your group runs the tests on one another's
 implementations, what happens? Did your test find a bug in anyone else's
 implementation? Did someone else's test find a bug in yours? (Does this whole
