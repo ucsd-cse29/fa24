@@ -52,7 +52,8 @@ you can see what's coming.
 ### Week 2 – Number Representations, Sizes, and Signs
 
 - **Announcements**
-  - [PA1](https://github.com/ucsd-cse29/pa1-utf8) is due this Thursday, Oct 10, at 10:10pm (that's 10/10 at 10:10pm)
+  - **Quiz 2** is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 15 at 8am.
+  - Reminder: [PA1](https://github.com/ucsd-cse29/pa1-utf8) is due this Thursday, Oct 10, at 10:10pm (that's 10/10 at 10:10pm)
   - The week 2 lab will use some of your work so far on PA1. You don't need to be done or mostly done, but you will get the most out of lab if you have *started*.
   - Reservations are open for exam slots on [PrairieTest](https://us.prairietest.com/), log in with your `@ucsd.edu` account
     - This week you can reserve a spot for a practice exam just to get used to finding the lab, signing in, etc. It is **not** a CSE29-specific practice, just a general tutorial in using the testing center
@@ -75,7 +76,7 @@ you can see what's coming.
 
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
 
-- **Announcements** <a name=pa1></a><a name=quiz1></a>
+- **Announcements**
     - **PA 1** is available on [GitHub](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10:10pm.
     - **Quiz 1** is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 8 at 8am.
     - Lab attendance is **required** and a lot happens there, make sure to go to lab.
