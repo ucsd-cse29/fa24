@@ -75,9 +75,9 @@ you can see what's coming.
 
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
 
-- **Announcements**
-    - <a name=pa1></a>**PA 1** is available on [GitHub](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10:10pm.
-    - <a name=quiz1></a>**Quiz 1** is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 8 at 8am.
+- **Announcements** <a name=pa1></a><a name=quiz1></a>
+    - **PA 1** is available on [GitHub](https://github.com/ucsd-cse29/pa1-utf8), due Thu Oct 10 at 10:10pm.
+    - **Quiz 1** is available on [PrairieLearn](https://us.prairielearn.com/pl/course_instance/160202), due Tue Oct 8 at 8am.
     - Lab attendance is **required** and a lot happens there, make sure to go to lab.
     - Submit the [welcome survey](https://docs.google.com/forms/d/e/1FAIpQLSeJknloDw6HVo7j7FFWt8_i2HqzeOhzgaPyJ3z7GJrDVCwCuw/viewform) before lab on Tuesday of week 1.
 
