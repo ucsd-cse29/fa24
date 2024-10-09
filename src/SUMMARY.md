@@ -8,6 +8,6 @@
 - [Week 2 Lab](./week2/index.md)
 
 # Assignments
-- [PA1](./index.md/#pa1)
+- [PA1](./index.md#pa1)
 # Quizzes
-- [Quiz 1](./index.md/#quiz1)
+- [Quiz 1](./index.md#quiz1)
