@@ -66,15 +66,25 @@ you can see what's coming.
 - **Lecture Materials**
   - **Friday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-07-w2f-hex-p)
-    - Joe's Lecture: [Handout](https://github.com/ucsd-cse29/fa24-07-w2f-hex-p/blob/main/lecture-07-w2f.pdf)
+    - <u>Joe's Lecture:</u>
+                  [Handout](https://github.com/ucsd-cse29/fa24-07-w2f-hex-p/blob/main/lecture-07-w2f.pdf) |
+                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-07-w2f-hex-p/blob/main/annotated-lecture-07-w2f.pdf) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/6)
+    - <u>Aaron's Lecture:</u> 
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/6)
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-06-w2w-size-and-sign)
-    - Joe's Lecture: [Handout](https://github.com/ucsd-cse29/fa24-06-w2w-size-and-sign/blob/main/lecture-06-w2w.pdf)
+    - <u>Joe's Lecture:</u> 
+                      [Handout](https://github.com/ucsd-cse29/fa24-06-w2w-size-and-sign/blob/main/lecture-06-w2w.pdf) |
+                      [Annotated Handout](https://github.com/ucsd-cse29/fa24-06-w2w-size-and-sign/blob/main/annotated-lecture-06-w2w.pdf) |
+                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/5)
     - <u>Aaron's Lecture:</u> 
-                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week2/29-fa24-l6.pdf)
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week2/29-fa24-l6.pdf) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/5)
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign)
-    - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign/blob/main/lecture-05-w2m.pdf) |
+    - <u>Joe's Lecture:</u> 
+                      [Handout](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign/blob/main/lecture-05-w2m.pdf) |
                       [Annotated Handout](https://github.com/ucsd-cse29/fa24-05-w2m-size-and-sign/blob/main/annotated-lecture-05-w2m.pdf) |
                       [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/4)
     - <u>Aaron's Lecture:</u> 
@@ -95,23 +105,6 @@ you can see what's coming.
   - [Arrays and Strings (In C)](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
 
 - **Lecture Materials**
-  - **Monday:** 
-    - [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) 
-    - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
-                      [Annotated Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/annotated-lecture-02-w1m.pdf) |
-                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/1)
-    - <u>Aaron's Lecture:</u> 
-                      [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf) |
-                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/1)
-  - **Wednesday:** 
-    - [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits) 
-    - <u>Joe's Lecture:</u> 
-                  [Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) | 
-                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/annotated-lecture-03-w1w.pdf) |
-                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/2)
-    - <u>Aaron's Lecture:</u> 
-                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf) |
-                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/2)
   - **Friday:**   
     - [Repository](https://github.com/ucsd-cse29/fa24-04-w1f-utf8)
     - <u>Joe's Lecture:</u> 
@@ -121,6 +114,23 @@ you can see what's coming.
     - <u>Aaron's Lecture:</u> 
                   [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l4.pdf) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/3)
+  - **Wednesday:** 
+    - [Repository](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits) 
+    - <u>Joe's Lecture:</u> 
+                  [Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/lecture-03-w1w.pdf) | 
+                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-03-w1w-strings-and-bits/blob/main/annotated-lecture-03-w1w.pdf) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/2)
+    - <u>Aaron's Lecture:</u> 
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/2)
+    - **Monday:** 
+    - [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) 
+    - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
+                      [Annotated Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/annotated-lecture-02-w1m.pdf) |
+                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/1)
+    - <u>Aaron's Lecture:</u> 
+                      [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l2.pdf) |
+                      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/1)
 
 - **Discussion Materials**
   - **Wednesday:** [Repository](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c) | [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing)
