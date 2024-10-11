@@ -64,6 +64,9 @@ you can see what's coming.
   - [Binary and Data Representaion (Sec 4.1-4.6)](https://diveintosystems.org/book/C4-Binary/bases.html)
 
 - **Lecture Materials**
+  - **Friday:**
+    - [Repository](https://github.com/ucsd-cse29/fa24-07-w2f-hex-p)
+    - Joe's Lecture: [Handout](https://github.com/ucsd-cse29/fa24-07-w2f-hex-p/blob/main/lecture-07-w2f.pdf)
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-06-w2w-size-and-sign)
     - Joe's Lecture: [Handout](https://github.com/ucsd-cse29/fa24-06-w2w-size-and-sign/blob/main/lecture-06-w2w.pdf)
