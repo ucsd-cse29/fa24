@@ -1,44 +1,16 @@
 # Week 3 – VSCode and Your Local Machine
 
-## Lecture Materials
-
-- [Monday Lecture Handout (Slides)](https://docs.google.com/presentation/d/1281XbfK5_dVXcVU-XNkb9BObIz0gt0hC/edit?usp=sharing&ouid=109342588918218787603&rtpof=true&sd=true)
-- [Monday Lecture Handout (PDF)](https://drive.google.com/file/d/1cTFm-d3cPLclZn0NxaD8Maqcapsx1Qwh/view?usp=sharing)
-- [Wednesday Lecture Handout (Slides)](https://docs.google.com/presentation/d/127DMrEDOnEGvZ8OzIwbbsueraSTGuTrz/edit?usp=sharing&ouid=109342588918218787603&rtpof=true&sd=true)
-- [Wednesday Lecture Handout (PDF)](https://drive.google.com/file/d/18qAdUK8P-Cis9itwRQt1ddbqbLjhvKuk/view?usp=sharing)
-- Monday Notes <iframe src="https://drive.google.com/file/d/1fSI3BnfmhkGhgmtBXnkJ_T6QZJmPuSea/preview" width="100%" height="600px"></iframe>
-- Wednesday Notes <iframe src="https://drive.google.com/file/d/1oqmo9Xo1JRYbJjXkDMRxo-rV84Curf-I/preview" width="100%" height="600px"></iframe>
-
-### To Read/For Your Reference
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- Read these two articles by Julia Evans (one summarized in a comic below):
-    - [When debugging, your attitude matters](https://jvns.ca/blog/debugging-attitude-matters/)
-    - [How I Got Better at Debugging](https://jvns.ca/blog/2015/11/22/how-i-got-better-at-debugging/)
-- Read this article by John Regehr: [How to Debug](https://blog.regehr.org/archives/199)
-    - You don't need to know what all the technical tools are in these readings (systems programming, CSS, divs, etc)
-- From the Regehr article, focus on the vocabulary (symptom, bug, etc); from the Evans articles, focus on the vibes
-- This article: [https://drive.google.com/file/d/1zbMVZxsI1zOBPhSsvBi4kB5dPJuxyOJh/view?usp=sharing](https://drive.google.com/file/d/1zbMVZxsI1zOBPhSsvBi4kB5dPJuxyOJh/view?usp=sharing)
-  (Note that assigning an article doesn't necessarily mean we all agree with everything in it...)
-
-### Video Shorts
 
 ## Lab Tasks
 
-As usual, we publish these ahead of time, but they aren't guaranteed to be final
-until the start of lab on Monday.
-
-Since the start of the course, we've been using 
-This week in lab, you will set up the terminal in an environment called Visual
-Studio Code on your own computer (or on a lab computer in your course account),
-and you'll complete the first Skill Demonstration.
+Since the start of the course, we've been using Codespaces on Github as an environment to write and run our C code. This week, we're going to set up our own environment using Visual Studio Code on our local machine to write and run our code. This will give us more control over our environment and allow us to work on our code even when we're not connected to the internet.
 
 ### Part 1 – Visual Studio Code
 
 (If you can't or don't want to use your own computer for this for any reason,
 you can do the installation of VScode on one of the computers in the lab! You
 can do all your work on the lab computers all quarter, no personal laptop setup
-required.)
+required.) -- CHECK IF THIS IS STILL THE CASE FOR CSE 29
 
 Go to the Visual Studio Code website
 [https://code.visualstudio.com/](https://code.visualstudio.com/), and follow the
@@ -49,7 +21,7 @@ When it is installed, you should be able to open a window that looks like this
 (it might have different colors, or a different menu bar, depending on your
 system and settings):
 
-![/images/vscode.png](/images/vscode.png)
+![/images/vscode.png](./assets/vscode.png)
 
 **Write down in notes**: Everyone should share a screenshot of VScode open –
 help folks figure it out if it won't install. If someone gets stuck, take a
@@ -57,12 +29,13 @@ screenshot of the error message or point at which they are stuck so we can help
 them figure it out later, and they can decide to keep trying (potentially with
 the tutor helping) or move on.
 
-Then if you're on Windows: install `git` for Windows, which comes with some
+**Next** if you're on Windows: install `git` for Windows, which comes with some
 useful tools we need:
 
 [Git for Windows](https://gitforwindows.org/)
 
 (#Arunan - Should we include instructions for minGW on windows for gcc, gdb, etc.?)
+(#Yash - I think we should. MinGW and then have them test the installation at the end of this section)
 
 Once installed, use the steps in this post to set your default terminal to use
 the newly-installed `git bash` in Visual Studio Code:
@@ -73,6 +46,8 @@ the newly-installed `git bash` in Visual Studio Code:
 open a terminal in VScode. (Ctrl or Command + \`, or use the Terminal → New
 Terminal menu option). Try running some of the commands we learned in earlier
 labs and lectures on this computer.
+
+<!-- ADD MINGW INSTALLATION INSTRUCTIONS HERE -->
 
 **Write down in notes**:
 
@@ -87,7 +62,7 @@ labs and lectures on this computer.
   2](/week2/#remotely-connecting-to-cse15l-account) to recall the commands you used.
 
 Take a few screenshots of what you tried, and discuss how this environment
-differs from EdStem.
+differs from Codespaces.
 
 <!-- #### Running the Server on Your Computer
 
@@ -126,6 +101,48 @@ what’s done in Server.java and by Java’s HTTPServer library.
 
 **Write down in notes**: Show a screenshot of the server running on your computer. -->
 
+### Part 2 - Setting up SSH Keys for Easy Access to `ieng6`
+
+With the setup we've used so far this quarter, each time you log in to your
+course-specific account, you have to type the password. This can get a bit tedious and luckily there is 
+a cool and interesting way to avoid this while still staying secure using SSH keys.
+
+- In your local terminal (the one you opened in VSCode), run `ssh-keygen`
+- Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
+  - Note the path where the public key is saved (underlined below). 
+  - ![Image](../images/ssh_keygen.png)
+- Now, log into your remote course specific account on `ieng6` with `ssh`
+  (using your password as usual)
+- Run `mkdir .ssh` in the terminal
+- Log out of your remote account by pressing `Ctrl-D` or typing `exit`.
+- Now, we want to copy the public SSH key you created on your local machine onto your remote account;
+specifically inside the `.ssh` directory you just created, in a file called
+`authorized_keys`.
+- Scroll up a bit to where you were creating the SSH key, find the line where it
+says: `Your public key has been saved in: <path to your public SSH key>`, copy
+the path. **Make sure you get the public key file, ending in `.pub`, here, not
+the private file**.
+<!-- Maybe we can have the students write the scp command themselves since they have seen it in Week 1-->
+- From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username)
+- Enter password when prompted (this will be the last time you have to type it!)
+- Try to log onto your remote account again, you shouldn’t be prompted for a
+password anymore. If you are, ask for help and carefully review the steps above
+with your partner.
+
+**Write down in notes**: This part introduced two new commands: `scp` and
+`mkdir`. Describe what you think they do in notes.
+
+Then, look them up online. You can do a Google or similar search for `scp
+command` and `mkdir command`. What do you learn about them?
+
+Then, look them up using the `man` (short for “manual”) command. Run `man
+scp` and `man mkdir` from the command line. What do you learn about them?
+
+You'll be introduced to new commands all the time; a course like CSE15L can't
+cover them all in 10 weeks!
+
+On future labs and assignments, you can choose whether to start from EdStem or
+from Visual Studio Code on your own setup.
 
 ### Part 2 - Working in Terminal
 
