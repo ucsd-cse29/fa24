@@ -123,7 +123,7 @@ you can see what's coming.
     - <u>Aaron's Lecture:</u> 
                   [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week1/29-fa24-l3.pdf) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/2)
-    - **Monday:** 
+  - **Monday:** 
     - [Repository](https://github.com/ucsd-cse29/fa24-02-w1m-strings) 
     - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/lecture-02-w1m.pdf) |
                       [Annotated Handout](https://github.com/ucsd-cse29/fa24-02-w1m-strings/blob/main/annotated-lecture-02-w1m.pdf) |
