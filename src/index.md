@@ -93,9 +93,13 @@ you can see what's coming.
 
 
 - **Discussion Materials**
-  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion-week2-yash) |
-                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01) |
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion2-Arunan/blob/main/main.c) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01) |
                   [GDB Quick Reference](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
+
+  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion-week2-yash) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01)
+
 
 
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
