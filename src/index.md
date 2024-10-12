@@ -92,6 +92,12 @@ you can see what's coming.
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/4)
 
 
+  - **Discussion Materials**
+    - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion-week2-yash) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01) |
+                  [GDB Quick Reference](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
+
+
 ### Week 1 – Strings, Memory and Bitwise Representations (in C)
 
 - **Announcements**
