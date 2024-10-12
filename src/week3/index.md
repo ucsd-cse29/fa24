@@ -23,19 +23,12 @@
 
 ### Video Shorts
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XJBUw3sNeuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hIqa1EoqIBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZsCVRkR_nik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/M_S88_2t1UE?cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Lab Tasks
 
 As usual, we publish these ahead of time, but they aren't guaranteed to be final
 until the start of lab on Monday.
 
+Since the start of the course, we've been using 
 This week in lab, you will set up the terminal in an environment called Visual
 Studio Code on your own computer (or on a lab computer in your course account),
 and you'll complete the first Skill Demonstration.
@@ -69,6 +62,8 @@ useful tools we need:
 
 [Git for Windows](https://gitforwindows.org/)
 
+(#Arunan - Should we include instructions for minGW on windows for gcc, gdb, etc.?)
+
 Once installed, use the steps in this post to set your default terminal to use
 the newly-installed `git bash` in Visual Studio Code:
 
@@ -94,7 +89,7 @@ labs and lectures on this computer.
 Take a few screenshots of what you tried, and discuss how this environment
 differs from EdStem.
 
-#### Running the Server on Your Computer
+<!-- #### Running the Server on Your Computer
 
 Repeat the steps from [lab 2 for building and running the
 server](/week2/#building-and-running-the-server), but this time do them on
@@ -129,8 +124,91 @@ somewhere else, this page is being handled by the running Java program on your
 computer, which we say is “listening” on localhost at port 4000. That work is
 what’s done in Server.java and by Java’s HTTPServer library.
 
-**Write down in notes**: Show a screenshot of the server running on your computer.
+**Write down in notes**: Show a screenshot of the server running on your computer. -->
 
+
+### Part 2 - Working in Terminal
+
+We've been primarily using our terminal to compile our C code (with `gcc`)
+and run our programs, but we've just scratched the service of what our command line can do.
+The terminal is the ultimate gateway into communicating with our computer, and today we're going
+to dive more into the different ways we can use the terminal to make our lives easier.
+
+Speeding Up
+
+Now, you will explore various ways that you can speed up your work. Try all the steps below, and find out what works best (and what doesn’t work) for you!
+
+1. Using Bash History (up/down arrows)
+
+  When using the terminal to make and run our C programs, we are often times running the same 1-2 commands constantly. Isn't it annoying to type it out every time?
+
+We can use the “up” and “down” arrows to go through the history of commands you have executed, it makes executing the same command much easier!
+If you run the commands you care about, then log out and back in, they are still in the command history!
+
+Executing the command you ran yesterday or last week would require a LOT of tapping of the up arrow.
+We can take this one step further and *search* through our command history. You can use Ctrl-R to search your command history.
+At the bash prompt, type Ctrl-R and then start typing part of a command – what shows up? After typing in your search term,
+repeatedly inputting CTRL-R will cycle through the different search results. Try experimenting with ctrl-r
+
+2. Using Tab
+Sometimes our file names can get wordy, and it sucks to make a minor typo when compiling our program. Luckily, our terminal comes with a built-in autocomplete function!
+Pressing the *tab* key will either autocomplete the term your typing, or show you the available autocomplete options (if more than one exists)
+
+Task: From your directory type `ls` and press tab BEFORE submitting the command. What do you see? 
+
+Pick any file/folder and type the first letter and press TAB. What changed?
+
+
+You can use the Tab key to speed up typing commands in the command line in the following ways:
+Start typing the first few letters of a command or path. Pressing tab once will autofill the rest of the line up to the point where there are multiple potential possibilities. If you press tab a second time, it will show you all of the possibilities for what it could autocomplete to.
+Keyboard Shortcuts while editing commands
+
+If you want even *more* tricks to work even faster in terminal, check out this article:
+https://www.redhat.com/sysadmin/shortcuts-command-line-navigation
+<!-- Have you had a time where you mistyped one of the commands and had to backspace all the way back to fix the problem? There’s a better way!
+Ctrl-U deletes everything from the current cursor position to the beginning of the line
+Ctrl-K deletes everything from the current cursor position to the end of the line
+Ctrl-A goes back to the beginning of the line
+Ctrl-E goes to the end of the line
+Ctrl-W deletes the last word
+Alt-Left/Alt-Right (Windows) or Option-Left/Option-Right (Mac) to move by word
+Click the “left” or “right” arrow to go to the left/right end of any selection!
+Quick Copy/Paste
+
+Use these keyboard shortcuts to highlight text quicker:
+
+Double click – selects an entire word
+Triple click - selects an entire paragraph
+Alt+Shift-Left/Alt+Shift-Right (Windows) or Option+Shift-Left/Option+Shift-Right (Mac) - select multiple words
+On Mac:
+
+Command-C to copy
+Command-V to paste
+On Windows:
+
+Ctrl-C to copy
+Ctrl-V to paste
+Right click to paste in Windows terminal -->
+
+
+
+#### VIM
+
+vim is a text editor that runs entirely in the terminal. There is a steep learning curve to mastering 
+vim, but it's a super valuable tool for productivity. You also look a lot cooler controlling everything 
+without needing a mouse.
+
+There are a lot of online resources available for vim, but thankfully, the program itself comes with a
+interactive tutorial (that's pretty neat!). We can access this tutorial with the `vimtutor` command from 
+our terminal
+
+**Task** Open the `vimtutor` tutorial in your terminal and complete Chapters 1 & 2 (#Arunan - refSpec said 30 minutes, how many chapters would that realistically be)
+
+
+**Task** Clone this Repo (#Arunan Link needed) and correct the bug in the given .c file using `vim`.
+You can compile the program to ensure that it runs correctly on your machine. You may NOT
+use an IDE or your mouse to complete this exercise. When you are done, discuss with a partner discuss 
+what was comfortable and what was tricky about correcting the file. (#Arunan - Is this good? IDK)
 ### Part 2 –Skill Demo
 
 For this part of the lab, you will be completing your skill demo on a platform
@@ -196,6 +274,47 @@ cover them all in 10 weeks!
 
 On future labs and assignments, you can choose whether to start from EdStem or
 from Visual Studio Code on your own setup.
+
+(#Arunan - Add SSH keys to Github ?)
+<!-- Generating SSH Keys for GitHub
+You can access and write data in repositories on GitHub.com using SSH. When you connect via SSH, you authenticate using a private key file on your local machine, which in our case will be the ieng6 machine.
+
+Create a private SSH key file on ieng6. This is a new private key just for accessing Github from your course-specific account.
+
+Login to ieng6 as usual (hopefully, without typing a password now!)
+Run the command ssh-keygen, and again press Enter until the command completes and shows the "randomart image"
+Next, we want to add the public key to your Github account. This is like the step of copying the public key to authorized_keys on ieng6, but instead we're copying to Github.
+
+Display the SSH public key generated above to your clipboard using cat like below; you can copy it by highlighting and right-clicking
+cat <path of your ssh key .pub file>
+Open your Github account on the browser.
+In the upper right corner, click on your profile photo, then click Settings.
+In the “Access” section of the sidebar, click SSH and GPG keys.
+Click New SSH key or Add SSH key under the “SSH keys” section.
+Add a “Title” to your key (ex: Your Name’s ieng6 machine).
+Select the “Key Type” to be an Authentication Key
+Copy your public key from the output of the cat command and paste it into the “Key” field
+Click Add SSH key.
+If prompted, confirm access to your account on Github.
+Go back to the ieng6 terminal and:
+
+Run the following command to add Github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
+$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+>> means "append stdout of the command to file"
+Check your connection by running the following command:
+$ ssh -T git@github.com
+It will say something like "Hi supercoolstudent1234! You've successfully authenticated, but GitHub does not provide shell access."
+Now we have an SSH key which can be used to authenticate to GitHub! In addition to using https clone URLs, we can now use SSH clone URLs that look like this:
+
+Image
+
+Crucially, these will allow both cloning and pushing to the repository (as long as your account has access). With this done, try cloning your fork of the lab 7 repository (make a fork if you didn't already), then making a small change, and pushing it with the command line.
+
+Important: For the rest of the lab, make sure to clone using the SSH clone URLs as described above!
+
+If you're not sure how to add, commit, and push from the command line, refer to this past lecture video.
+
+Make sure you can make a change to your repository by editing, adding, and pushing all from the command line before going on! -->
 
 ## Lab Report 2 - Servers and SSH Keys (Week 3)
 
