@@ -10,27 +10,27 @@
 
 ## Lab Tasks
 
-### Part 1 – Visual Studio Code
+### Part 1 – Let's get a Terminal Setup
 
-- [ ] Install Visual Studio Code on your computer [https://code.visualstudio.com/](https://code.visualstudio.com/)
-- [ ] If you're using Windows, install git for windows [Git for Windows](https://gitforwindows.org/), and set `git bash` as your default terminal: [Using Bash on Windows in VScode](https://stackoverflow.com/a/50527994)
-- [ ] Open VSCode, and open a terminal in VSCode (Ctrl/Command-\` or Terminal → New Terminal in the menu), and try some commands from [Lab 1](https://ucsd-cse29.github.io/fa24/week1/index.html#navigation-commands)
+- [ ] If you're using Windows, install [Git for Windows](https://gitforwindows.org/). Mac users have a pre-installed terminal application.
+- [ ] Open the Git Bash terminal application (Windows) or Terminal (Mac) and try some commands from [Lab 1](https://ucsd-cse29.github.io/fa24/week1/index.html#navigation-commands)
+- [ ] Try to `ls` your `Desktop` directory. Do those files look familiar?
 - [ ] Try to `ssh` into `ieng6` with your username and password (just like you did in Lab 1)
-- [ ] Help each other if anyone has issues installing VSCode or figuring out the terminal
+- [ ] Help each other if anyone has issues installing VSCode or figuring out the terminal.
 
 **Discuss and write in notes**:
 
-- What was the working directory of the terminal that opened in Visual Studio Code?
+- What was the working directory of the terminal when you launched it?
 - What is your home directory on this computer?
 - What files and folders are in the home directory?
 - Where do you think files that download from your web browser go? Can you list
   them with `ls`? What's the absolute path to that folder?
 - Do any commands work differently than you expect on this computer?
 - Are you able to use `ssh` with your username and password
-  from the terminal in VScode to log into `ieng6` and enter the course-specific account?
+  from your local terminal to log into `ieng6` and enter the course-specific account?
 
 Take a few screenshots of what you found particularly interesting, and discuss how this environment
-differs from Codespaces.
+differs from the terminal you used on Codespaces.
 
 
 <!-- (#Arunan - Should we include instructions for minGW on windows for gcc, gdb, etc.?)
@@ -45,7 +45,7 @@ With the setup we've used so far this quarter, each time you log in to your
 course-specific account, you have to type the password. This can get a bit tedious and luckily there is 
 a cool and interesting way to avoid this while still staying secure using SSH keys.
 
-We've labelled each step with whether it should run on **[Y]**our computer or **[i]**eng6 Make sure you follow the instructions carefully!
+We've labelled each step with whether it should run on **[Y]** our computer or **[i]** eng6 Make sure you follow the instructions carefully!
 
 1. **[Y]** In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
 2. **[Y]** Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
@@ -75,114 +75,17 @@ with your group. To review:
   - You should have a directory called `.ssh` on `ieng6` (that you created with `mkdir`) in your home directory.
   - The `.pub` file from your computer should be copied to the `.ssh/authorized_keys` file on `ieng6`
 
-### Part 3 - Generating SSH Keys for GitHub
 
-You can access and write data in repositories on GitHub.com using SSH. When you connect via SSH, you authenticate using a private key file on your local machine, which in our case will be the ieng6 machine.
 
-1. Login to `ieng6` as usual (hopefully, without typing a password now!)
-2. Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
-  
-Next, we want to add the public key to your Github account. This is like the step of copying the public key to authorized_keys on ieng6, but instead we're copying to Github.
-
-3. Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
-
-4. Open your Github account on the browser.
-5. In the upper right corner, click on your profile photo, then click *Settings*.
-6. In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
-7. Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
-8. Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
-9. Select the *“Key Type”* to be an Authentication Key
-10. Copy your public key from the output of the cat command and paste it into the “Key” field
-11. Click *Add SSH key*.
-12. If prompted, confirm access to your account on Github.
-
-Go back to the `ieng6` terminal and:
-
-13. Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
-  - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
-  - `>>` means "append stdout of the command to file"
-14. Check your connection by running the following command:
-  - `$ ssh -T git@github.com`
-  - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
-  
-Now we have an SSH key which can be used to authenticate to GitHub! In addition to using `https` clone URLs, we can now use `SSH` clone URLs that look like this:
-
-![Image](../images/clone_with_ssh.png)
-
-Crucially, these will allow both cloning and pushing to the repository (as long as your account has access) from `ieng6`!
-
-**Important**: For the rest of the lab, make sure to clone using the SSH clone URLs as described above!
-
-### Part 4 - Working in Terminal
+### Part 3 - Working in Terminal
 
 So far, we've been primarily using our terminal to compile our C code (with `gcc`)
 and run our programs, but we've just scratched the service of what the terminal can do.
 The terminal is the ultimate gateway into communicating with our computer, and today we're going
 to dive more into the different ways we can use the terminal to make our lives easier.
 
-#### 4.1 - Speeding Up
 
-Now, you will explore various ways that you can speed up your work. Try all the steps below, and find out what works best (and what doesn’t work) for you!
-
-1. **Using Bash History (up/down arrows)**
-
-When using the terminal to make and run our C programs, we are often times running the same 1-2 commands constantly. Isn't it annoying to type it out every time?
-
-We can use the “up” and “down” arrows to go through the history of commands you have executed, it makes executing the same command much easier!
-If you run the commands you care about, then log out and back in, they are still in the command history!
-
-Executing the command you ran yesterday or last week would require a LOT of tapping of the up arrow.
-We can take this one step further and *search* through our command history. You can use `Ctrl-R` to search your command history.
-At the bash prompt, type `Ctrl-R` and then start typing part of a command – what shows up? After typing in your search term,
-repeatedly inputting `Ctrl-R` will cycle through the different search results. Try experimenting with `Ctrl-R`!
-
-**Write in your notes:** Paste a screenshot of using `Ctrl-R` to search through your command history. 
-
-2. **Using Tab**
-   
-Sometimes our file names can get wordy, and it's frustrating to make a minor typo when compiling our program. Luckily, our terminal comes with a built-in autocomplete function!
-Pressing the `TAB` key will either autocomplete the term your typing, or show you the available autocomplete options (if more than one exists)
-
-**Task**: From your directory type `ls` and press `TAB` BEFORE submitting the command. What do you see? 
-
-Pick any file/folder and type the first letter and press `TAB`. What changed?
-
-
-You can use the `TAB` key to speed up typing commands in the command line in the following ways:
-Start typing the first few letters of a command or path. Pressing `TAB` once will autofill the rest of the line up to the point where there are multiple potential possibilities. If you press `TAB` a second time, it will show you all of the possibilities for what it could autocomplete to.
-
-
-If you want even *more* tricks to work even faster in terminal, check out this article:
-https://www.redhat.com/sysadmin/shortcuts-command-line-navigation
-<!-- Have you had a time where you mistyped one of the commands and had to backspace all the way back to fix the problem? There’s a better way!
-Keyboard Shortcuts while editing commands
-Ctrl-U deletes everything from the current cursor position to the beginning of the line
-Ctrl-K deletes everything from the current cursor position to the end of the line
-Ctrl-A goes back to the beginning of the line
-Ctrl-E goes to the end of the line
-Ctrl-W deletes the last word
-Alt-Left/Alt-Right (Windows) or Option-Left/Option-Right (Mac) to move by word
-Click the “left” or “right” arrow to go to the left/right end of any selection!
-Quick Copy/Paste
-
-Use these keyboard shortcuts to highlight text quicker:
-
-Double click – selects an entire word
-Triple click - selects an entire paragraph
-Alt+Shift-Left/Alt+Shift-Right (Windows) or Option+Shift-Left/Option+Shift-Right (Mac) - select multiple words
-On Mac:
-
-Command-C to copy
-Command-V to paste
-On Windows:
-
-Ctrl-C to copy
-Ctrl-V to paste
-Right click to paste in Windows terminal -->
-
-
-
-#### 4.2 - VIM
+#### 3.1 - VIM
 
 `vim` is a text editor that runs entirely in the terminal. For better or worse, many times developers find themselves with only terminal access to a remote computer, and need to do some programming – that is, editing source code files. A terminal-based editor makes this possible. (As a side effect you can look like hacker from a movie controlling everything 
 without needing a mouse.)
@@ -219,13 +122,57 @@ Once you have completed the first 2 chapters of `vimtutor`, you will now be usin
 When you are done, discuss with a partner discuss what was comfortable and what was tricky about correcting the file.
 Compare the commands you used with other members in your group and note the differences. 
 
-Try reverting the bug fix and fixing it again using one of your group member's commands!
 
-<!-- **Task:** Clone this Repo (#Arunan Link needed) and correct the bug in the given .c file using `vim`.
-You can compile the program to ensure that it runs correctly on your machine. You may NOT
-use an IDE or your mouse to complete this exercise.  (#Arunan - Is this good? IDK) -->
+#### 3.2 - VIM Telephone
 
-#### 4.3 - `git` CLI commands
+Next, we will see how different members of your group approached fixing the bug in the provided C code. You will be running your group members' `vim` commands
+to see the differences in how each of you navigated the `vim` editor.
+
+**Task:** 
+1. Run the `cd` command to navigate back to your home directory on `ieng6`.
+2. Clone your forked repository into a new directory on `ieng6` using the command `git clone <SSH clone URL> <new directory name>`.
+3. `cd` into the new directory.
+4. Now, run the commands that another member of your group used to correct the `average.c` file. You should find the commands
+in your shared Google Doc.
+5. **Write in your notes:** What were some of the key differences you noticed between your keystrokes and your group members?
+
+### Part 4 - Getting `ieng6` and Github to Play Nice
+
+With the bug fixed, we now want to push our changes to our Github repository. Before we can do that though, we need to be able to 
+
+1. Login to `ieng6` as usual (hopefully, without typing a password now!)
+2. Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
+  
+Next, we want to add the public key to your Github account. This is like the step of copying the public key to authorized_keys on ieng6, but instead we're copying to Github.
+
+3. Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
+
+4. Open your Github account on the browser.
+5. In the upper right corner, click on your profile photo, then click *Settings*.
+6. In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
+7. Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
+8. Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
+9. Select the *“Key Type”* to be an Authentication Key
+10. Copy your public key from the output of the cat command and paste it into the “Key” field
+11. Click *Add SSH key*.
+12. If prompted, confirm access to your account on Github.
+
+Go back to the `ieng6` terminal and:
+
+13. Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
+  - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
+  - `>>` means "append stdout of the command to file"
+14. Check your connection by running the following command:
+  - `$ ssh -T git@github.com`
+  - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
+  
+Now we have an SSH key which can be used to authenticate to GitHub! In addition to using `https` clone URLs, we can now use `SSH` clone URLs that look like this:
+
+![Image](../images/clone_with_ssh.png)
+
+Crucially, these will allow both cloning and pushing to the repository (as long as your account has access) from `ieng6`!
+
+#### 4.1 - `git` CLI commands
 
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
 - `git clone`
