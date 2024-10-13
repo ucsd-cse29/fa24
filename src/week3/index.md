@@ -176,7 +176,7 @@ Crucially, these will allow both cloning and pushing to the repository (as long 
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
 - `git clone`
 
-To retrieve a local copy of our git repository, we use the `git clone` command. `clone` takes a link from github (usually beginning with `https://github.com` or `git@github.com`). 
+To retrieve a local copy of our git repository, we use the `git clone` command. `clone` takes a link from github (usually beginning with `https://github.com` or `git@github.com`). This time, use the `SSH` clone URL to clone your forked repository to your `ieng6` account into another new directory. Fix the bug that you fixed earlier in the `average.c` file again and then proceed!
 
 After we are done making changes to our local branch it's now time to push our changes to our remote branch (in this case github)
 - `git status`
