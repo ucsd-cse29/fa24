@@ -1,4 +1,4 @@
-# Week 3 – VSCode and Your Local Machine
+# Week 3 – Terminal Usage and Git
 
 
 ## Lab Goals
