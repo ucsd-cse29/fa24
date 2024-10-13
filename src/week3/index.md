@@ -184,8 +184,8 @@ Right click to paste in Windows terminal -->
 
 #### 4.2 - VIM
 
-`vim` is a text editor that runs entirely in the terminal. You also look a lot cooler controlling everything 
-without needing a mouse.
+`vim` is a text editor that runs entirely in the terminal. For better or worse, many times developers find themselves with only terminal access to a remote computer, and need to do some programming – that is, editing source code files. A terminal-based editor makes this possible. (As a side effect you can look like hacker from a movie controlling everything 
+without needing a mouse.)
 
 There are a lot of online resources available for `vim`, but thankfully, the program itself comes with a
 interactive tutorial (that's pretty neat!). We can access this tutorial with the `vimtutor` command from 
@@ -200,6 +200,7 @@ Once you have completed the first 2 chapters of `vimtutor`, you will now be usin
 1. Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) by click the down arrow next to the "Fork" option in the top right and clicking "Create a new fork" to create your own copy of our repository.
 <!-- - Use this link to create your own copy of the starting repository -->
 ![Image](../images/fork.png)
+
 2. If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
 3. Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
 4. `cd` into your cloned repository directory.
@@ -207,6 +208,7 @@ Once you have completed the first 2 chapters of `vimtutor`, you will now be usin
 6. Open the `average.c` file in `vim` and read through the program.
 7. Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
 8. Re-compile and re-run the program to ensure that it now outputs the correct value.
+
 
 **Write in your notes:**
 - The original output of the program.
