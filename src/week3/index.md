@@ -47,27 +47,27 @@ a cool and interesting way to avoid this while still staying secure using SSH ke
 
 We've labelled each step with whether it should run on **[Y]**our computer or **[i]**eng6 Make sure you follow the instructions carefully!
 
-- **[Y]** In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
-- **[Y]** Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
+1. **[Y]** In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
+2. **[Y]** Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
   - Note the path where the public key is saved (underlined below). 
   - ![Image](../images/ssh_keygen.png)
-- **[Y]**/**[I]** Now, log into your remote course specific account on `ieng6` with `ssh`
+3. **[Y]**/**[I]** Now, log into your remote course specific account on `ieng6` with `ssh`
   (using your password as usual)
-- **[I]** Run `mkdir .ssh` in the terminal
-- **[I]**/**[Y]** Log out of your remote account by pressing `Ctrl-D` or typing `exit`.
-- **[Y]** Now, we want to copy the public SSH key you created on your local machine onto your remote account;
+4. **[I]** Run `mkdir .ssh` in the terminal
+5. **[I]**/**[Y]** Log out of your remote account by pressing `Ctrl-D` or typing `exit`.
+6. **[Y]** Now, we want to copy the public SSH key you created on your local machine onto your remote account;
 specifically inside the `.ssh` directory you just created, in a file called
 `authorized_keys`.
-- **[Y]** Scroll up a bit to where you were creating the SSH key, find the line where it
+7. **[Y]** Scroll up a bit to where you were creating the SSH key, find the line where it
 says: `Your public key has been saved in: <path to your public SSH key>`, copy
 the path. **Make sure you get the public key file, ending in `.pub`, here, not
 the private file**.
 <!-- Maybe we can have the students write the scp command themselves since they have seen it in Week 1 -->
-- **Construct** a command that will perform the copying of the public key file from your local machine to the
+8. **Construct** a command that will perform the copying of the public key file from your local machine to the
   `.ssh` directory on your remote account with the appropriate name (HINT: you [used this command in Week 1's lab](https://ucsd-cse29.github.io/fa24/week1/index.html#making-an-edit)). Work with your group members if you need help!
 <!-- - From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username) -->
 <!-- - Enter your password when prompted (this will be the last time you have to type it!) -->
-- Try to log onto your remote account again, you shouldn’t be prompted for a
+9. Try to log onto your remote account again, you shouldn’t be prompted for a
 password anymore. If you are, ask for help and carefully review the steps above
 with your group. To review:
   - You should have a directory called `.ssh` on *your* computer in your home directory.
@@ -79,29 +79,29 @@ with your group. To review:
 
 You can access and write data in repositories on GitHub.com using SSH. When you connect via SSH, you authenticate using a private key file on your local machine, which in our case will be the ieng6 machine.
 
-- Login to `ieng6` as usual (hopefully, without typing a password now!)
-- Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
+1. Login to `ieng6` as usual (hopefully, without typing a password now!)
+2. Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
   
 Next, we want to add the public key to your Github account. This is like the step of copying the public key to authorized_keys on ieng6, but instead we're copying to Github.
 
-- Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
+3. Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
 
-- Open your Github account on the browser.
-- In the upper right corner, click on your profile photo, then click *Settings*.
-- In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
-- Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
-- Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
-- Select the *“Key Type”* to be an Authentication Key
-- Copy your public key from the output of the cat command and paste it into the “Key” field
-- Click *Add SSH key*.
-- If prompted, confirm access to your account on Github.
+4. Open your Github account on the browser.
+5. In the upper right corner, click on your profile photo, then click *Settings*.
+6. In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
+7. Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
+8. Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
+9. Select the *“Key Type”* to be an Authentication Key
+10. Copy your public key from the output of the cat command and paste it into the “Key” field
+11. Click *Add SSH key*.
+12. If prompted, confirm access to your account on Github.
 
 Go back to the `ieng6` terminal and:
 
-- Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
+13. Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
   - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
   - `>>` means "append stdout of the command to file"
-- Check your connection by running the following command:
+14. Check your connection by running the following command:
   - `$ ssh -T git@github.com`
   - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
   
@@ -197,16 +197,16 @@ our terminal
 Once you have completed the first 2 chapters of `vimtutor`, you will now be using some of the commands that you learned to correct a bug in a C program that we have written for you.
 
 **Task:**
-- Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) by click the down arrow next to the "Fork" option in the top right and clicking "Create a new fork" to create your own copy of our repository.
+1. Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) by click the down arrow next to the "Fork" option in the top right and clicking "Create a new fork" to create your own copy of our repository.
 <!-- - Use this link to create your own copy of the starting repository -->
 ![Image](../images/fork.png)
-- If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
-- Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
-- `cd` into your cloned repository directory.
-- Compile and run the `average.c` file.
-- Open the `average.c` file in `vim` and read through the program.
-- Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
-- Re-compile and re-run the program to ensure that it now outputs the correct value.
+2. If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
+3. Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
+4. `cd` into your cloned repository directory.
+5. Compile and run the `average.c` file.
+6. Open the `average.c` file in `vim` and read through the program.
+7. Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
+8. Re-compile and re-run the program to ensure that it now outputs the correct value.
 
 **Write in your notes:**
 - The original output of the program.
