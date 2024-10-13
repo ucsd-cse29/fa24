@@ -1,6 +1,11 @@
 # Week 3 – VSCode and Your Local Machine
 
 
+## Lab Goals
+- Set up SSH keys for ieng6 and Github
+- Learn basic terminal shortcuts and typing in `vim`
+- Learn how to upload file changes using git CLI
+
 ## Lab Tasks
 
 
