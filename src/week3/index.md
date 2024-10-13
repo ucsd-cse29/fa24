@@ -3,9 +3,10 @@
 
 ## Lab Tasks
 
-Since the start of the course, we've been using Codespaces on Github as an environment to write and run our C code. This week, we're going to set up our own environment using Visual Studio Code on our local machine to write and run our code. This will give us more control over our environment and allow us to work on our code even when we're not connected to the internet.
+
 
 ### Part 1 – Visual Studio Code
+Since the start of the course, we've been using Codespaces on Github as an environment to write and run our C code. This week, we're going to set up our own environment using Visual Studio Code on our local machine to write and run our code. This will give us more control over our environment and allow us to work on our code even when we're not connected to the internet.
 
 (If you can't or don't want to use your own computer for this for any reason,
 you can do the installation of VScode on one of the computers in the lab! You
