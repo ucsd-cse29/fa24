@@ -84,8 +84,62 @@ and run our programs, but we've just scratched the service of what the terminal 
 The terminal is the ultimate gateway into communicating with our computer, and today we're going
 to dive more into the different ways we can use the terminal to make our lives easier.
 
+<<<<<<< HEAD
 
 #### 3.1 - VIM
+=======
+#### 4.1 - Speeding Up 
+
+Now, you will explore various ways that you can speed up your work. Try all the steps below, and find out what works best (and what doesn’t work) for you!
+
+1. **Using Bash History (up/down arrows)**
+
+We can use the “up” and “down” arrows to go through the history of commands you have executed, it makes executing the same command much easier!
+
+We can take this one step further and *search* through our command history. You can use `Ctrl-R` to search your command history.
+After typing in your search term, repeatedly inputting `Ctrl-R` will cycle through the different search results. Try experimenting with `Ctrl-R`!
+
+**Write in your notes:** Paste a screenshot of using `Ctrl-R` to search through your command history. 
+
+2. **Using Tab**
+   
+Our terminal also comes with a built-in autocomplete function! Pressing the `TAB` key will either autocomplete the term your typing, or show you the available autocomplete options (if more than one exists)
+
+You can use the `TAB` key to speed up typing commands in the command line in the following ways:
+Start typing the first few letters of a command or path. Pressing `TAB` once will autofill the rest of the line up to the point where there are multiple potential possibilities. If you press `TAB` a second time, it will show you all of the possibilities for what it could autocomplete to.
+
+If you want even *more* tricks to work even faster in terminal, check out this article:
+https://www.redhat.com/sysadmin/shortcuts-command-line-navigation
+<!-- Have you had a time where you mistyped one of the commands and had to backspace all the way back to fix the problem? There’s a better way!
+Keyboard Shortcuts while editing commands
+Ctrl-U deletes everything from the current cursor position to the beginning of the line
+Ctrl-K deletes everything from the current cursor position to the end of the line
+Ctrl-A goes back to the beginning of the line
+Ctrl-E goes to the end of the line
+Ctrl-W deletes the last word
+Alt-Left/Alt-Right (Windows) or Option-Left/Option-Right (Mac) to move by word
+Click the “left” or “right” arrow to go to the left/right end of any selection!
+Quick Copy/Paste
+
+Use these keyboard shortcuts to highlight text quicker:
+
+Double click – selects an entire word
+Triple click - selects an entire paragraph
+Alt+Shift-Left/Alt+Shift-Right (Windows) or Option+Shift-Left/Option+Shift-Right (Mac) - select multiple words
+On Mac:
+
+Command-C to copy
+Command-V to paste
+On Windows:
+
+Ctrl-C to copy
+Ctrl-V to paste
+Right click to paste in Windows terminal -->
+
+
+
+#### 4.2 - VIM
+>>>>>>> fbe2d9b0d14e848ccab2eea1e6b83142824f05d6
 
 `vim` is a text editor that runs entirely in the terminal. For better or worse, many times developers find themselves with only terminal access to a remote computer, and need to do some programming – that is, editing source code files. A terminal-based editor makes this possible. (As a side effect you can look like hacker from a movie controlling everything 
 without needing a mouse.)
