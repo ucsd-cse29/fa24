@@ -67,43 +67,6 @@ labs and lectures on this computer.
 Take a few screenshots of what you tried, and discuss how this environment
 differs from Codespaces.
 
-<!-- #### Running the Server on Your Computer
-
-Repeat the steps from [lab 2 for building and running the
-server](/week2/#building-and-running-the-server), but this time do them on
-your computer.
-
-That means:
-
-- `git clone` the repository
-- `cd` into the correct directory
-- Run `javac` and `java` on the appropriate files
-
-Once you run `java` and the server starts, you can open up a browser on your
-computer and visit `http://localhost:4000` (assuming you chose `4000` as the
-port when you started the server).
-
-If the `java` command isn't found when you try this, you should [install
-Java](https://www.oracle.com/java/technologies/downloads/).
-
-There are a few definitions worth discussing here for introducing/reminding you
-of a few concepts:
-
-- Ports: The 4000 above identifies a specific port that the web server runs on.
-  This is an extra part of a URL that’s often used in development; 4000 isn’t
-special and you could pick others – you’re welcome to try a few in the
-thousands; it won’t break anything. Sites on the public web actually use a port
-as well, either 80 or 443, but your browser hides it from you because it’s the
-default. You’re welcome to read about these details, but they aren’t necessary
-to learn the relevant stuff in this lab.
-- Localhost: The localhost domain refers to the computer you’re on. So rather
-  than going out over the internet to send the URL to a particular domain
-somewhere else, this page is being handled by the running Java program on your
-computer, which we say is “listening” on localhost at port 4000. That work is
-what’s done in Server.java and by Java’s HTTPServer library.
-
-**Write down in notes**: Show a screenshot of the server running on your computer. -->
-
 ### Part 2 - Setting up SSH Keys for Easy Access to `ieng6`
 
 With the setup we've used so far this quarter, each time you log in to your
@@ -284,6 +247,39 @@ use an IDE or your mouse to complete this exercise.  (#Arunan - Is this good? ID
 #### 4.3 - `git` CLI commands
 
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
+- `git clone`
+
+To retrieve a local copy of our git repository, we use the `git clone` command. `clone` takes a link from github (usually beginning with https://github.com or git@github.com). 
+
+After we are done making changes to our local branch it's now time to push our changes to our remote branch (in this case github)
+- `git status`
+
+Let's first run `git status`, to see the status of our repository. `status` returns which files are untracked (new) modified (changed) and deleted. 
+
+**Task:** After correcting the buggy C code, add the output of running the `git status` command in your terminal to your notes.
+
+- `git add`
+
+When we are done making changes to a file, we "stage" it to mark it as ready to be commited. Using the `git add` command with the path of the changed file(s) will stage each to be included in the next commit. Using `git add .` will stage all changed files. 
+
+**Task:** Use `git add` to stage our corrected C file. Write the output of `git status` to your notes.
+
+- `git commit`
+
+A **commit** is a package of associated changes. Running the `git commit` command will take all of our staged files, and package them into a single commit. With the `-m` flag, we can specify a message detailing the changes of the commit. Without `-m`, git opens a vim window to write the commit message.
+
+**Task:** Use `git commit` to commit our staged changes. Use vim to write your commit message.
+
+- `git push`
+
+With our commit now made, we can use the `git push` command to upload our changes to our remote branch (github). If this is the first time you are using `git push`, git may ask you to set the name and email you want associated with your commits.
+
+- `git log`
+
+Git also keeps a log of all the changes. The `git log` command prints this log into our terminal. From this log we can see the date, author, and message associated with each commit. The **HEAD ->** marker points to the latest commit locally, while the **origin/** marker points to the latest commit on the remote. After running `git push`, both of these markers should be on the same line.
+
+**Task:** After pushing your changes, add the output of `git log` to your notes.
+
 
 
 
