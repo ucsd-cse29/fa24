@@ -174,7 +174,7 @@ and run our programs, but we've just scratched the service of what our command l
 The terminal is the ultimate gateway into communicating with our computer, and today we're going
 to dive more into the different ways we can use the terminal to make our lives easier.
 
-#### Speeding Up
+#### 4.1 - Speeding Up
 
 Now, you will explore various ways that you can speed up your work. Try all the steps below, and find out what works best (and what doesn’t work) for you!
 
@@ -233,7 +233,7 @@ Right click to paste in Windows terminal -->
 
 
 
-#### VIM
+#### 4.2 - VIM
 
 `vim` is a text editor that runs entirely in the terminal. You also look a lot cooler controlling everything 
 without needing a mouse.
@@ -247,18 +247,36 @@ our terminal
 
 Once you have completed the first 2 chapters of `vimtutor`, you will now be using some of the commands that you learned to correct a bug in a C program that we have written for you.
 
+**Task:**
 - Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) to create your own copy of our repository.
 <!-- - Use this link to create your own copy of the starting repository -->
 ![Image](../images/fork.png)
 - If you aren't logged into `ieng6`, log in now.
 - Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL.
-- 
+- `cd` into your cloned repository directory.
+- Compile and run the `buggy.c` file.
+- Open the `buggy.c` file in `vim` and read through the program.
+- Determine the bug in the program and correct it in `vim`. **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
+- Re-compile and re-run the program to ensure that it now runs correctly.
 
+**Write in your notes:**
+- The original output of the program.
+- What do you think the program is supposed to do/output?
+- What was the bug and how did you fix it?
+- The output of the program after the bug has been fixed.
 
-**Task:** Clone this Repo (#Arunan Link needed) and correct the bug in the given .c file using `vim`.
+When you are done, discuss with a partner discuss what was comfortable and what was tricky about correcting the file.
+Compare the commands you used with other members in your group and note the differences. Try reverting the bug fix and fixing it again using one of your group member's commands!
+
+<!-- **Task:** Clone this Repo (#Arunan Link needed) and correct the bug in the given .c file using `vim`.
 You can compile the program to ensure that it runs correctly on your machine. You may NOT
-use an IDE or your mouse to complete this exercise. When you are done, discuss with a partner discuss 
-what was comfortable and what was tricky about correcting the file. (#Arunan - Is this good? IDK)
+use an IDE or your mouse to complete this exercise.  (#Arunan - Is this good? IDK) -->
+
+#### 4.3 - `git` CLI commands
+
+So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
+
+
 
 
 
