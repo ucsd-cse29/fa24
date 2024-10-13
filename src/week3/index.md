@@ -120,37 +120,25 @@ and run our programs, but we've just scratched the service of what the terminal 
 The terminal is the ultimate gateway into communicating with our computer, and today we're going
 to dive more into the different ways we can use the terminal to make our lives easier.
 
-#### 4.1 - Speeding Up
+#### 4.1 - Speeding Up 
 
 Now, you will explore various ways that you can speed up your work. Try all the steps below, and find out what works best (and what doesn’t work) for you!
 
 1. **Using Bash History (up/down arrows)**
 
-When using the terminal to make and run our C programs, we are often times running the same 1-2 commands constantly. Isn't it annoying to type it out every time?
-
 We can use the “up” and “down” arrows to go through the history of commands you have executed, it makes executing the same command much easier!
-If you run the commands you care about, then log out and back in, they are still in the command history!
 
-Executing the command you ran yesterday or last week would require a LOT of tapping of the up arrow.
 We can take this one step further and *search* through our command history. You can use `Ctrl-R` to search your command history.
-At the bash prompt, type `Ctrl-R` and then start typing part of a command – what shows up? After typing in your search term,
-repeatedly inputting `Ctrl-R` will cycle through the different search results. Try experimenting with `Ctrl-R`!
+After typing in your search term, repeatedly inputting `Ctrl-R` will cycle through the different search results. Try experimenting with `Ctrl-R`!
 
 **Write in your notes:** Paste a screenshot of using `Ctrl-R` to search through your command history. 
 
 2. **Using Tab**
    
-Sometimes our file names can get wordy, and it's frustrating to make a minor typo when compiling our program. Luckily, our terminal comes with a built-in autocomplete function!
-Pressing the `TAB` key will either autocomplete the term your typing, or show you the available autocomplete options (if more than one exists)
-
-**Task**: From your directory type `ls` and press `TAB` BEFORE submitting the command. What do you see? 
-
-Pick any file/folder and type the first letter and press `TAB`. What changed?
-
+Our terminal also comes with a built-in autocomplete function! Pressing the `TAB` key will either autocomplete the term your typing, or show you the available autocomplete options (if more than one exists)
 
 You can use the `TAB` key to speed up typing commands in the command line in the following ways:
 Start typing the first few letters of a command or path. Pressing `TAB` once will autofill the rest of the line up to the point where there are multiple potential possibilities. If you press `TAB` a second time, it will show you all of the possibilities for what it could autocomplete to.
-
 
 If you want even *more* tricks to work even faster in terminal, check out this article:
 https://www.redhat.com/sysadmin/shortcuts-command-line-navigation
