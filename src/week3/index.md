@@ -2,63 +2,23 @@
 
 
 ## Lab Goals
+
 1. Set up SSH keys for `ieng6` and Github
 2. Learn basic terminal shortcuts and editing in  `vim`
 3. Learn how to manage repositories using `git` CLI
+4. Do all the steps for working on a PA entirely on a remote computer (`ieng6`)
 
 ## Lab Tasks
 
-
-
 ### Part 1 – Visual Studio Code
-Since the start of the course, we've been using Codespaces on Github as an environment to write and run our C code. This week, we're going to set up our own environment using Visual Studio Code on our local machine to write and run our code. This will give us more control over our environment and allow us to work on our code even when we're not connected to the internet.
 
-(If you can't or don't want to use your own computer for this for any reason,
-you can do the installation of VScode on one of the computers in the lab! You
-can do all your work on the lab computers all quarter, no personal laptop setup
-required.)
+- [ ] Install Visual Studio Code on your computer [https://code.visualstudio.com/](https://code.visualstudio.com/)
+- [ ] If you're using Windows, install git for windows [Git for Windows](https://gitforwindows.org/), and set `git bash` as your default terminal: [Using Bash on Windows in VScode](https://stackoverflow.com/a/50527994)
+- [ ] Open VSCode, and open a terminal in VSCode (Ctrl/Command-\` or Terminal → New Terminal in the menu), and try some commands from [Lab 1](https://ucsd-cse29.github.io/fa24/week1/index.html#navigation-commands)
+- [ ] Try to `ssh` into `ieng6` with your username and password (just like you did in Lab 1)
+- [ ] Help each other if anyone has issues installing VSCode or figuring out the terminal
 
-Go to the Visual Studio Code website
-[https://code.visualstudio.com/](https://code.visualstudio.com/), and follow the
-instructions to download and install it on your computer. There are versions for
-all the major operating systems, like macOS (for Macs) and Windows (for PCs).
-
-When it is installed, you should be able to open a familiar window that looks like this
-(it might have different colors, or a different menu bar, depending on your
-system and settings):
-
-![/images/vscode.png](./assets/vscode.png)
-
-**Write down in notes**: Everyone should share a screenshot of VScode open –
-help folks figure it out if it won't install. If someone gets stuck, take a
-screenshot of the error message or point at which they are stuck so we can help
-them figure it out later, and they can decide to keep trying (potentially with
-the tutor helping) or move on.
-
-**NOTE:** For the purposes of this lab we will be using VSCode primarily as an access point to the terminal
-as it has a very similar interface to the Codespaces that we have been using thus far. VSCode is also a powerful text editor to write and develop code in but we will not be covering those capabilities in this lab.
-
-**Next** if you're on Windows: install `git` for Windows, which comes with some
-useful tools we need:
-
-[Git for Windows](https://gitforwindows.org/)
-
-<!-- (#Arunan - Should we include instructions for minGW on windows for gcc, gdb, etc.?)
-(#Yash - I think we should. MinGW and then have them test the installation at the end of this section) -->
-
-Once installed, use the steps in this post to set your default terminal to use
-the newly-installed `git bash` in Visual Studio Code:
-
-[Using Bash on Windows in VScode](https://stackoverflow.com/a/50527994)
-
-(That's all the special instructions for Windows users). Then, to run commands,
-open a terminal in VScode. (Ctrl or Command + \`, or use the Terminal → New
-Terminal menu option). Try running some of the commands we learned in earlier
-labs and lectures on this computer.
-
-<!-- ADD MINGW INSTALLATION INSTRUCTIONS HERE -->
-
-**Write down in notes**:
+**Discuss and write in notes**:
 
 - What was the working directory of the terminal that opened in Visual Studio Code?
 - What is your home directory on this computer?
@@ -69,8 +29,15 @@ labs and lectures on this computer.
 - Are you able to use `ssh` with your username and password
   from the terminal in VScode to log into `ieng6` and enter the course-specific account?
 
-Take a few screenshots of what you tried, and discuss how this environment
+Take a few screenshots of what you found particularly interesting, and discuss how this environment
 differs from Codespaces.
+
+
+<!-- (#Arunan - Should we include instructions for minGW on windows for gcc, gdb, etc.?)
+(#Yash - I think we should. MinGW and then have them test the installation at the end of this section) -->
+
+<!-- ADD MINGW INSTALLATION INSTRUCTIONS HERE -->
+
 
 ### Part 2 - Setting up SSH Keys for Easy Access to `ieng6`
 
@@ -78,56 +45,63 @@ With the setup we've used so far this quarter, each time you log in to your
 course-specific account, you have to type the password. This can get a bit tedious and luckily there is 
 a cool and interesting way to avoid this while still staying secure using SSH keys.
 
-- In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
-- Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
+We've labelled each step with whether it should run on **[Y]**our computer or **[i]**eng6 Make sure you follow the instructions carefully!
+
+1. **[Y]** In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
+2. **[Y]** Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
   - Note the path where the public key is saved (underlined below). 
   - ![Image](../images/ssh_keygen.png)
-- Now, log into your remote course specific account on `ieng6` with `ssh`
+3. **[Y]**/**[I]** Now, log into your remote course specific account on `ieng6` with `ssh`
   (using your password as usual)
-- Run `mkdir .ssh` in the terminal
-- Log out of your remote account by pressing `Ctrl-D` or typing `exit`.
-- Now, we want to copy the public SSH key you created on your local machine onto your remote account;
+4. **[I]** Run `mkdir .ssh` in the terminal
+5. **[I]**/**[Y]** Log out of your remote account by pressing `Ctrl-D` or typing `exit`.
+6. **[Y]** Now, we want to copy the public SSH key you created on your local machine onto your remote account;
 specifically inside the `.ssh` directory you just created, in a file called
 `authorized_keys`.
-- Scroll up a bit to where you were creating the SSH key, find the line where it
+7. **[Y]** Scroll up a bit to where you were creating the SSH key, find the line where it
 says: `Your public key has been saved in: <path to your public SSH key>`, copy
 the path. **Make sure you get the public key file, ending in `.pub`, here, not
 the private file**.
 <!-- Maybe we can have the students write the scp command themselves since they have seen it in Week 1 -->
-- **Construct** a command that will perform the copying of the public key file from your local machine to the
-  `.ssh` directory on your remote account with the appropriate name (HINT: you used this command in Week 1's lab). Work with your group members if you need help!
+8. **Construct** a command that will perform the copying of the public key file from your local machine to the
+  `.ssh` directory on your remote account with the appropriate name (HINT: you [used this command in Week 1's lab](https://ucsd-cse29.github.io/fa24/week1/index.html#making-an-edit)). Work with your group members if you need help!
 <!-- - From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username) -->
 <!-- - Enter your password when prompted (this will be the last time you have to type it!) -->
-- Try to log onto your remote account again, you shouldn’t be prompted for a
+9. Try to log onto your remote account again, you shouldn’t be prompted for a
 password anymore. If you are, ask for help and carefully review the steps above
-with your group.
+with your group. To review:
+  - You should have a directory called `.ssh` on *your* computer in your home directory.
+  - That folder should have a key file created by `ssh-keygen` and a corresponding `.pub` version of the file.
+  - You should have a directory called `.ssh` on `ieng6` (that you created with `mkdir`) in your home directory.
+  - The `.pub` file from your computer should be copied to the `.ssh/authorized_keys` file on `ieng6`
 
 ### Part 3 - Generating SSH Keys for GitHub
+
 You can access and write data in repositories on GitHub.com using SSH. When you connect via SSH, you authenticate using a private key file on your local machine, which in our case will be the ieng6 machine.
 
-- Login to ieng6 as usual (hopefully, without typing a password now!)
-- Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image"
+1. Login to `ieng6` as usual (hopefully, without typing a password now!)
+2. Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
   
 Next, we want to add the public key to your Github account. This is like the step of copying the public key to authorized_keys on ieng6, but instead we're copying to Github.
 
-- Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
+3. Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
 
-- Open your Github account on the browser.
-- In the upper right corner, click on your profile photo, then click *Settings*.
-- In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
-- Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
-- Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
-- Select the *“Key Type”* to be an Authentication Key
-- Copy your public key from the output of the cat command and paste it into the “Key” field
-- Click *Add SSH key*.
-- If prompted, confirm access to your account on Github.
+4. Open your Github account on the browser.
+5. In the upper right corner, click on your profile photo, then click *Settings*.
+6. In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
+7. Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
+8. Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
+9. Select the *“Key Type”* to be an Authentication Key
+10. Copy your public key from the output of the cat command and paste it into the “Key” field
+11. Click *Add SSH key*.
+12. If prompted, confirm access to your account on Github.
 
 Go back to the `ieng6` terminal and:
 
-- Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
+13. Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
   - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
   - `>>` means "append stdout of the command to file"
-- Check your connection by running the following command:
+14. Check your connection by running the following command:
   - `$ ssh -T git@github.com`
   - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
   
@@ -152,7 +126,7 @@ Now, you will explore various ways that you can speed up your work. Try all the 
 
 1. **Using Bash History (up/down arrows)**
 
-  When using the terminal to make and run our C programs, we are often times running the same 1-2 commands constantly. Isn't it annoying to type it out every time?
+When using the terminal to make and run our C programs, we are often times running the same 1-2 commands constantly. Isn't it annoying to type it out every time?
 
 We can use the “up” and “down” arrows to go through the history of commands you have executed, it makes executing the same command much easier!
 If you run the commands you care about, then log out and back in, they are still in the command history!
@@ -223,16 +197,18 @@ our terminal
 Once you have completed the first 2 chapters of `vimtutor`, you will now be using some of the commands that you learned to correct a bug in a C program that we have written for you.
 
 **Task:**
-- Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) by click the down arrow next to the "Fork" option in the top right and clicking "Create a new fork" to create your own copy of our repository.
+1. Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) by click the down arrow next to the "Fork" option in the top right and clicking "Create a new fork" to create your own copy of our repository.
 <!-- - Use this link to create your own copy of the starting repository -->
 ![Image](../images/fork.png)
-- If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
-- Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
-- `cd` into your cloned repository directory.
-- Compile and run the `average.c` file. 
-- Open the `average.c` file in `vim` and read through the program.
-- Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
-- Re-compile and re-run the program to ensure that it now outputs the correct value.
+
+2. If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
+3. Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
+4. `cd` into your cloned repository directory.
+5. Compile and run the `average.c` file.
+6. Open the `average.c` file in `vim` and read through the program.
+7. Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
+8. Re-compile and re-run the program to ensure that it now outputs the correct value.
+
 
 **Write in your notes:**
 - The original output of the program.
