@@ -229,7 +229,7 @@ Once you have completed the first 2 chapters of `vimtutor`, you will now be usin
 - If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
 - Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
 - `cd` into your cloned repository directory.
-- Compile and run the `average.c` file.
+- Compile (`gcc -o average average.c`) and run the `average.c` file. 
 - Open the `average.c` file in `vim` and read through the program.
 - Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
 - Re-compile and re-run the program to ensure that it now outputs the correct value.
