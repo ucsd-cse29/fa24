@@ -227,7 +227,7 @@ Once you have completed the first 2 chapters of `vimtutor`, you will now be usin
 <!-- - Use this link to create your own copy of the starting repository -->
 ![Image](../images/fork.png)
 - If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
-- Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL.
+- Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
 - `cd` into your cloned repository directory.
 - Compile and run the `average.c` file.
 - Open the `average.c` file in `vim` and read through the program.
@@ -254,7 +254,7 @@ use an IDE or your mouse to complete this exercise.  (#Arunan - Is this good? ID
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
 - `git clone`
 
-To retrieve a local copy of our git repository, we use the `git clone` command. `clone` takes a link from github (usually beginning with https://github.com or git@github.com). 
+To retrieve a local copy of our git repository, we use the `git clone` command. `clone` takes a link from github (usually beginning with `https://github.com` or `git@github.com`). 
 
 After we are done making changes to our local branch it's now time to push our changes to our remote branch (in this case github)
 - `git status`
@@ -265,13 +265,13 @@ Let's first run `git status`, to see the status of our repository. `status` retu
 
 - `git add`
 
-When we are done making changes to a file, we "stage" it to mark it as ready to be commited. Using the `git add` command with the path of the changed file(s) will stage each to be included in the next commit. Using `git add .` will stage all changed files. 
+When we are done making changes to a file, we *"stage"* it to mark it as ready to be commited. Using the `git add` command with the path of the changed file(s) will stage each to be included in the next commit. Using `git add .` will stage all changed and/or new files in the current directory. 
 
-**Task:** Use `git add` to stage our corrected C file. Write the output of `git status` to your notes.
+**Task:** Use `git add` to stage our corrected C file. Add the output of `git status` to your notes.
 
 - `git commit`
 
-A **commit** is a package of associated changes. Running the `git commit` command will take all of our staged files, and package them into a single commit. With the `-m` flag, we can specify a message detailing the changes of the commit. Without `-m`, git opens a vim window to write the commit message.
+A **commit** is a package of associated changes. Running the `git commit` command will take all of our staged files, and package them into a single commit. With the `-m` flag, we can specify a message detailing the changes of the commit. Without `-m`, git opens a `vim` window to write the commit message.
 
 **Task:** Use `git commit` to commit our staged changes. Use vim to write your commit message.
 
@@ -284,6 +284,11 @@ With our commit now made, we can use the `git push` command to upload our change
 Git also keeps a log of all the changes. The `git log` command prints this log into our terminal. From this log we can see the date, author, and message associated with each commit. The **HEAD ->** marker points to the latest commit locally, while the **origin/** marker points to the latest commit on the remote. After running `git push`, both of these markers should be on the same line.
 
 **Task:** After pushing your changes, add the output of `git log` to your notes.
+
+
+### More Practice
+**Potential TODO**
+<!-- Add things here that students can do if they are done early -->
 
 
 
