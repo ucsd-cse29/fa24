@@ -277,6 +277,7 @@ use an IDE or your mouse to complete this exercise.  (#Arunan - Is this good? ID
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
 
 
+### Part 5 - C Programs with command-line arguments
 
 
 
