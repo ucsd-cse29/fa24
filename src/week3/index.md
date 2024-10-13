@@ -16,7 +16,7 @@
 - [ ] Open the Git Bash terminal application (Windows) or Terminal (Mac) and try some commands from [Lab 1](https://ucsd-cse29.github.io/fa24/week1/index.html#navigation-commands)
 - [ ] Try to `ls` your `Desktop` directory. Do those files look familiar?
 - [ ] Try to `ssh` into `ieng6` with your username and password (just like you did in Lab 1)
-- [ ] Help each other if anyone has issues installing VSCode or figuring out the terminal.
+- [ ] Help each other if anyone has issues installing or figuring out the terminal.
 
 **Discuss and write in notes**:
 
@@ -94,6 +94,7 @@ interactive tutorial (that's pretty neat!). We can access this tutorial with the
 our terminal
 
 **Task:** Open the `vimtutor` tutorial in your terminal and complete Chapters 1 & 2.
+![Image](../images/vimtutor.png)
 <!-- (#Arunan - refSpec said 30 minutes, how many chapters would that realistically be) -->
 
 Once you have completed the first 2 chapters of `vimtutor`, you will now be using some of the commands that you learned to correct a bug in a C program that we have written for you.
@@ -148,11 +149,14 @@ Next, we want to add the public key to your Github account. This is like the ste
 
 4. Open your Github account on the browser.
 5. In the upper right corner, click on your profile photo, then click *Settings*.
+![Image](../images/github_settings.png)
 6. In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
 7. Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
+![Image](../images/github_ssh.png)
 8. Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
-9. Select the *“Key Type”* to be an Authentication Key
+9.  Select the *“Key Type”* to be an Authentication Key
 10. Copy your public key from the output of the cat command and paste it into the “Key” field
+![Image](../images/github_add_new_key.png)
 11. Click *Add SSH key*.
 12. If prompted, confirm access to your account on Github.
 
