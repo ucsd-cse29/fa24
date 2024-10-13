@@ -2,9 +2,9 @@
 
 
 ## Lab Goals
-- Set up SSH keys for ieng6 and Github
-- Learn basic terminal shortcuts and typing in `vim`
-- Learn how to upload file changes using git CLI
+1. Set up SSH keys for `ieng6` and Github
+2. Learn basic terminal shortcuts and editing in  `vim`
+3. Learn how to manage repositories using `git` CLI
 
 ## Lab Tasks
 
