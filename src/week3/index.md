@@ -210,8 +210,8 @@ Right click to paste in Windows terminal -->
 
 #### 4.2 - VIM
 
-`vim` is a text editor that runs entirely in the terminal. You also look a lot cooler controlling everything 
-without needing a mouse.
+`vim` is a text editor that runs entirely in the terminal. For better or worse, many times developers find themselves with only terminal access to a remote computer, and need to do some programming – that is, editing source code files. A terminal-based editor makes this possible. (As a side effect you can look like hacker from a movie controlling everything 
+without needing a mouse.)
 
 There are a lot of online resources available for `vim`, but thankfully, the program itself comes with a
 interactive tutorial (that's pretty neat!). We can access this tutorial with the `vimtutor` command from 
