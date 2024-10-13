@@ -211,9 +211,6 @@ Git also keeps a log of all the changes. The `git log` command prints this log i
 
 **Task:** After pushing your changes, add the output of `git log` to your notes.
 
-
-### More Practice
-**Potential TODO**
 <!-- Add things here that students can do if they are done early -->
 
 
