@@ -4,9 +4,9 @@
 ## Lab Goals
 
 1. Set up SSH keys for `ieng6` and Github
-2. Learn basic terminal shortcuts and editing in  `vim`
-3. Learn how to manage repositories using `git` CLI
-4. Do all the steps for working on a PA entirely on a remote computer (`ieng6`)
+2. Learn how to edit files on the terminal using  `vim`
+3. Do all the steps for working on a PA entirely on a remote computer (`ieng6`)
+4. Learn how to manage repositories using `git` CLI
 
 ## Lab Tasks
 
