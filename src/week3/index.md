@@ -11,14 +11,14 @@ Since the start of the course, we've been using Codespaces on Github as an envir
 (If you can't or don't want to use your own computer for this for any reason,
 you can do the installation of VScode on one of the computers in the lab! You
 can do all your work on the lab computers all quarter, no personal laptop setup
-required.) -- CHECK IF THIS IS STILL THE CASE FOR CSE 29
+required.)
 
 Go to the Visual Studio Code website
 [https://code.visualstudio.com/](https://code.visualstudio.com/), and follow the
 instructions to download and install it on your computer. There are versions for
 all the major operating systems, like macOS (for Macs) and Windows (for PCs).
 
-When it is installed, you should be able to open a window that looks like this
+When it is installed, you should be able to open a familiar window that looks like this
 (it might have different colors, or a different menu bar, depending on your
 system and settings):
 
@@ -30,13 +30,16 @@ screenshot of the error message or point at which they are stuck so we can help
 them figure it out later, and they can decide to keep trying (potentially with
 the tutor helping) or move on.
 
+**NOTE:** For the purposes of this lab we will be using VSCode primarily as an access point to the terminal
+as it has a very similar interface to the Codespaces that we have been using thus far. VSCode is also a powerful text editor to write and develop code in but we will not be covering those capabilities in this lab.
+
 **Next** if you're on Windows: install `git` for Windows, which comes with some
 useful tools we need:
 
 [Git for Windows](https://gitforwindows.org/)
 
-(#Arunan - Should we include instructions for minGW on windows for gcc, gdb, etc.?)
-(#Yash - I think we should. MinGW and then have them test the installation at the end of this section)
+<!-- (#Arunan - Should we include instructions for minGW on windows for gcc, gdb, etc.?)
+(#Yash - I think we should. MinGW and then have them test the installation at the end of this section) -->
 
 Once installed, use the steps in this post to set your default terminal to use
 the newly-installed `git bash` in Visual Studio Code:
@@ -107,7 +110,7 @@ With the setup we've used so far this quarter, each time you log in to your
 course-specific account, you have to type the password. This can get a bit tedious and luckily there is 
 a cool and interesting way to avoid this while still staying secure using SSH keys.
 
-- In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This creates a private SSH key.
+- In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
 - Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
   - Note the path where the public key is saved (underlined below). 
   - ![Image](../images/ssh_keygen.png)
@@ -124,12 +127,12 @@ the path. **Make sure you get the public key file, ending in `.pub`, here, not
 the private file**.
 <!-- Maybe we can have the students write the scp command themselves since they have seen it in Week 1 -->
 - **Construct** a command that will perform the copying of the public key file from your local machine to the
-  `.ssh` directory on your remote account with the appropriate name. (HINT: you used this command in Week 1)
+  `.ssh` directory on your remote account with the appropriate name (HINT: you used this command in Week 1's lab). Work with your group members if you need help!
 <!-- - From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username) -->
-- Enter password when prompted (this will be the last time you have to type it!)
+<!-- - Enter your password when prompted (this will be the last time you have to type it!) -->
 - Try to log onto your remote account again, you shouldn’t be prompted for a
 password anymore. If you are, ask for help and carefully review the steps above
-with your partner.
+with your group.
 
 ### Part 3 - Generating SSH Keys for GitHub
 You can access and write data in repositories on GitHub.com using SSH. When you connect via SSH, you authenticate using a private key file on your local machine, which in our case will be the ieng6 machine.
@@ -142,36 +145,36 @@ Next, we want to add the public key to your Github account. This is like the ste
 - Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
 
 - Open your Github account on the browser.
-- In the upper right corner, click on your profile photo, then click Settings.
-- In the “Access” section of the sidebar, click SSH and GPG keys.
-- Click New SSH key or Add SSH key under the “SSH keys” section.
-- Add a “Title” to your key (ex: Your Name’s ieng6 machine).
-- Select the “Key Type” to be an Authentication Key
+- In the upper right corner, click on your profile photo, then click *Settings*.
+- In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
+- Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
+- Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
+- Select the *“Key Type”* to be an Authentication Key
 - Copy your public key from the output of the cat command and paste it into the “Key” field
-- Click Add SSH key.
+- Click *Add SSH key*.
 - If prompted, confirm access to your account on Github.
 
-Go back to the ieng6 terminal and:
+Go back to the `ieng6` terminal and:
 
-- Run the following command to add Github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
+- Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
   - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
   - `>>` means "append stdout of the command to file"
 - Check your connection by running the following command:
   - `$ ssh -T git@github.com`
-  - It will say something like "Hi supercoolstudent1234! You've successfully authenticated, but GitHub does not provide shell access."
+  - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
   
-Now we have an SSH key which can be used to authenticate to GitHub! In addition to using https clone URLs, we can now use SSH clone URLs that look like this:
+Now we have an SSH key which can be used to authenticate to GitHub! In addition to using `https` clone URLs, we can now use `SSH` clone URLs that look like this:
 
 ![Image](../images/clone_with_ssh.png)
 
-Crucially, these will allow both cloning and pushing to the repository (as long as your account has access). 
+Crucially, these will allow both cloning and pushing to the repository (as long as your account has access) from `ieng6`!
 
-Important: For the rest of the lab, make sure to clone using the SSH clone URLs as described above!
+**Important**: For the rest of the lab, make sure to clone using the SSH clone URLs as described above!
 
 ### Part 4 - Working in Terminal
 
-We've been primarily using our terminal to compile our C code (with `gcc`)
-and run our programs, but we've just scratched the service of what our command line can do.
+So far, we've been primarily using our terminal to compile our C code (with `gcc`)
+and run our programs, but we've just scratched the service of what the terminal can do.
 The terminal is the ultimate gateway into communicating with our computer, and today we're going
 to dive more into the different ways we can use the terminal to make our lives easier.
 
@@ -187,27 +190,30 @@ We can use the “up” and “down” arrows to go through the history of comma
 If you run the commands you care about, then log out and back in, they are still in the command history!
 
 Executing the command you ran yesterday or last week would require a LOT of tapping of the up arrow.
-We can take this one step further and *search* through our command history. You can use Ctrl-R to search your command history.
-At the bash prompt, type Ctrl-R and then start typing part of a command – what shows up? After typing in your search term,
-repeatedly inputting CTRL-R will cycle through the different search results. Try experimenting with ctrl-r
+We can take this one step further and *search* through our command history. You can use `Ctrl-R` to search your command history.
+At the bash prompt, type `Ctrl-R` and then start typing part of a command – what shows up? After typing in your search term,
+repeatedly inputting `Ctrl-R` will cycle through the different search results. Try experimenting with `Ctrl-R`!
+
+**Write in your notes:** Paste a screenshot of using `Ctrl-R` to search through your command history. 
 
 2. **Using Tab**
    
-Sometimes our file names can get wordy, and it sucks to make a minor typo when compiling our program. Luckily, our terminal comes with a built-in autocomplete function!
-Pressing the *tab* key will either autocomplete the term your typing, or show you the available autocomplete options (if more than one exists)
+Sometimes our file names can get wordy, and it's frustrating to make a minor typo when compiling our program. Luckily, our terminal comes with a built-in autocomplete function!
+Pressing the `TAB` key will either autocomplete the term your typing, or show you the available autocomplete options (if more than one exists)
 
-Task: From your directory type `ls` and press tab BEFORE submitting the command. What do you see? 
+**Task**: From your directory type `ls` and press `TAB` BEFORE submitting the command. What do you see? 
 
-Pick any file/folder and type the first letter and press TAB. What changed?
+Pick any file/folder and type the first letter and press `TAB`. What changed?
 
 
-You can use the Tab key to speed up typing commands in the command line in the following ways:
-Start typing the first few letters of a command or path. Pressing tab once will autofill the rest of the line up to the point where there are multiple potential possibilities. If you press tab a second time, it will show you all of the possibilities for what it could autocomplete to.
-Keyboard Shortcuts while editing commands
+You can use the `TAB` key to speed up typing commands in the command line in the following ways:
+Start typing the first few letters of a command or path. Pressing `TAB` once will autofill the rest of the line up to the point where there are multiple potential possibilities. If you press `TAB` a second time, it will show you all of the possibilities for what it could autocomplete to.
+
 
 If you want even *more* tricks to work even faster in terminal, check out this article:
 https://www.redhat.com/sysadmin/shortcuts-command-line-navigation
 <!-- Have you had a time where you mistyped one of the commands and had to backspace all the way back to fix the problem? There’s a better way!
+Keyboard Shortcuts while editing commands
 Ctrl-U deletes everything from the current cursor position to the beginning of the line
 Ctrl-K deletes everything from the current cursor position to the end of the line
 Ctrl-A goes back to the beginning of the line
@@ -249,16 +255,16 @@ our terminal
 Once you have completed the first 2 chapters of `vimtutor`, you will now be using some of the commands that you learned to correct a bug in a C program that we have written for you.
 
 **Task:**
-- Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) to create your own copy of our repository.
+- Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) by click the down arrow next to the "Fork" option in the top right and clicking "Create a new fork" to create your own copy of our repository.
 <!-- - Use this link to create your own copy of the starting repository -->
 ![Image](../images/fork.png)
-- If you aren't logged into `ieng6`, log in now.
+- If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
 - Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL.
 - `cd` into your cloned repository directory.
-- Compile and run the `buggy.c` file.
-- Open the `buggy.c` file in `vim` and read through the program.
-- Determine the bug in the program and correct it in `vim`. **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
-- Re-compile and re-run the program to ensure that it now runs correctly.
+- Compile and run the `average.c` file.
+- Open the `average.c` file in `vim` and read through the program.
+- Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
+- Re-compile and re-run the program to ensure that it now outputs the correct value.
 
 **Write in your notes:**
 - The original output of the program.
@@ -267,7 +273,9 @@ Once you have completed the first 2 chapters of `vimtutor`, you will now be usin
 - The output of the program after the bug has been fixed.
 
 When you are done, discuss with a partner discuss what was comfortable and what was tricky about correcting the file.
-Compare the commands you used with other members in your group and note the differences. Try reverting the bug fix and fixing it again using one of your group member's commands!
+Compare the commands you used with other members in your group and note the differences. 
+
+Try reverting the bug fix and fixing it again using one of your group member's commands!
 
 <!-- **Task:** Clone this Repo (#Arunan Link needed) and correct the bug in the given .c file using `vim`.
 You can compile the program to ensure that it runs correctly on your machine. You may NOT
@@ -277,8 +285,6 @@ use an IDE or your mouse to complete this exercise.  (#Arunan - Is this good? ID
 
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
 
-
-### Part 5 - C Programs with command-line arguments
 
 
 
