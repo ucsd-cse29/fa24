@@ -1,4 +1,4 @@
-# Week 3 – VSCode and Your Local Machine
+# Week 3 – Terminal Usage and Git
 
 
 ## Lab Goals
@@ -16,7 +16,7 @@
 - [ ] Open the Git Bash terminal application (Windows) or Terminal (Mac) and try some commands from [Lab 1](https://ucsd-cse29.github.io/fa24/week1/index.html#navigation-commands)
 - [ ] Try to `ls` your `Desktop` directory. Do those files look familiar?
 - [ ] Try to `ssh` into `ieng6` with your username and password (just like you did in Lab 1)
-- [ ] Help each other if anyone has issues installing VSCode or figuring out the terminal.
+- [ ] Help each other if anyone has issues installing or figuring out the terminal.
 
 **Discuss and write in notes**:
 
@@ -63,8 +63,19 @@ says: `Your public key has been saved in: <path to your public SSH key>`, copy
 the path. **Make sure you get the public key file, ending in `.pub`, here, not
 the private file**.
 <!-- Maybe we can have the students write the scp command themselves since they have seen it in Week 1 -->
-8. **Construct** a command that will perform the copying of the public key file from your local machine to the
+8. **Think about** a command that will perform the copying of the public key file from your local machine to the
   `.ssh` directory on your remote account with the appropriate name (HINT: you [used this command in Week 1's lab](https://ucsd-cse29.github.io/fa24/week1/index.html#making-an-edit)). Work with your group members if you need help!
+<details>
+  <summary>Click here to see the answer</summary>
+  From your local computer, run 
+
+  ```
+scp <path to your public SSH key> {user}@ieng6.ucsd.edu:~/.ssh/authorized_keys
+  ```
+
+  Make sure to replace `{user}` with your UCSD username
+</details>
+
 <!-- - From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username) -->
 <!-- - Enter your password when prompted (this will be the last time you have to type it!) -->
 9. Try to log onto your remote account again, you shouldn’t be prompted for a
@@ -75,7 +86,7 @@ with your group. To review:
   - You should have a directory called `.ssh` on `ieng6` (that you created with `mkdir`) in your home directory.
   - The `.pub` file from your computer should be copied to the `.ssh/authorized_keys` file on `ieng6`
 
-
+**Add to your notes:** A screenshot of you logging into your `ieng6` account without a password prompt.
 
 ### Part 3 - Working in Terminal
 
@@ -94,22 +105,25 @@ interactive tutorial (that's pretty neat!). We can access this tutorial with the
 our terminal
 
 **Task:** Open the `vimtutor` tutorial in your terminal and complete Chapters 1 & 2.
+![Image](../images/vimtutor.png)
 <!-- (#Arunan - refSpec said 30 minutes, how many chapters would that realistically be) -->
 
 Once you have completed the first 2 chapters of `vimtutor`, you will now be using some of the commands that you learned to correct a bug in a C program that we have written for you.
 
 **Task:**
-1. Fork this [repository](https://github.com/ucsd-cse29/lab3-starter) by click the down arrow next to the "Fork" option in the top right and clicking "Create a new fork" to create your own copy of our repository.
-<!-- - Use this link to create your own copy of the starting repository -->
-![Image](../images/fork.png)
 
 1. If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
-2. Clone your forked repository to your `ieng6` course-specific account using the SSH clone URL. The command would look like `git clone <SSH clone URL>`
-3. `cd` into your cloned repository directory.
-4. Compile and run the `average.c` file.
-5. Open the `average.c` file in `vim` and read through the program.
-6. Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
-7. Re-compile and re-run the program to ensure that it now outputs the correct value.
+2. Download our buggy C program using `curl`. The command would look like 
+
+`curl https://raw.githubusercontent.com/ucsd-cse29/lab3-starter/refs/heads/main/average.c -o average.c`
+
+3. Compile and run the `average.c` file.
+4. Open the `average.c` file in `vim` and read through the program.
+5. Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) 
+
+**Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
+
+6. Re-compile and re-run the program to ensure that it now outputs the correct value.
 
 
 **Write in your notes:**
@@ -128,12 +142,12 @@ Next, we will see how different members of your group approached fixing the bug 
 to see the differences in how each of you navigated the `vim` editor.
 
 **Task:** 
-1. Run the `cd` command to navigate back to your home directory on `ieng6`.
-2. Clone your forked repository into a new directory on `ieng6` using the command `git clone <SSH clone URL> <new directory name>`.
-3. `cd` into the new directory.
-4. Now, run the commands that another member of your group used to correct the `average.c` file. You should find the commands
+
+2. Redownload our C file using a similar `curl` to the previous section. 
+`curl https://raw.githubusercontent.com/ucsd-cse29/lab3-starter/refs/heads/main/average.c -o average_telephone.c`. 
+3. Now, run the commands that another member of your group used to correct the `average.c` file. You should find the commands
 in your shared Google Doc.
-5. **Write in your notes:** What were some of the key differences you noticed between your keystrokes and your group members?
+4. **Write in your notes:** What were some of the key differences you noticed between your keystrokes and your group members?
 
 ### Part 4 - Getting `ieng6` and Github to Play Nice
 
@@ -148,11 +162,14 @@ Next, we want to add the public key to your Github account. This is like the ste
 
 4. Open your Github account on the browser.
 5. In the upper right corner, click on your profile photo, then click *Settings*.
+![Image](../images/github_settings.png)
 6. In the *“Access”* section of the sidebar, click *SSH and GPG keys*.
 7. Click *New SSH key* or *Add SSH key* under the *“SSH keys”* section.
+![Image](../images/github_ssh.png)
 8. Add a “Title” to your key (ex: *Aaron's* ieng6 machine).
-9. Select the *“Key Type”* to be an Authentication Key
+9.  Select the *“Key Type”* to be an Authentication Key
 10. Copy your public key from the output of the cat command and paste it into the “Key” field
+![Image](../images/github_add_new_key.png)
 11. Click *Add SSH key*.
 12. If prompted, confirm access to your account on Github.
 
@@ -178,6 +195,8 @@ So far you have been using the "Source Control" tab in your Github codespaces to
 
 To retrieve a local copy of our git repository, we use the `git clone` command. `clone` takes a link from github (usually beginning with `https://github.com` or `git@github.com`). 
 
+**Task:** This time, use the `SSH` clone URL to clone your forked repository to your `ieng6` account into another new directory. Fix the bug that you fixed earlier in the `average.c` file again and then proceed!
+
 After we are done making changes to our local branch it's now time to push our changes to our remote branch (in this case github)
 - `git status`
 
@@ -189,7 +208,7 @@ Let's first run `git status`, to see the status of our repository. `status` retu
 
 When we are done making changes to a file, we *"stage"* it to mark it as ready to be commited. Using the `git add` command with the path of the changed file(s) will stage each to be included in the next commit. Using `git add .` will stage all changed and/or new files in the current directory. 
 
-**Task:** Use `git add` to stage our corrected C file. Compare the new output of `git status` to the one in your notes.
+**Task:** Use `git add` to stage our corrected C file. Compare the output of `git status` to the output written in your notes.
 
 - `git commit`
 
@@ -207,9 +226,6 @@ Git also keeps a log of all the changes. The `git log` command prints this log i
 
 **Task:** After pushing your changes, add the output of `git log` to your notes.
 
-
-### More Practice
-**Potential TODO**
 <!-- Add things here that students can do if they are done early -->
 
 
