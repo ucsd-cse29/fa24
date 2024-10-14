@@ -195,7 +195,7 @@ Let's first run `git status`, to see the status of our repository. `status` retu
 
 When we are done making changes to a file, we *"stage"* it to mark it as ready to be commited. Using the `git add` command with the path of the changed file(s) will stage each to be included in the next commit. Using `git add .` will stage all changed and/or new files in the current directory. 
 
-**Task:** Use `git add` to stage our corrected C file. Add the output of `git status` to your notes.
+**Task:** Use `git add` to stage our corrected C file. Compare the output of `git status` to the output written in your notes.
 
 - `git commit`
 
