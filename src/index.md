@@ -56,6 +56,7 @@ you can see what's coming.
 
 - **Readings**
   - [Debugging with GDB](https://diveintosystems.org/book/C3-C_debug/gdb.html)
+  - [GDB Quick reference guide](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
   - [Pointers and Functions](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
   - [Arrays in C](https://diveintosystems.org/book/C2-C_depth/arrays.html)
 
