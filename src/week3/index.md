@@ -53,17 +53,19 @@ We've labelled each step with whether it should run on **[Y]** our computer or *
   - ![Image](../images/ssh_keygen.png)
 3. **[Y]**/**[I]** Now, log into your remote course specific account on `ieng6` with `ssh`
   (using your password as usual)
+**DO NOT** run the `cs29fa24` command to prepare your course-specific environment!
+
 4. **[I]** Run `mkdir .ssh` in the terminal
 5. **[I]**/**[Y]** Log out of your remote account by pressing `Ctrl-D` or typing `exit`.
 6. **[Y]** Now, we want to copy the public SSH key you created on your local machine onto your remote account;
 specifically inside the `.ssh` directory you just created, in a file called
 `authorized_keys`.
-7. **[Y]** Scroll up a bit to where you were creating the SSH key, find the line where it
+Scroll up a bit to where you were creating the SSH key, find the line where it
 says: `Your public key has been saved in: <path to your public SSH key>`, copy
 the path. **Make sure you get the public key file, ending in `.pub`, here, not
 the private file**.
 <!-- Maybe we can have the students write the scp command themselves since they have seen it in Week 1 -->
-8. **Think about** a command that will perform the copying of the public key file from your local machine to the
+1. **[Y]** **Think about** a command that will perform the copying of the public key file from your local machine to the
   `.ssh` directory on your remote account with the appropriate name (HINT: you [used this command in Week 1's lab](https://ucsd-cse29.github.io/fa24/week1/index.html#making-an-edit)). Work with your group members if you need help!
 <details>
   <summary>Click here to see the answer</summary>
@@ -75,10 +77,10 @@ scp <path to your public SSH key> {user}@ieng6.ucsd.edu:~/.ssh/authorized_keys
 
   Make sure to replace `{user}` with your UCSD username
 </details>
-
+<br>
 <!-- - From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username) -->
 <!-- - Enter your password when prompted (this will be the last time you have to type it!) -->
-9. Try to log onto your remote account again, you shouldn’t be prompted for a
+8. **[Y]**/**[I]** Try to log onto your remote account again, you shouldn’t be prompted for a
 password anymore. If you are, ask for help and carefully review the steps above
 with your group. To review:
   - You should have a directory called `.ssh` on *your* computer in your home directory.
@@ -138,8 +140,7 @@ Compare the commands you used with other members in your group and note the diff
 
 #### 3.2 - VIM Telephone
 
-Next, we will see how different members of your group approached fixing the bug in the provided C code. You will be running your group members' `vim` commands
-to see the differences in how each of you navigated the `vim` editor.
+Next, we will see how different members of your group approached fixing the bug in the provided C code. You will be running your group members' `vim` keystrokes to see the differences in how each of you navigated the `vim` editor.
 
 **Task:** 
 
@@ -153,12 +154,12 @@ in your shared Google Doc.
 
 With the bug fixed, we now want to push our changes to our Github repository. Before we can do that though, we need to be able to 
 
-1. Login to `ieng6` as usual (hopefully, without typing a password now!)
-2. Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
+1. **[Y]/[I]** Login to `ieng6` as usual (hopefully, without typing a password now!)
+2. **[I]** Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
   
 Next, we want to add the public key to your Github account. This is like the step of copying the public key to authorized_keys on ieng6, but instead we're copying to Github.
 
-3. Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
+3. **[I]** Display the SSH public key generated above using `cat <path of your ssh key .pub file>` and copy it to your clipboard; you can copy it by highlighting and right-clicking
 
 4. Open your Github account on the browser.
 5. In the upper right corner, click on your profile photo, then click *Settings*.
@@ -175,10 +176,10 @@ Next, we want to add the public key to your Github account. This is like the ste
 
 Go back to the `ieng6` terminal and:
 
-13. Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
+13. **[I]** Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
   - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
   - `>>` means "append stdout of the command to file"
-14. Check your connection by running the following command:
+14. **[I]** Check your connection by running the following command:
   - `$ ssh -T git@github.com`
   - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
   
@@ -191,36 +192,54 @@ Crucially, these will allow both cloning and pushing to the repository (as long 
 #### 4.1 - `git` CLI commands
 
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
-- `git clone`
+
+- **Forking** a repository
+
+A *fork* of a repository is a personal copy of the repository that you can make changes to without affecting the original repository. To fork a repository, click the "Fork" button in the top right corner of the repository page.
+
+**Task:** Create a fork of the Lab 3 starter repository [here](https://github.com/ucsd-cse29/lab3-starter).
+![Image](../images/fork.png)
+<br>
+
+- **Cloning** with `git clone`
 
 To retrieve a local copy of our git repository, we use the `git clone` command. `clone` takes a link from github (usually beginning with `https://github.com` or `git@github.com`). 
 
-**Task:** This time, use the `SSH` clone URL to clone your forked repository to your `ieng6` account into another new directory. Fix the bug that you fixed earlier in the `average.c` file again and then proceed!
+**Task:** Use the `SSH` clone URL to clone your forked repository to your `ieng6` account into another new directory. Fix the bug that you fixed earlier in the `average.c` file again and then proceed!
+
+![Image](../images/ssh_clone.png)
 
 After we are done making changes to our local branch it's now time to push our changes to our remote branch (in this case github)
-- `git status`
+
+<br>
+
+- **Getting the status** with `git status`
 
 Let's first run `git status`, to see the status of our repository. `status` returns which files are untracked (new) modified (changed) and deleted. 
 
 **Task:** After correcting the buggy C code, add the output of running the `git status` command in your terminal to your notes.
+<br>
 
-- `git add`
+- **Staging** file with `git add`
 
 When we are done making changes to a file, we *"stage"* it to mark it as ready to be commited. Using the `git add` command with the path of the changed file(s) will stage each to be included in the next commit. Using `git add .` will stage all changed and/or new files in the current directory. 
 
 **Task:** Use `git add` to stage our corrected C file. Compare the output of `git status` to the output written in your notes.
+<br>
 
-- `git commit`
+- **Committing** with `git commit`
 
-A **commit** is a package of associated changes. Running the `git commit` command will take all of our staged files, and package them into a single commit. With the `-m` flag, we can specify a message detailing the changes of the commit. Without `-m`, git opens a `vim` window to write the commit message.
+A *commit* is a package of associated changes. Running the `git commit` command will take all of our staged files, and package them into a single commit. With the `-m` flag, we can specify a message detailing the changes of the commit. Without `-m`, git opens a `vim` window to write the commit message.
 
 **Task:** Use `git commit` to commit our staged changes. Use vim to write your commit message.
+<br>
 
-- `git push`
+- **Pushing** to the remote repository with `git push`
 
 With our commit now made, we can use the `git push` command to upload our changes to our remote branch (github). If this is the first time you are using `git push`, git may ask you to set the name and email you want associated with your commits.
+<br>
 
-- `git log`
+- **Viewing the log** with `git log`
 
 Git also keeps a log of all the changes. The `git log` command prints this log into our terminal. From this log we can see the date, author, and message associated with each commit. The **HEAD ->** marker points to the latest commit locally, while the **origin/** marker points to the latest commit on the remote. After running `git push`, both of these markers should be on the same line.
 
