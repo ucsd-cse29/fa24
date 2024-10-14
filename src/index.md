@@ -49,6 +49,24 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
+### Week 3 – Where (Some) Things are in Memory
+
+- **Announcements**
+  - Make sure to go to your exam slot that you reserved on [PrairieTest](https://us.prairietest.com/)!
+
+- **Readings**
+  - [Debugging with GDB](https://diveintosystems.org/book/C3-C_debug/gdb.html)
+  - [Pointers and Functions](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
+  - [Arrays in C](https://diveintosystems.org/book/C2-C_depth/arrays.html)
+
+- **Lecture Materials**
+  - **Monday:**
+    - [Repository](https://github.com/ucsd-cse29/fa24-08-w3m-stack-and-memory)
+    - <u>Joe's Lecture:</u>
+                  [Handout](https://github.com/ucsd-cse29/fa24-08-w3m-stack-and-memory) |
+                  Annotated Handout |
+                  Recording
+
 ### Week 2 – Number Representations, Sizes, and Signs
 
 - **Announcements**
