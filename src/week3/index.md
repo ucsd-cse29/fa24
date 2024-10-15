@@ -209,6 +209,7 @@ To retrieve a local copy of our git repository, we use the `git clone` command. 
 
 ![Image](../images/ssh_clone.png)
 
+
 After we are done making changes to our local branch it's now time to push our changes to our remote branch (in this case github)
 
 <br>
@@ -226,6 +227,7 @@ When we are done making changes to a file, we *"stage"* it to mark it as ready t
 
 **Task:** Use `git add` to stage our corrected C file. Compare the output of `git status` to the output written in your notes.
 <br>
+
 
 - **Committing** with `git commit`
 
