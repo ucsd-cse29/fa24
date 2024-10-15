@@ -12,7 +12,7 @@
 
 ### Part 1 – Let's get a Terminal Setup
 
-- [ ] If you're using Windows, install [Git for Windows](https://gitforwindows.org/). Mac users have a pre-installed terminal application.
+- [ ] If you're using Windows, install [Git for Windows](https://gitforwindows.org/) using all the default/recommended settings as suggested by the installation wizard. Mac users have a pre-installed terminal application.
 - [ ] Open the Git Bash terminal application (Windows) or Terminal (Mac) and try some commands from [Lab 1](https://ucsd-cse29.github.io/fa24/week1/index.html#navigation-commands)
 - [ ] Try to `ls` your `Desktop` directory. Do those files look familiar?
 - [ ] Try to `ssh` into `ieng6` with your username and password (just like you did in [Lab 1](https://ucsd-cse29.github.io/fa24/week1/index.html#logging-into-ieng6))
