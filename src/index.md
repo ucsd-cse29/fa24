@@ -67,6 +67,8 @@ you can see what's coming.
                   [Handout](https://github.com/ucsd-cse29/fa24-08-w3m-stack-and-memory) |
                   [Annotated Handout](https://github.com/ucsd-cse29/fa24-08-w3m-stack-and-memory/blob/main/annotated-lecture-08-w3m.pdf) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/7)
+    - <u>Aaron's Lecture:</u> 
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/7)
 
 ### Week 2 – Number Representations, Sizes, and Signs
 
