@@ -151,9 +151,12 @@ Next, we will see how different members of your group approached fixing the bug 
 in your shared Google Doc.
 4. **Write in your notes:** What were some of the key differences you noticed between your keystrokes and your group members?
 
-### Part 4 - Getting `ieng6` and Github to Play Nice
+### Part 4 - Github with `ieng6`
 
-With the bug fixed, we now want to push our changes to our Github repository. Before we can do that though, we need to be able to 
+With the bug fixed, we now want to push our changes to our Github repository. Before we can do that though, we need to be able to perform actions against our Github repository from `ieng6`. This is where SSH keys come in handy once again!
+
+#### 4.1 - Setting up SSH Keys for Github
+
 
 1. **[Y]/[I]** Login to `ieng6` as usual (hopefully, without typing a password now!)
 2. **[I]** Run the command `ssh-keygen`, and again press `<Enter>` until the command completes and shows the "randomart image". Just like before, this will put a key file and a `.pub` version of it into the `.ssh` directory – this time on `ieng6`!
