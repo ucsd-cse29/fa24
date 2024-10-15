@@ -45,12 +45,12 @@ With the setup we've used so far this quarter, each time you log in to your
 course-specific account, you have to type the password. This can get a bit tedious and luckily there is 
 a cool and interesting way to avoid this while still staying secure using SSH keys.
 
-We've labelled each step with whether it should run on **[Y]** our computer or **[i]** eng6 Make sure you follow the instructions carefully!
+We've labelled each step with whether it should run on **[Y]** our computer or **[i]** eng6. Make sure you follow the instructions carefully!
 
 1. **[Y]** In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
 2. **[Y]** Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
-  - Note the path where the public key is saved (underlined below). 
-  - ![Image](../images/ssh_keygen.png)
+    - Note the path where the public key is saved (underlined below). 
+    - ![Image](../images/ssh_keygen.png)
 3. **[Y]**/**[I]** Now, log into your remote course specific account on `ieng6` with `ssh`
   (using your password as usual)
 **DO NOT** run the `cs29fa24` command to prepare your course-specific environment!
@@ -58,9 +58,9 @@ We've labelled each step with whether it should run on **[Y]** our computer or *
 4. **[I]** Run `mkdir .ssh` in the terminal
 5. **[I]**/**[Y]** Log out of your remote account by pressing `Ctrl-D` or typing `exit`.
 6. **[Y]** Now, we want to copy the public SSH key you created on your local machine onto your remote account;
-specifically inside the `.ssh` directory you just created, in a file called
+specifically inside the `.ssh` directory you just created, into a file called
 `authorized_keys`.
-Scroll up a bit to where you were creating the SSH key, find the line where it
+Scroll up in your terminal to where you were creating the SSH key, find the line where it
 says: `Your public key has been saved in: <path to your public SSH key>`, copy
 the path. **Make sure you get the public key file, ending in `.pub`, here, not
 the private file**.
@@ -68,26 +68,26 @@ the private file**.
 7. **[Y]** **Think about** a command that will perform the copying of the public key file from your local machine to the
   `.ssh` directory on your remote account with the appropriate name (HINT: you [used this command in Week 1's lab](https://ucsd-cse29.github.io/fa24/week1/index.html#making-an-edit)). Work with your group members if you need help!
 <details>
-  <summary>Click here to see the answer</summary>
+  <summary>If you're really stuck, click here to see the answer</summary>
   From your local computer, run 
 
   ```
-scp <path to your public SSH key> {user}@ieng6.ucsd.edu:~/.ssh/authorized_keys
+scp PATH_TO_YOUR_PUBLIC_SSH_KEY USER@ieng6.ucsd.edu:~/.ssh/authorized_keys
   ```
 
-  Make sure to replace `{user}` with your UCSD username
+  Make sure to replace `USER` with your UCSD username and `PATH...` with the appropriate path
 </details>
 <br>
 <!-- - From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username) -->
 <!-- - Enter your password when prompted (this will be the last time you have to type it!) -->
 
-8. **[Y]**/**[I]** Try to log onto your remote account again, you shouldn’t be prompted for a
-password anymore. If you are, ask for help and carefully review the steps above
+8. **[Y]**/**[I]** Try to log onto your remote account again, **you shouldn’t be prompted for a
+password anymore.** If you are, ask for help and carefully review the steps above
 with your group. To review:
-  - You should have a directory called `.ssh` on *your* computer in your home directory.
-  - That folder should have a key file created by `ssh-keygen` and a corresponding `.pub` version of the file.
-  - You should have a directory called `.ssh` on `ieng6` (that you created with `mkdir`) in your home directory.
-  - The `.pub` file from your computer should be copied to the `.ssh/authorized_keys` file on `ieng6`
+    - You should have a directory called `.ssh` on *your* computer in your home directory.
+    - That folder should have a key file created by `ssh-keygen` and a corresponding `.pub` version of the file.
+    - You should have a directory called `.ssh` on `ieng6` (that you created with `mkdir`) in your home directory.
+    - The `.pub` file from your computer should be copied to the `.ssh/authorized_keys` file on `ieng6`
 
 **Add to your notes:** A screenshot of you logging into your `ieng6` account without a password prompt.
 
@@ -115,18 +115,18 @@ Once you have completed the first 2 chapters of `vimtutor`, you will now be usin
 
 **Task:**
 
-1. If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
-2. Download our buggy C program using `curl`. The command would look like 
+1. **[Y]**/**[I]** If you aren't logged into `ieng6`, log in now. (password-free hopefully!)
+2. **[I]** Download our buggy C program using `curl`. The command would look like 
 
 `curl https://raw.githubusercontent.com/ucsd-cse29/lab3-starter/refs/heads/main/average.c -o average.c`
 
-3. Compile and run the `average.c` file.
-4. Open the `average.c` file in `vim` and read through the program.
-5. Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) 
+3. **[I]** Compile and run the `average.c` file.
+4. **[I]** Open the `average.c` file in `vim` and read through the program.
+5. **[I]** Determine the bug in the program and correct it in `vim`. (Try doing it without introducing a new variable!) 
 
 **Write in your notes:**  The keys/commands you are pressing/using while navigating `vim`
 
-6. Re-compile and re-run the program to ensure that it now outputs the correct value.
+6. **[I]** Re-compile and re-run the program to ensure that it now outputs the correct value.
 
 
 **Write in your notes:**
@@ -145,9 +145,9 @@ Next, we will see how different members of your group approached fixing the bug 
 
 **Task:** 
 
-2. Redownload our C file using a similar `curl` to the previous section. 
+2. **[I]** Redownload our C file using a similar `curl` to the previous section. 
 `curl https://raw.githubusercontent.com/ucsd-cse29/lab3-starter/refs/heads/main/average.c -o average_telephone.c`. 
-3. Now, run the commands that another member of your group used to correct the `average.c` file. You should find the commands
+3. **[I]** Now, run the commands that another member of your group used to correct the `average.c` file. You should find the commands
 in your shared Google Doc.
 4. **Write in your notes:** What were some of the key differences you noticed between your keystrokes and your group members?
 
@@ -181,11 +181,11 @@ Next, we want to add the public key to your Github account. This is like the ste
 Go back to the `ieng6` terminal and:
 
 13. **[I]** Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
-  - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
-  - `>>` means "append stdout of the command to file"
+    - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
+    - `>>` means "append stdout of the command to file"
 14. **[I]** Check your connection by running the following command:
-  - `$ ssh -T git@github.com`
-  - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
+    - `$ ssh -T git@github.com`
+    - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
   
 Now we have an SSH key which can be used to authenticate to GitHub! In addition to using `https` clone URLs, we can now use `SSH` clone URLs that look like this:
 
