@@ -146,7 +146,7 @@ Next, we will see how different members of your group approached fixing the bug 
 **Task:** 
 
 2. **[I]** Redownload our C file using a similar `curl` to the previous section. 
-`curl https://raw.githubusercontent.com/ucsd-cse29/lab3-starter/refs/heads/main/average.c -o average_telephone.c`. 
+`curl https://raw.githubusercontent.com/ucsd-cse29/lab3-starter/refs/heads/main/average.c -o average2.c`. 
 3. **[I]** Now, run the commands that another member of your group used to correct the `average.c` file. You should find the commands
 in your shared Google Doc.
 4. **Write in your notes:** What were some of the key differences you noticed between your keystrokes and your group members?
