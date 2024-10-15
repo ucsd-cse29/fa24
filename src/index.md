@@ -53,6 +53,7 @@ you can see what's coming.
 
 - **Announcements**
   - Make sure to go to your exam slot that you reserved on [PrairieTest](https://us.prairietest.com/)!
+  - [PA2](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is available and is due Friday, October 25 at 10pm!
 
 - **Readings**
   - [Debugging with GDB](https://diveintosystems.org/book/C3-C_debug/gdb.html)
