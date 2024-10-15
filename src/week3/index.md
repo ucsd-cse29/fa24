@@ -65,7 +65,7 @@ says: `Your public key has been saved in: <path to your public SSH key>`, copy
 the path. **Make sure you get the public key file, ending in `.pub`, here, not
 the private file**.
 <!-- Maybe we can have the students write the scp command themselves since they have seen it in Week 1 -->
-1. **[Y]** **Think about** a command that will perform the copying of the public key file from your local machine to the
+7. **[Y]** **Think about** a command that will perform the copying of the public key file from your local machine to the
   `.ssh` directory on your remote account with the appropriate name (HINT: you [used this command in Week 1's lab](https://ucsd-cse29.github.io/fa24/week1/index.html#making-an-edit)). Work with your group members if you need help!
 <details>
   <summary>Click here to see the answer</summary>
@@ -80,6 +80,7 @@ scp <path to your public SSH key> {user}@ieng6.ucsd.edu:~/.ssh/authorized_keys
 <br>
 <!-- - From your local computer, run `scp <path to your public SSH key> user@ieng6.ucsd.edu:~/.ssh/authorized_keys` (make sure to fill in your actual username) -->
 <!-- - Enter your password when prompted (this will be the last time you have to type it!) -->
+
 8. **[Y]**/**[I]** Try to log onto your remote account again, you shouldn’t be prompted for a
 password anymore. If you are, ask for help and carefully review the steps above
 with your group. To review:
