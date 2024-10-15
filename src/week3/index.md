@@ -193,7 +193,7 @@ Now we have an SSH key which can be used to authenticate to GitHub! In addition 
 
 Crucially, these will allow both cloning and pushing to the repository (as long as your account has access) from `ieng6`!
 
-#### 4.1 - `git` CLI commands
+#### 4.2 - `git` CLI commands
 
 So far you have been using the "Source Control" tab in your Github codespaces to commit and push your changes. Since we only have our terminal today, we will be learning how to use the `git` CLI to do the same thing.
 
