@@ -47,7 +47,7 @@ a cool and interesting way to avoid this while still staying secure using SSH ke
 
 We've labelled each step with whether it should run on **[Y]** our computer or **[i]** eng6. Make sure you follow the instructions carefully!
 
-1. **[Y]** In your local terminal (the one you opened in VSCode), run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
+1. **[Y]** In your local terminal, run `ssh-keygen`. This command will generate a pair of SSH keys for you, one public and one private.
 2. **[Y]** Keep pressing `<Enter>` until the program shows some text it calls the "randomart image".
     - Note the path where the public key is saved (underlined below). 
     - ![Image](../images/ssh_keygen.png)
