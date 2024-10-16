@@ -71,6 +71,10 @@ you can see what's coming.
     - <u>Aaron's Lecture:</u> 
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/7)
 
+- **Discussion Materials**
+  - **Wednesday:** [Code](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
+
 ### Week 2 – Number Representations, Sizes, and Signs
 
 - **Announcements**
@@ -116,11 +120,11 @@ you can see what's coming.
 
 - **Discussion Materials**
   - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion2-Arunan/blob/main/main.c) |
-                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/1) |
                   [GDB Quick Reference](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
 
   - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion-week2-yash) |
-                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01)
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/1)
 
 
 
