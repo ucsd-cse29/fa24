@@ -62,6 +62,10 @@ you can see what's coming.
   - [Arrays in C](https://diveintosystems.org/book/C2-C_depth/arrays.html)
 
 - **Lecture Materials**
+  - **Wednesday**
+    - [Repository](https://github.com/ucsd-cse29/fa24-09-w3w-pointers-and-casting)
+    - [Slides](https://github.com/ucsd-cse29/fa24-09-w3w-pointers-and-casting/blob/main/29-fa24-l9.pdf)
+
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-08-w3m-stack-and-memory)
     - <u>Joe's Lecture:</u>
