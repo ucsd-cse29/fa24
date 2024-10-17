@@ -113,3 +113,9 @@ able to visit your repository on Github and see the change!
 
     nothing to commit, working tree clean
    ```
+
+Check with the person sitting next to you to see if they got a similar result.
+Did you run into any errors? Try understanding and fixing them: maybe you made a
+typo in a command, or maybe something isn't set up correctly about your
+connection to Github. Make sure you can create and edit files, add and commit
+the changes, and push them to Github before moving on.
