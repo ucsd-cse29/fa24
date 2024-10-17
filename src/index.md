@@ -84,6 +84,9 @@ you can see what's coming.
   - **Wednesday:** [Code](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
 
+- **Resources**
+  - [GDB Tips and Tricks](https://docs.google.com/document/d/1wiNoKEqqhx1YIIr4JhbLWu-8-5llhm4y4CN3vIMSs4k)
+
 ### Week 2 – Number Representations, Sizes, and Signs
 
 - **Announcements**
