@@ -62,6 +62,9 @@ you can see what's coming.
   - [Arrays in C](https://diveintosystems.org/book/C2-C_depth/arrays.html)
 
 - **Lecture Materials**
+  - **Friday:**
+    - [Repository](https://github.com/ucsd-cse29/fa24-10-w3f-casting-and-hashing)
+    - [Slides](https://github.com/ucsd-cse29/fa24-10-w3f-casting-and-hashing/blob/main/29-fa24-l10.pdf)  
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-09-w3w-pointers-and-casting) 
     - <u>Joe's Lecture:</u>
