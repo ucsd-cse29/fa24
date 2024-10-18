@@ -55,11 +55,13 @@ you can see what's coming.
   - Make sure to go to your exam slot that you reserved on [PrairieTest](https://us.prairietest.com/)!
   - [PA2](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is available and is due Friday, October 25 at 10pm!
 
-- **Readings**
+- **Readings & Resources**
   - [Debugging with GDB](https://diveintosystems.org/book/C3-C_debug/gdb.html)
-  - [GDB Quick reference guide](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
   - [Pointers and Functions](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
   - [Arrays in C](https://diveintosystems.org/book/C2-C_depth/arrays.html)
+  - [GDB Quick reference guide](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
+  - [GDB Tips and Tricks](https://docs.google.com/document/d/1wiNoKEqqhx1YIIr4JhbLWu-8-5llhm4y4CN3vIMSs4k)
+  - [VIM Tips and Tricks](https://docs.google.com/document/d/1MnTBAfKlIcYQQfIxhw31aWTYdRUnSnQT4cHP3k_Iit0)
 
 - **Lecture Materials**
   - **Friday:**
@@ -87,9 +89,6 @@ you can see what's coming.
   - **Wednesday:** [Code](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
 
-- **Resources**
-  - [GDB Tips and Tricks](https://docs.google.com/document/d/1wiNoKEqqhx1YIIr4JhbLWu-8-5llhm4y4CN3vIMSs4k)
-  - [VIM Tips and Tricks](https://docs.google.com/document/d/1MnTBAfKlIcYQQfIxhw31aWTYdRUnSnQT4cHP3k_Iit0)
 
 ### Week 2 – Number Representations, Sizes, and Signs
 
