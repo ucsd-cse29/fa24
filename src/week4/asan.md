@@ -49,7 +49,7 @@ compiling and running this program again, with a special compile option to
 enable the sanitizer:
 
 ```
-$ gcc -g -fsanitize=address wrongarg.c -o wrongarg
+$ gcc -g -fsanitize=address wrongarg.c -o wrongarg.asan
 ```
 
 The `-fsanitize=address` part does extra work in the compiler to put special
@@ -59,7 +59,7 @@ turns on some debugging information like line numbers in stack traces.
 After compiling we can run the program like before:
 
 ```
-$ ./wrongarg onlyone
+$ ./wrongarg.asan onlyone
 [cs29fa24@ieng6-201]:pa2-hashing-and-passwords-jpolitz:458$ ./wrongarg onearg
 ASAN:SIGSEGV
 =================================================================
@@ -76,6 +76,13 @@ SUMMARY: AddressSanitizer: SEGV ??:0 __GI_strlen
 
 The key thing is it has a _stacktrace_, which specifically points to
 `wrongarg.c:3`, or line 3 of the file `wrongarg.c`.
+
+Why isn't ASan the default? Mainly because it makes programs significantly
+slower. On small test cases and inputs that's not a big deal, so it's great for
+debugging, or for deploying in an environment where speed isn't an issue. But
+if you're trying to hash as many passwords as you can in 10 seconds, it's best
+to not turn it on! So there's a good reason to have the option to compile two
+different executables, which we called `wrongarg` and `wrongarg.asan` above.
 
 
 
