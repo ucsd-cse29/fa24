@@ -88,6 +88,7 @@ you can see what's coming.
 - **Discussion Materials**
   - **Wednesday:** [Code](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
+  - **Friday:** [Code](https://github.com/ucsd-cse29/discussion3-yash)
 
 
 ### Week 2 – Number Representations, Sizes, and Signs
