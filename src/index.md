@@ -89,6 +89,7 @@ you can see what's coming.
 
 - **Resources**
   - [GDB Tips and Tricks](https://docs.google.com/document/d/1wiNoKEqqhx1YIIr4JhbLWu-8-5llhm4y4CN3vIMSs4k)
+  - [VIM Tips and Tricks](https://docs.google.com/document/d/1MnTBAfKlIcYQQfIxhw31aWTYdRUnSnQT4cHP3k_Iit0)
 
 ### Week 2 – Number Representations, Sizes, and Signs
 
