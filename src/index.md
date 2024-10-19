@@ -59,7 +59,7 @@ you can see what's coming.
   - [Debugging with GDB](https://diveintosystems.org/book/C3-C_debug/gdb.html)
   - [Pointers and Functions](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
   - [Arrays in C](https://diveintosystems.org/book/C2-C_depth/arrays.html)
-  - [GDB Quick reference guide](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
+  - [GDB Quick Reference Guide](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
   - [GDB Tips and Tricks](https://docs.google.com/document/d/1wiNoKEqqhx1YIIr4JhbLWu-8-5llhm4y4CN3vIMSs4k)
   - [VIM Tips and Tricks](https://docs.google.com/document/d/1MnTBAfKlIcYQQfIxhw31aWTYdRUnSnQT4cHP3k_Iit0)
 
@@ -92,9 +92,10 @@ you can see what's coming.
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/7)
 
 - **Discussion Materials**
+  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion3-yash)
   - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
-  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion3-yash)
+
 
 
 ### Week 2 – Number Representations, Sizes, and Signs
@@ -141,12 +142,12 @@ you can see what's coming.
 
 
 - **Discussion Materials**
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion2-Arunan/blob/main/main.c) |
-                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/1) |
-                  [GDB Quick Reference](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
-
   - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion-week2-yash) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/1)
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion2-Arunan/blob/main/main.c) |
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/1) |
+                  [GDB Quick Reference Guide](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
+
 
 
 
