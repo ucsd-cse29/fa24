@@ -66,7 +66,13 @@ you can see what's coming.
 - **Lecture Materials**
   - **Friday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-10-w3f-casting-and-hashing)
-    - [Slides](https://github.com/ucsd-cse29/fa24-10-w3f-casting-and-hashing/blob/main/29-fa24-l10.pdf)  
+    - <u>Joe's Lecture:</u>
+                  [Slides](https://github.com/ucsd-cse29/fa24-10-w3f-casting-and-hashing/blob/main/29-fa24-l10.pdf) | 
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/9)
+    - <u>Aaron's Lecture:</u> 
+                  [Slides](https://github.com/ucsd-cse29/fa24-10-w3f-casting-and-hashing/blob/main/29-fa24-l10.pdf) | 
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/9)
+
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-09-w3w-pointers-and-casting) 
     - <u>Joe's Lecture:</u>
@@ -86,9 +92,9 @@ you can see what's coming.
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/7)
 
 - **Discussion Materials**
-  - **Wednesday:** [Code](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
-  - **Friday:** [Code](https://github.com/ucsd-cse29/discussion3-yash)
+  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion3-yash)
 
 
 ### Week 2 – Number Representations, Sizes, and Signs
