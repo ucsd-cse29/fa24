@@ -92,7 +92,8 @@ you can see what's coming.
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/7)
 
 - **Discussion Materials**
-  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion3-yash)
+  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion3-yash) |
+                [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/3)
   - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
 
