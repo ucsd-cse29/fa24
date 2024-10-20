@@ -1,5 +1,7 @@
 # Working with multiple C files
 
+<!-- ADD INTRO BLURB HERE?? -->
+
 While on your `ieng6` account within your PA2 repo directory perform the following steps:
 
 1. Create a new file called `pwcrack.h` with the following content:
