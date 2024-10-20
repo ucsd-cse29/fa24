@@ -28,7 +28,7 @@ When I provided a single argument, the command-line argument at index `2` is
 _invalid_ as an address (it happens to be `0`, though other values would give
 the same error), so the program ended with a _segmentation fault_, which is a
 fancy term for “the program tried to access memory it shouldn't and was
-stopped by the operating systems”.
+stopped by the operating system”.
 
 This is pretty different from an error like `ArrayIndexOutOfBounds` in a
 language like `Java`, which gives information like a stack trace and the value
