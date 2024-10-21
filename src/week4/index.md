@@ -1,6 +1,6 @@
 # Week 4 – Compiling and “Building”
 
-**This is a DRAFT and may change before lab on Tuesday!**
+<!-- **This is a DRAFT and may change before lab on Tuesday!** -->
 
 ## Lab Goals
 

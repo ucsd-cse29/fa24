@@ -9,5 +9,5 @@
 - [Week 3 Lab](./week3/index.md)
 - [Week 4 Lab](./week4/index.md)
   - [Pushing from `ieng6` to Github](./week4/push-pa2-code.md)
-  - [Multi-file C Programs & Makefiles](./week4/c-multifile-make.md)
   - [ASan & GDB](./week4/asan.md)
+  - [Multi-file C Programs & Makefiles](./week4/c-multifile-make.md)
