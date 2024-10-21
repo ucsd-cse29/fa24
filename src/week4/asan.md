@@ -1,4 +1,4 @@
-# AddressSanitizer for Memory Errors
+# Debugging Memory Errors
 
 On `ieng6`, put this program in a file called `wrongarg.c`:
 
@@ -77,12 +77,15 @@ SUMMARY: AddressSanitizer: SEGV ??:0 __GI_strlen
 The key thing is it has a _stacktrace_, which specifically points to
 `wrongarg.c:3`, or line 3 of the file `wrongarg.c`.
 
-Why isn't ASan the default? Mainly because it makes programs significantly
+Q: Why isn't ASan the default? 
+A: Mainly because it makes programs significantly
 slower. On small test cases and inputs that's not a big deal, so it's great for
 debugging, or for deploying in an environment where speed isn't an issue. But
 if you're trying to hash as many passwords as you can in 10 seconds, it's best
 to not turn it on! So there's a good reason to have the option to compile two
 different executables, which we called `wrongarg` and `wrongarg.asan` above.
 
+## GDB
+Another tool that can help us debug memory errors is one we have been using a little bit already, `gdb`. `gdb` is a command-line debugger that allows us to step through our program line by line and inspect the values of variables at each step. It can also give us backtraces through our program to show us where the error may have occurred.
 
 
