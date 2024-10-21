@@ -6,7 +6,7 @@ Finally, we will introduce a convenient way to compile our programs using `Makef
 
 ## Testing with `assert`
 
-While on your `ieng6` account within your PA2 repo directory perform the following steps:
+**Task:** While on your `ieng6` account within your PA2 repo directory perform the following steps:
 
 <!-- 1. Create a new file called `pwcrack.h` with the following content:
     ```
@@ -76,7 +76,6 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
     int main(int argc, char **argv) {
 
         // UNIT TESTING SECTION
-
         int test = 0; // Set this variable to 1 to run unit tests instead of the entire program
         if (test) {
             assert(hex_to_byte('a', '2') == 162);
@@ -86,6 +85,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
             return 0;
         }
 
+        // MAIN PROGRAM SECTION
         if (argc < 2) {
             printf("Error: not enough arguments provided!\n");
             printf("Usage: %s <byte 1 in hex> <byte 2 in hex> ...\n", argv[0]);
@@ -153,25 +153,23 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
 
 `make` is a utility for building C programs. A `Makefile` is a file that contains a set of rules that tell the `make` utility what commands it should run for that rule. We will be creating a `Makefile` with rules to compile our C programs with the correct flags and dependencies.
 
+**Task:** Perform the following steps to create a `Makefile` for your PA2 project:
 1. In your PA2 repository, create a new file named `Makefile` and add the following content to it:
     <!-- MAYBE WE HAVE THE STUDENTS ADD THE all RULE THEMSELVES AND ASK A QUESTION ABOUT IT AT THE END? -->
     ```
     all: main
     
     main: pwcrack.c
-        gcc pwcrack.c -g -o pwcrack.out
+        gcc -std=c99 -fsanitize=address -g pwcrack.c -o pwcrack.out
 
     clean:
-            rm -rf *.out
+        rm -rf *.out
     ```
     **IMPORTANT NOTE:** The indentation in the `Makefile` is done with a `TAB` character, not spaces. Make sure to use a `TAB` character when indenting the commands in the `Makefile`.
 
     **NOTE:** If your file names are different than what is given above at this point, change the rules to match the file names you are using.
 
-    <!-- ***EXPLANATION FOR MAKEFILE HERE*** -->
-    <!-- ADD EXPLANATION FOR MAKEFILE HERE -->
-
-2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -o pwcrack.out main.c pwcrack.c -g`. You should see the `pwcrack.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
+2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -std=c99 -fsanitize=address -g pwcrack.c -o pwcrack.out` without needing to type or remember that command! You should see the `pwcrack.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
 
 3. Now run `make clean`. This will remove all the `.out` executable files in your directory.
 4. Next, run simply `make`. **Write in your notes:** What do you see when you run `make` without any arguments? Why do you think this is the case?

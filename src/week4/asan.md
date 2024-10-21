@@ -1,6 +1,6 @@
 # Debugging Memory Errors
 
-On `ieng6`, put this program in a file called `wrongarg.c`:
+1. On `ieng6`, put this program in a file called `wrongarg.c`:
 
 ```
 #include <stdio.h>
@@ -11,14 +11,14 @@ int main(int argc, char** argv) {
 }
 ```
 
-Then run it, mimicking a situation where a programmer accidentally gives the wrong number of arguments (here just one when 2 are expected):
+2. Then run the following command to compile the program:
 
 ```
 $ gcc -std=c99 wrongarg.c -o wrongarg 
 ```
-Notice the new command-line flag introduced here! We use the `-std=c99` flag to tell `gcc` what version of C we want to compile with. This is necessary since the default version on `ieng6` would fail to compile this program sue to us declaring `i` within the `for` loop.
+Notice the new command-line flag introduced here! We use the `-std=c99` flag to tell `gcc` what version of C we want to compile with. This is necessary since the default version on `ieng6` would fail to compile this program due to us declaring `i` within the `for` loop.
 
-What output do you get? Here's what I got:
+3. Next, we will run the program with a single command-line argument. What output do you get? Here's what I got:
 
 ```
 $ ./wrongarg onlyone
@@ -27,7 +27,7 @@ onlyone
 Segmentation fault (core dumped)
 ```
 
-When I provided a single argument, the command-line argument at index `2` is _invalid_ as an address (it happens to be `0`, though other values would givethe same error), so the program ended with a _segmentation fault_, which is a fancy term for “the program tried to access memory it shouldn't and was stopped by the operating system”.
+When we provided a single argument, the command-line argument at index `2` is _invalid_ as an address (it happens to be `0`, though other values would givethe same error), so the program ended with a _segmentation fault_, which is a fancy term for “the program tried to access memory it shouldn't and was stopped by the operating system”. This is because our `for` loop iterates until `i <= argc`, which means it will try to access `argv[argc]`, which is one past the number of arguments passed in.
 
 This is pretty different from an error like `ArrayIndexOutOfBounds` in a language like `Java`, which gives information like a stack trace and the value of the incorrect index. Because of C's focus on doing only what is necessary and giving low-level access to memory, this kind of mistake is permitted, for better or worse. Aside from causing numerous security vulnerabilities, these _memory errors_ are difficult to debug.
 
@@ -35,7 +35,9 @@ Thankfully, there are a few tools that help debug invalid memory accesses.
 
 ## AddressSanitizer
 
-[AddressSanitizer (or ASan)](https://github.com/google/sanitizers/wiki/addresssanitizer) is a tool, built into `gcc` and other C compilers these days, that turns invalid memory accesses (the kind that give segfaults) into descriptive errors. Let's try compiling and running this program again, with a special compile option to enable the sanitizer:
+[AddressSanitizer (or ASan)](https://github.com/google/sanitizers/wiki/addresssanitizer) is a tool, built into `gcc` and other C compilers these days, that turns invalid memory accesses (the kind that give segfaults) into descriptive errors. 
+
+1. Let's try compiling and running this program again, with a special compile option to enable the sanitizer:
 
 ```
 $ gcc -std=c99 -g -fsanitize=address wrongarg.c -o wrongarg.asan
@@ -43,7 +45,7 @@ $ gcc -std=c99 -g -fsanitize=address wrongarg.c -o wrongarg.asan
 
 The `-fsanitize=address` part does extra work in the compiler to put special checks in to look for memory errors. The `-g` option we saw in lecture turns on some debugging information like line numbers in stack traces.
   
-After compiling we can run the program like before:
+2. After compiling we can run the program like before:
 
 ```
 $ ./wrongarg.asan onlyone
@@ -94,6 +96,6 @@ If done correctly, `gdb` should print out the `printf()` line in the program. Th
 * The `info` command can tell us some useful information at this point in the program. `info args` tells us what arguments were passed into this function, `info locals` tells the values of the local variables at this point of the execution.
 * The `p` command prints the value of a variable/address. `p` can take an extra arguement to specify how the output should be formatted. (e.g. `p/x var1` prints the value of `var1` in hex, `p/t var1` prints in binary).
 
-**TASK:** Run `info args` in the gdb terminal, what do you see?
+**Task:** Run `info args` in the gdb terminal, what do you see?
 
 **In your notes:** Print the value of the variable that `wrongarg.c` is attempting to access. Add the command you used to your notes.
