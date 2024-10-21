@@ -143,20 +143,17 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 6. **Commit and push your changes to Github.** Make sure to include the new files you created in your commit.
 
 # Makefiles
-Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information (and we will be learning an additional one in the next section of this lab!). Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `Makefiles` come in.
+Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information, `-Wall` for extra compiler warnings, and `-fsanitize` for memory errors. Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `make` comes in.
 
-A `Makefile` is a file that contains a set of rules that tell the `make` utility what commands it should run for that rule. We will be creating a `Makefile` with rules to compile our C programs with the correct flags and dependencies.
+`make` is a utility for building C programs. A `Makefile` is a file that contains a set of rules that tell the `make` utility what commands it should run for that rule. We will be creating a `Makefile` with rules to compile our C programs with the correct flags and dependencies.
 
 1. In your PA2 repository, create a new file named `Makefile` and add the following content to it:
     <!-- MAYBE WE HAVE THE STUDENTS ADD THE all RULE THEMSELVES AND ASK A QUESTION ABOUT IT AT THE END? -->
     ```
-    all: main test
-
-    main: main.c pwcrack.c
-        gcc main.c pwcrack.c -g -o main.out
-
-    test: test.c pwcrack.c
-        gcc test.c pwcrack.c -g -o test.out
+    all: main
+    
+    main: pwcrack.c
+        gcc pwcrack.c -g -o pwcrack.out
 
     clean:
             rm -rf *.out
@@ -168,10 +165,7 @@ A `Makefile` is a file that contains a set of rules that tell the `make` utility
     ***EXPLANATION FOR MAKEFILE HERE***
     <!-- ADD EXPLANATION FOR MAKEFILE HERE -->
 
-2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -o main.out main.c pwcrack.c -g`. You should see the `main.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
-    <br>
-
-    Similarly, running `make test` will compile the `test.c` file and the `pwcrack.c` file into an executable called `test.out`.
+2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -o pwcrack.out main.c pwcrack.c -g`. You should see the `pwcrack.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
 
 3. Now run `make clean`. This will remove all the `.out` executable files in your directory.
 4. Next, run simply `make`. **Write in your notes:** What do you see when you run `make` without any arguments? Why do you think this is the case?
