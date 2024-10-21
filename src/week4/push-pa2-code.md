@@ -1,4 +1,4 @@
-# Pushing PA2 Code Github from `ieng6`
+# Pushing PA2 Code to Github from `ieng6`
 
 Make sure your `ieng6` account has [Github access](https://ucsd-cse29.github.io/fa24/week3/index.html#42---git-cli-commands).
 

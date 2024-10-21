@@ -10,4 +10,4 @@
 - [Week 4 Lab](./week4/index.md)
   - [Pushing from `ieng6` to Github](./week4/push-pa2-code.md)
   - [ASan & GDB](./week4/asan.md)
-  - [Multi-file C Programs & Makefiles](./week4/c-multifile-make.md)
+  - [Testing with `assert` + Makefiles](./week4/c-multifile-make.md)

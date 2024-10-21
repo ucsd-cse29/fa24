@@ -66,7 +66,10 @@ SUMMARY: AddressSanitizer: SEGV ??:0 __GI_strlen
 
 The key thing is it has a _stacktrace_, (a list of function calls that led to the error) which specifically points to `wrongarg.c:4`, or line 4 of the file `wrongarg.c`.
 
+**In your notes:** Try passing in more than one argument to the program. What happens? Why do you think this is the case?
+
 **Q**: Why isn't ASan the default? 
+
 **A**: Mainly because it makes programs significantly slower. On small test cases and inputs that's not a big deal, so it's great for debugging, or for deploying in an environment where speed isn't an issue. But if you're trying to hash as many passwords as you can in 10 seconds, it's best to not turn it on! 
 So there's a good reason to have the option to compile two different executables, which we called `wrongarg` and `wrongarg.asan` above.
 
@@ -98,4 +101,4 @@ If done correctly, `gdb` should print out the `printf()` line in the program. Th
 
 **Task:** Run `info args` in the gdb terminal, what do you see?
 
-**In your notes:** Print the value of the variable that `wrongarg.c` is attempting to access. Add the command you used to your notes.
+**In your notes:** Print the value of the variable that `wrongarg.c` is attempting to access. Add the command you used to your notes along with what `gdb` printed out.

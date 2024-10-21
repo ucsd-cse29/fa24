@@ -54,6 +54,9 @@ Finally, we will introduce a convenient way to compile our programs using `Makef
     }
     ```
 
+    <!-- **In your notes:** Mention what the function should return based on the PA2 spec and why? -->
+
+
 <!-- 3. You may have noticed that we did not include a `main()` function in either of these files. A `main()` function is necessary to execute a program, so a logical next question may be, "Where will my program execution start from?" We'll include the `main()` function in a seperate file, to isolate it away from our other functions. 
 
     We will be creating two different files with `main()` functions that will serve different purposes: 
@@ -148,6 +151,8 @@ Finally, we will introduce a convenient way to compile our programs using `Makef
 
 3. **Commit and push your changes to Github.** Make sure to include the new files you created in your commit.
 
+**In your notes:** Briefly explain what you had the `hex_to_byte` function return and why?
+
 ## Makefiles
 Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information, `-std=c99` to use the correct C version when compiling on `ieng6` and `-fsanitize` for memory errors. Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `make` comes in.
 
@@ -172,6 +177,8 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
 2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -std=c99 -fsanitize=address -g pwcrack.c -o pwcrack.out` without needing to type or remember that command! You should see the `pwcrack.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
 
 3. Now run `make clean`. This will remove all the `.out` executable files in your directory.
-4. Next, run simply `make`. **Write in your notes:** What do you see when you run `make` without any arguments? Why do you think this is the case?
+4. Next, run simply `make`. 
+
+**In your notes:** What do you see when you run `make` without any arguments? Why do you think this is the case?
 
 We now have a clean and simple way to compile our C programs with the correct flags and dependencies using `make`. This will be very useful as we continue to work on our PA2 project and need to compile our programs multiple times.
