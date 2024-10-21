@@ -60,7 +60,6 @@ After compiling we can run the program like before:
 
 ```
 $ ./wrongarg.asan onlyone
-[cs29fa24@ieng6-201]:pa2-hashing-and-passwords-jpolitz:458$ ./wrongarg onearg
 ASAN:SIGSEGV
 =================================================================
 ==14309== ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x7f3102d6fe71 sp 0x7fff24fa5a08 bp 0x7fff24fa5a50 T0)
