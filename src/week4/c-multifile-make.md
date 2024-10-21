@@ -141,7 +141,7 @@ A `Makefile` is a file that contains a set of rules that tell the `make` utility
         gcc main.c pwcrack.c -g -o main.out
 
     test: test.c pwcrack.c
-            gcc test.c pwcrack.c -g -o test.out
+        gcc test.c pwcrack.c -g -o test.out
 
     clean:
             rm -rf *.out
