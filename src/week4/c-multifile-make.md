@@ -1,4 +1,4 @@
-# Working with multiple C files
+# Working across multiple C files
 
 <!-- ADD INTRO BLURB HERE?? -->
 
@@ -101,7 +101,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
     This `test.c` file can now be used to test each individual function you write with `assert()` statements without the need to run the program as a whole. This can be very useful for debugging and ensuring that each function is working as expected before moving on to the next one.
 
-5. Since we have split up the functions definition and the `main()` function into separate files, we will need to tell `gcc` to compile all the files necessary to get our executable. To do this, run the following command:
+5. Since we have split up the function's definition and the `main()` function into separate files, we will need to tell `gcc` to compile all the files necessary to get our executable. To do this, run the following command:
     ```
     gcc -o test.out test.c pwcrack.c
     ```
@@ -125,6 +125,7 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
 A `Makefile` is a file that contains a set of rules that tell the `make` utility what commands it should run for that rule. We will be creating a `Makefile` with rules to compile our C programs with the correct flags and dependencies.
 
 1. In your PA2 repository, create a new file named `Makefile` and add the following content to it:
+    <!-- MAYBE WE HAVE THE STUDENTS ADD THE all RULE THEMSELVES AND ASK A QUESTION ABOUT IT AT THE END? -->
     ```
     all: main test
 
