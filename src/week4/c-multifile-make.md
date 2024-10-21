@@ -13,9 +13,11 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
     #endif
     ```
-    This file is known as a C header file (hence the `.h` extension). It contains function declarations and other definitions that can be shared across multiple C files. The functions declared in this file will be defined in its corresponding `.c` file (`pwcrack.c` in this case). As you continue to work on your PA, you can (and should) add the function declarations for the other functions you implement to this file.
+    This file is known as a C header file (hence the `.h` extension). Similar to an interface in Java, the header contains function signatures and other definitions that can be shared across multiple C files. Any function **not** declared in the `.h` file cannot be accessed by other source files.The functions declared in the header will be defined in its corresponding `.c` file (`pwcrack.c` in this case). As you continue to work on your PA, you can (and should) add the function declarations for the other functions you implement to this file.
 
-    <!-- ADD EXPLANATION FOR HEADER FILE HERE -->
+    **NOTE:** Any new functions or changes to the function signature in the `.c` file **must** be updated in the corresponding `.h` file.
+
+
 
 2. Open your `pwcrack.c` file that we created/renamed in the previous portion of the lab. We are providing an incomplete implementation of the `hex_to_byte` function. Add the following function to your C file and complete it by determining what the function should return. To see the function's intended behavior, refer to the PA2 spec found [here](https://github.com/ucsd-cse29/pa2-hashing-and-passwords?tab=readme-ov-file#functions---milestone-1).
 **NOTE:** If you have already implemented your own `hex_to_byte` function, you can skip this step.
@@ -79,7 +81,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
             }
     }
     ```
-    This file contains the `main()` function that will call the `hex_to_byte` function on the command-line arguments passed to the program (notice the use of `argv`). The `#include "pwcrack.h"` line includes the header file we created earlier. This allows the `main()` function to know about the `hex_to_byte` function we defined in `pwcrack.c`.
+    This file contains the `main()` function that will call the `hex_to_byte` function on the command-line arguments passed to the program (notice the use of `argv`). The `#include "pwcrack.h"` line includes the header file we created earlier. This allows the `main()` function to know about the `hex_to_byte` function we defined in `pwcrack.c`. Notice that the C libraries implemented use the `<>` around the filename, while the custom header file uses `""`. 
 
     <br>
 
