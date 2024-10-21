@@ -4,7 +4,7 @@
 
 While on your `ieng6` account within your PA2 repo directory perform the following steps:
 
-1. Create a new file called `pwcrack.h` with the following content:
+<!-- 1. Create a new file called `pwcrack.h` with the following content:
     ```
     #ifndef PWCRACK_H
     #define PWCRACK_H
@@ -15,12 +15,13 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
     ```
     This file is known as a C header file (hence the `.h` extension). Similar to an interface in Java, the header contains function signatures and other definitions that can be shared across multiple C files. Any function **not** declared in the `.h` file cannot be accessed by other source files.The functions declared in the header will be defined in its corresponding `.c` file (`pwcrack.c` in this case). As you continue to work on your PA, you can (and should) add the function declarations for the other functions you implement to this file.
 
-    **NOTE:** Any new functions or changes to the function signature in the `.c` file **must** be updated in the corresponding `.h` file.
+    **NOTE:** Any new functions or changes to the function signature in the `.c` file **must** be updated in the corresponding `.h` file. -->
 
 
 
-2. Open your `pwcrack.c` file that we created/renamed in the previous portion of the lab. We are providing an incomplete implementation of the `hex_to_byte` function. Add the following function to your C file and complete it by determining what the function should return. To see the function's intended behavior, refer to the PA2 spec found [here](https://github.com/ucsd-cse29/pa2-hashing-and-passwords?tab=readme-ov-file#functions---milestone-1).
-**NOTE:** If you have already implemented your own `hex_to_byte` function, you can skip this step.
+1. Open your `pwcrack.c` file that we created/renamed in the previous portion of the lab. We are providing an incomplete implementation of the `hex_to_byte` function. Add the following function to your C file and complete it by determining what the function should return. To see the function's intended behavior, refer to the PA2 spec found [here](https://github.com/ucsd-cse29/pa2-hashing-and-passwords?tab=readme-ov-file#functions---milestone-1).
+
+    **NOTE:** If you have already implemented your own `hex_to_byte` function, you can skip this step.
     ```
     #include <stdlib.h>
     #include <stdio.h>
@@ -70,16 +71,29 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
 
     int main(int argc, char **argv) {
-            if (argc < 2) {
-                printf("Error: not enough arguments provided!\n");
-                printf("Usage: %s <byte 1 in hex> <byte 2 in hex> ...\n", argv[0]);
-                printf("Example: %s a2 b7 99\n", argv[0]);
-                return 1;
-            }
-            int i = 1;
-            for (; i < argc; i++) {
-                printf("Value of hex byte %s is %d\n", argv[i], hex_to_byte(argv[i][0], argv[i][1]));
-            }
+
+        // UNIT TESTING SECTION
+
+        int test = 0; // Set this variable to 1 to run unit tests instead of the entire program
+        if (test) {
+            assert(hex_to_byte('a', '2') == 162);
+            // ADD MORE TESTS HERE. MAKE SURE TO ADD TESTS THAT FAIL AS WELL TO SEE WHAT HAPPENS!
+            
+            printf("ALL TESTS PASSED!\n");
+            return 0;
+        }
+
+        if (argc < 2) {
+            printf("Error: not enough arguments provided!\n");
+            printf("Usage: %s <byte 1 in hex> <byte 2 in hex> ...\n", argv[0]);
+            printf("Example: %s a2 b7 99\n", argv[0]);
+            return 1;
+        }
+
+        int i = 1;
+        for (; i < argc; i++) {
+            printf("Value of hex byte %s is %d\n", argv[i], hex_to_byte(argv[i][0], argv[i][1]));
+        }
     }
     ```
     This file contains the `main()` function that will call the `hex_to_byte` function on the command-line arguments passed to the program (notice the use of `argv`). The `#include "pwcrack.h"` line includes the header file we created earlier. This allows the `main()` function to know about the `hex_to_byte` function we defined in `pwcrack.c`. Notice that the C libraries implemented use the `<>` around the filename, while the custom header file uses `""`. 
