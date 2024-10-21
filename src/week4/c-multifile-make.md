@@ -60,6 +60,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
     <br>
 
     Create a new file called `main.c` and add the following content:
+    
     **IMPORTANT NOTE:** If you have already defined a `main()` function somewhere in your code, move your function to this new file. You may keep the portion of your `main()` function that you have written and simply add the `#include "pwcrack.h"` line to the top of the file and the for loop provided in the code below for the purposes of this lab!
     ```
     #include <stdlib.h>
@@ -147,7 +148,9 @@ A `Makefile` is a file that contains a set of rules that tell the `make` utility
             rm -rf *.out
     ```
     **IMPORTANT NOTE:** The indentation in the `Makefile` is done with a `TAB` character, not spaces. Make sure to use a `TAB` character when indenting the commands in the `Makefile`.
+
     **NOTE:** If your file names are different than what is given above at this point, change the rules to match the file names you are using.
+
     ***EXPLANATION FOR MAKEFILE HERE***
     <!-- ADD EXPLANATION FOR MAKEFILE HERE -->
 
