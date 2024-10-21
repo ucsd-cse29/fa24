@@ -4,8 +4,8 @@
 
 ## Lab Goals
 
-1. Set up SSH keys for connecting `ieng6` to Github [From Week 3 Lab](https://ucsd-cse29.github.io/fa24/week3/index.html#42---git-cli-commands)
+1. Set up SSH keys for connecting `ieng6` to Github [From Week 3 Lab](https://ucsd-cse29.github.io/fa24/week3/index.html#41---setting-up-ssh-keys-for-github)
 2. [Practice pushing PA2 code to Github from the command line](./push-pa2-code.html)
+3. [Learn to split a C program across multiple files + Makefiles](./c-multifile-make.html)
 4. [Practice with some command-line options for `gcc`](./asan.html)
-3. [Learn to split a C program across multiple files]()
 
