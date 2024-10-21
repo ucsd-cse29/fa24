@@ -1,6 +1,10 @@
-# Working across multiple C files
-
+# Testing with `assert` and Makefiles
 <!-- ADD INTRO BLURB HERE?? -->
+In this section, we will be working on one of the functions that is part of PA2 and provide a cool way to incorporate unit testing into your `main()` functions without needing to change/comment lots of lines of code!
+
+Finally, we will introduce a convenient way to compile our programs using `Makefiles` and the `make` utility!
+
+## Testing with `assert`
 
 While on your `ieng6` account within your PA2 repo directory perform the following steps:
 
@@ -144,7 +148,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
 3. **Commit and push your changes to Github.** Make sure to include the new files you created in your commit.
 
-# Makefiles
+## Makefiles
 Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information, `-Wall` for extra compiler warnings, and `-fsanitize` for memory errors. Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `make` comes in.
 
 `make` is a utility for building C programs. A `Makefile` is a file that contains a set of rules that tell the `make` utility what commands it should run for that rule. We will be creating a `Makefile` with rules to compile our C programs with the correct flags and dependencies.
@@ -164,7 +168,7 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
 
     **NOTE:** If your file names are different than what is given above at this point, change the rules to match the file names you are using.
 
-    ***EXPLANATION FOR MAKEFILE HERE***
+    <!-- ***EXPLANATION FOR MAKEFILE HERE*** -->
     <!-- ADD EXPLANATION FOR MAKEFILE HERE -->
 
 2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -o pwcrack.out main.c pwcrack.c -g`. You should see the `pwcrack.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
