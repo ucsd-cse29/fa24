@@ -13,11 +13,11 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
     #endif
     ```
-    This file is known as a C header file (hence the `.h` extension). It contains function declarations and other definitions that can be shared across multiple C files. The functions declared in this file will be defined in another `.c` file (`pwcrack.c` in case). As you continue to work on your PA, you can (and should) add the function declarations for the other functions you implement to this file.
+    This file is known as a C header file (hence the `.h` extension). It contains function declarations and other definitions that can be shared across multiple C files. The functions declared in this file will be defined in its corresponding `.c` file (`pwcrack.c` in this case). As you continue to work on your PA, you can (and should) add the function declarations for the other functions you implement to this file.
 
     <!-- ADD EXPLANATION FOR HEADER FILE HERE -->
 
-2. Open your `pwcrack.c` file that we created/renamed in the previous portion of the lab. We are providing an incomplete implementation of the `hex_to_byte` function. Add the following function to your C file and complete it by determining what the function should return. To see what the functions intended behavior is refer to the [PA2 spec found here](https://github.com/ucsd-cse29/pa2-hashing-and-passwords?tab=readme-ov-file#functions---milestone-1).
+2. Open your `pwcrack.c` file that we created/renamed in the previous portion of the lab. We are providing an incomplete implementation of the `hex_to_byte` function. Add the following function to your C file and complete it by determining what the function should return. To see the function's intended behavior, refer to the PA2 spec found [here](https://github.com/ucsd-cse29/pa2-hashing-and-passwords?tab=readme-ov-file#functions---milestone-1).
 **NOTE:** If you have already implemented your own `hex_to_byte` function, you can skip this step.
     ```
     #include <stdlib.h>
@@ -30,26 +30,31 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
         // Convert h1 to a decimal value
         if (h1 >= '0' && h1 <= '9') {
-            x += h1 - 48;
+            x += h1 - '0';
         }
         else if (h1 >= 'a' && h1 <= 'f') {
-            x += h1 - 87;
+            x += h1 - 'a' + 10;
         }
 
         // Convert h2 to a decimal value
         if (h2 >= '0' && h2 <= '9') {
-            y += h2 - 48;
+            y += h2 - '0';
         }
         else if (h2 >= 'a' && h2 <= 'f') {
-            y += h2 - 87;
+            y += h2 - 'a' + 10;
         }
         // TODO: Determine what the function should return
     }
     ```
 
-3. You may have noticed that we did not include a `main()` function in either of these files. So a logical next question may be, "Where will my program execution start from?" The answer is that the `main()` function will be in a separate file. 
+3. You may have noticed that we did not include a `main()` function in either of these files. A `main()` function is necessary to execute a program, so a logical next question may be, "Where will my program execution start from?" We'll include the `main()` function in a seperate file, to isolate it away from our other functions. 
 
-    Additionally, we will be creating two different files with `main()` functions that will server different purposes. One to be used for unit testing the various functions you will be implementing for PA2 using `assert()` statements and the other to be used for running your password cracker as a whole with the command-line argument(s) it will need to take. In this lab, we will be demonstrating the use of command-line arguments to only test the `hex_to_byte` function but you will extend this to work for your complete password cracker implementation.
+    We will be creating two different files with `main()` functions that will serve different purposes: 
+    - `main.c` will be used for running your password cracker as a whole with the command-line argument(s) it will need to take. 
+    - `test.c` will use `assert()` statements to unit test the various functions you will be implementing for PA2. 
+
+
+    In this lab, we will be demonstrating the use of command-line arguments to only test the `hex_to_byte` function but you will extend this to work for your complete password cracker implementation.
     <br>
 
     Create a new file called `main.c` and add the following content:

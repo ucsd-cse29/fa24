@@ -9,8 +9,7 @@ int main(int argc, char** argv) {
 }
 ```
 
-Then run it, mimicking a situation where a programmer accidentally gives the
-wrong number of arguments (here just one when 2 are expected):
+Then run it, mimicking a situation where a programmer accidentally gives the wrong number of arguments (here just one when 2 are expected):
 
 ```
 $ gcc wrongarg.c -o wrongarg
@@ -53,9 +52,9 @@ $ gcc -g -fsanitize=address wrongarg.c -o wrongarg.asan
 ```
 
 The `-fsanitize=address` part does extra work in the compiler to put special
-checks in to look for memory errors. The `-g` option we saw in lecture, and it
+checks in to look for memory errors. The `-g` option we saw in lecture
 turns on some debugging information like line numbers in stack traces.
-
+  
 After compiling we can run the program like before:
 
 ```
@@ -73,18 +72,39 @@ SUMMARY: AddressSanitizer: SEGV ??:0 __GI_strlen
 ==14309== ABORTING
 ```
 
-The key thing is it has a _stacktrace_, which specifically points to
+The key thing is it has a _stacktrace_, (a list of function calls that led to the error) which specifically points to
 `wrongarg.c:3`, or line 3 of the file `wrongarg.c`.
 
-Q: Why isn't ASan the default? 
-A: Mainly because it makes programs significantly
-slower. On small test cases and inputs that's not a big deal, so it's great for
-debugging, or for deploying in an environment where speed isn't an issue. But
-if you're trying to hash as many passwords as you can in 10 seconds, it's best
-to not turn it on! So there's a good reason to have the option to compile two
-different executables, which we called `wrongarg` and `wrongarg.asan` above.
+**Q**: Why isn't ASan the default? 
+**A**: Mainly because it makes programs significantly slower. On small test cases and inputs that's not a big deal, so it's great for debugging, or for deploying in an environment where speed isn't an issue. But if you're trying to hash as many passwords as you can in 10 seconds, it's best to not turn it on! 
+So there's a good reason to have the option to compile two different executables, which we called `wrongarg` and `wrongarg.asan` above.
 
 ## GDB
-Another tool that can help us debug memory errors is one we have been using a little bit already, `gdb`. `gdb` is a command-line debugger that allows us to step through our program line by line and inspect the values of variables at each step. It can also give us backtraces through our program to show us where the error may have occurred.
+Another tool that can help us debug memory errors is one we have been using a little bit already: `gdb`. 
+`gdb` is a command-line debugger that allows us to step through our program line by line and inspect the values of variables at each step. It can also give us backtraces through our program to show us where the error may have occurred.
 
+If we compiled our source files with the `-g` command, we can run gdb with our debugging program with:
+``` 
+$ gdb wrongarg.asan
+```
 
+Before running the program, set a **breakpoint** in the code before the program reaches its error. Here, the error is on line 3, so type in your gdb terminal:
+``` 
+(gdb) break main.c:3
+```
+
+After setting the breakpoint, run the program from gdb with the same arguments we used prior
+``` 
+(gdb) run onlyone
+```
+
+If done correctly, `gdb` should print out the `printf()` line in the program. The breakpoint paused the execution before this line was executed.
+
+* The `bt` command prints out the same stacktrace seen when running ASan.
+
+* The `info` command can tell us some useful information at this point in the program. `info args` tells us what arguments were passed into this function, `info locals` tells the values of the local variables at this point of the execution.
+* The `p` command prints the value of a variable/address. `p` can take an extra arguement to specify how the output should be formatted. (e.g. `p/x var1` prints the value of `var1` in hex, `p/t var1` prints in binary).
+
+**TASK:** Run `info args` in the gdb terminal, what do you see?
+
+**In your notes:** Print the value of the variable that wrongarg.c is attempting to access. Add the command you used to your notes.
