@@ -47,7 +47,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
     }
     ```
 
-3. You may have noticed that we did not include a `main()` function in either of these files. So you may be asking, "Where will my program execution start from?" The answer is that the `main()` function will be in a separate file. 
+3. You may have noticed that we did not include a `main()` function in either of these files. So a logical next question may be, "Where will my program execution start from?" The answer is that the `main()` function will be in a separate file. 
 
     Additionally, we will be creating two different files with `main()` functions that will server different purposes. One to be used for unit testing the various functions you will be implementing for PA2 using `assert()` statements and the other to be used for running your password cracker as a whole with the command-line argument(s) it will need to take. In this lab, we will be demonstrating the use of command-line arguments to only test the `hex_to_byte` function but you will extend this to work for your complete password cracker implementation.
     <br>
@@ -120,3 +120,34 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 6. **Commit and push your changes to Github.** Make sure to include the new files you created in your commit.
 
 # Makefiles
+Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information (and we will be learning an additional one in the next section of this lab!). Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `Makefiles` come in.
+
+A `Makefile` is a file that contains a set of rules that tell the `make` utility what commands it should run for that rule. We will be creating a `Makefile` with rules to compile our C programs with the correct flags and dependencies.
+
+1. In your PA2 repository, create a new file named `Makefile` and add the following content to it:
+    ```
+    all: main test
+
+    main: main.c pwcrack.c
+        gcc main.c pwcrack.c -g -o main.out
+
+    test: test.c pwcrack.c
+            gcc test.c pwcrack.c -g -o test.out
+
+    clean:
+            rm -rf *.out
+    ```
+    **IMPORTANT NOTE:** The indentation in the `Makefile` is done with a `TAB` character, not spaces. Make sure to use a `TAB` character when indenting the commands in the `Makefile`.
+    **NOTE:** If your file names are different than what is given above at this point, change the rules to match the file names you are using.
+    ***EXPLANATION FOR MAKEFILE HERE***
+    <!-- ADD EXPLANATION FOR MAKEFILE HERE -->
+
+2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -o main.out main.c pwcrack.c -g`. You should see the `main.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
+    <br>
+
+    Similarly, running `make test` will compile the `test.c` file and the `pwcrack.c` file into an executable called `test.out`.
+
+3. Now run `make clean`. This will remove all the `.out` executable files in your directory.
+4. Next, run simply `make`. **Write in your notes:** What do you see when you run `make` without any arguments? Why do you think this is the case?
+
+We now have a clean and simple way to compile our C programs with the correct flags and dependencies using `make`. This will be very useful as we continue to work on our PA2 project and need to compile our programs multiple times.
