@@ -49,6 +49,22 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
+### Week 4 – Representations and Memory
+
+- **Announcements**
+  - [PA1 grades](https://piazza.com/class/m0gwg9yze003k8/post/274) have been released; that Piazza post has information about grading process we'll use all quarter.
+  - [PA2 - Hashing and Passwords](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is due this Friday, October 25, at 10PM
+
+- **Readings and Resources**
+  = [Pointer Variables](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
+  - [Structs](https://diveintosystems.org/book/C2-C_depth/structs.html)
+  - [Dynamic Memory Allocation](https://diveintosystems.org/book/C2-C_depth/dynamic_memory.html)
+
+- **Lecture Materials**
+  - **Monday:**
+    - Videos: [Strings/Pointers](https://youtu.be/t7ESfE0DywA) | [Endianness](https://youtu.be/HOY3tyZe9bc)
+    - [Repository](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/) | [Notes PDF](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/blob/main/lecture.pdf)
+
 ### Week 3 – Where (Some) Things are in Memory
 
 - **Announcements**
