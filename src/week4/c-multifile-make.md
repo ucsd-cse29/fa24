@@ -50,7 +50,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
     }
     ```
 
-3. You may have noticed that we did not include a `main()` function in either of these files. A `main()` function is necessary to execute a program, so a logical next question may be, "Where will my program execution start from?" We'll include the `main()` function in a seperate file, to isolate it away from our other functions. 
+<!-- 3. You may have noticed that we did not include a `main()` function in either of these files. A `main()` function is necessary to execute a program, so a logical next question may be, "Where will my program execution start from?" We'll include the `main()` function in a seperate file, to isolate it away from our other functions. 
 
     We will be creating two different files with `main()` functions that will serve different purposes: 
     - `main.c` will be used for running your password cracker as a whole with the command-line argument(s) it will need to take. 
@@ -62,14 +62,13 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
     Create a new file called `main.c` and add the following content:
     
-    **IMPORTANT NOTE:** If you have already defined a `main()` function somewhere in your code, move your function to this new file. You may keep the portion of your `main()` function that you have written and simply add the `#include "pwcrack.h"` line to the top of the file and the for loop provided in the code below for the purposes of this lab!
+    **IMPORTANT NOTE:** If you have already defined a `main()` function somewhere in your code, move your function to this new file. You may keep the portion of your `main()` function that you have written and simply add the `#include "pwcrack.h"` line to the top of the file and the for loop provided in the code below for the purposes of this lab! -->
+
+2. Now we will need to add a `main()` function to this file to give the program an entrypoint. Copy the following main function into your `pwcrack.c` file.
+
+    **NOTE:** If you already have a `main()` function from working on the PA, you can keep it as is and focus on the unit testing portion of the code given below.
+
     ```
-    #include <stdlib.h>
-    #include <stdio.h>
-    #include <stdint.h>
-    #include "pwcrack.h"
-
-
     int main(int argc, char **argv) {
 
         // UNIT TESTING SECTION
@@ -96,11 +95,16 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
         }
     }
     ```
-    This file contains the `main()` function that will call the `hex_to_byte` function on the command-line arguments passed to the program (notice the use of `argv`). The `#include "pwcrack.h"` line includes the header file we created earlier. This allows the `main()` function to know about the `hex_to_byte` function we defined in `pwcrack.c`. Notice that the C libraries implemented use the `<>` around the filename, while the custom header file uses `""`. 
+    You will note that this `main()` function serves two purposes:
+    
+    - It parses your command-line arguments to your program and runs your password cracker. In this lab, we will be demonstrating the use of command-line arguments to only test the `hex_to_byte` function but you will extend this to work for your complete password cracker implementation.
+    - The `if` statement at the beginning of the `main()` function is a way to unit test specific functions as you work on your PA. Setting the value of the `test` variable to `1` will run the code within the `if` statement that should have several `assert()` statements to test your individual functions (we have provided an example test for `hex_to_byte`). If all your tests pass, the program will print `ALL TESTS PASSED` and exit successfully. If not, you will receive an error when you run your program with `int test = 1;`.
 
-    <br>
 
-4. Now, create another file called `test.c` and add the following content:
+    
+    <!-- This file contains the `main()` function that will call the `hex_to_byte` function on the command-line arguments passed to the program (notice the use of `argv`). The `#include "pwcrack.h"` line includes the header file we created earlier. This allows the `main()` function to know about the `hex_to_byte` function we defined in `pwcrack.c`. Notice that the C libraries implemented use the `<>` around the filename, while the custom header file uses `""`.  -->
+
+<!-- 4. Now, create another file called `test.c` and add the following content:
     ```
     #include <stdlib.h>
     #include <stdio.h>
@@ -122,9 +126,9 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
     <br>
 
-    This `test.c` file can now be used to test each individual function you write with `assert()` statements without the need to run the program as a whole. This can be very useful for debugging and ensuring that each function is working as expected before moving on to the next one.
+    This `test.c` file can now be used to test each individual function you write with `assert()` statements without the need to run the program as a whole. This can be very useful for debugging and ensuring that each function is working as expected before moving on to the next one. -->
 
-5. Since we have split up the function's definition and the `main()` function into separate files, we will need to tell `gcc` to compile all the files necessary to get our executable. To do this, run the following command:
+<!-- 5. Since we have split up the function's definition and the `main()` function into separate files, we will need to tell `gcc` to compile all the files necessary to get our executable. To do this, run the following command:
     ```
     gcc -o test.out test.c pwcrack.c
     ```
@@ -136,11 +140,9 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
     ```
     gcc -o main.out main.c pwcrack.c
     ```
-    and run `main.out` with the appropriate command-line arguments to see the results of your `hex_to_byte` function for various inputs.
+    and run `main.out` with the appropriate command-line arguments to see the results of your `hex_to_byte` function for various inputs. -->
 
-    <!-- ADD A WRITE IN NOTES SECTION HERE -->
-
-6. **Commit and push your changes to Github.** Make sure to include the new files you created in your commit.
+3. **Commit and push your changes to Github.** Make sure to include the new files you created in your commit.
 
 # Makefiles
 Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information (and we will be learning an additional one in the next section of this lab!). Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `Makefiles` come in.
