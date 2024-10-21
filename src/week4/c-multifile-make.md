@@ -13,7 +13,7 @@ While on your `ieng6` account within your PA2 repo directory perform the followi
 
     #endif
     ```
-    This file is known as a C header file (hence the `.h` extension). It contains function declarations and other definitions that can be shared across multiple C files. The functions declared in this file will be defined in another `.c` file (`pwcrack.c` in case).
+    This file is known as a C header file (hence the `.h` extension). It contains function declarations and other definitions that can be shared across multiple C files. The functions declared in this file will be defined in another `.c` file (`pwcrack.c` in case). As you continue to work on your PA, you can (and should) add the function declarations for the other functions you implement to this file.
 
     <!-- ADD EXPLANATION FOR HEADER FILE HERE -->
 
