@@ -26,19 +26,19 @@ command-line) what's going in the copy of your code you have checked out in the 
 
     nothing to commit, working tree clean
     ```
-
-    This means you haven't edited or created any files since you cloned the
-    code. If you've done some work, you might see all kinds of things here, most
-    likely `pwcrack.c`, which you may have created.
-
-    **IMPORTANT NOTE:** If you have already done some work and your file name is not `pwcrack.c`, use the command `mv <your_file_name>.c pwcrack.c` to rename it. This will be important for future sections of the lab!
-
     You can also use `ls` to see what's going on. In a brand-new repository, that will show these files:
 
     ```
     $ ls
     CREDITS.md  DESIGN.md  README.md
     ```
+    This means you haven't edited or created any files since you cloned the
+    code. If you've done some work, you might see all kinds of things here, most
+    likely `pwcrack.c`, which you may have created.
+
+    **IMPORTANT NOTE:** If you have already done some work and your file name is not `pwcrack.c`, use the command `mv <your_file_name>.c pwcrack.c` to rename it (`mv` is also used to move files from one place to another in a filesystem). This will be important for future sections of the lab!
+
+    
 
 1.  Create or edit `pwcrack.c`. If you already created `pwcrack.c` and the `git
 status` command shows that it is new or modified, there's nothing to do here. If
