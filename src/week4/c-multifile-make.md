@@ -182,3 +182,9 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
 **In your notes:** What do you see when you run `make` without any arguments? Why do you think this is the case?
 
 We now have a clean and simple way to compile our C programs with the correct flags and dependencies using `make`. This will be very useful as we continue to work on our PA2 project and need to compile our programs multiple times.
+
+
+## If you are done early
+
+- Work on PA2! Use the remaining time in lab to make progress on PA2 along with your group members and your tutor!
+- If you are done with PA2 here is a fun extension you could work on: Extend your password cracker such that when given a hash, it will attempt to go through **all possible passwords of length 6** until the password is found.
