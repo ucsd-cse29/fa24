@@ -30,21 +30,21 @@ int main(int argc, char *argv[]) {
 2. **In your notes**, write down what you think it would output if ran as `./buggy helloX XOXO` 
 3. Discuss your thoughts with your group, and see if you notice any bugs in it. **In your notes**: Write down any bugs you think you've fonud.
 
+# Getting set up on ieng6
 
-4. On `ieng6`, use the following command to curl the above program into a file called `buggy.c`:
+1. On `ieng6`, use the following command to curl the above program into a file called `buggy.c`:
 
 ```
 curl -o buggy.c https://raw.githubusercontent.com/ucsd-cse29/fa24/refs/heads/main/src/week4/buggy.c
 ```
-
-4. Then run the following command to compile the program:
+2. Then run the following command to compile the program:
 
 ```
 $ gcc -std=c11 buggy.c -o buggy 
 ```
 Notice the new command-line flag introduced here! We use the `-std=c11` flag to tell `gcc` what version of C we want to compile with. This is necessary since the default version on `ieng6` would fail to compile this program due to us declaring `i` within the `for` loop.
 
-5. Now, try running the program with some string arguments:
+3. Now, try running the program with some string arguments:
 
 ```
 $ ./buggy helloX XOXO
@@ -86,6 +86,13 @@ Thankfully, there are a few tools that help debug invalid memory accesses.
 
 Let's use the AddressSanitizer to figure out which line of code we crashed on. [AddressSanitizer (or ASan)](https://github.com/google/sanitizers/wiki/addresssanitizer) is a tool, built into `gcc` and other C compilers these days, that turns invalid memory accesses (the kind that give segfaults) into descriptive errors. 
 
+0. Run the following commands (these are needed if you don't run `cs29fa24` on login, to work around an old version of gcc)
+```
+export ASAN_OPTIONS=symbolize=1:print_legend=0
+export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer
+
+```
+
 1. Compile the program again with the following option to enable the sanitizer:
 
 ```
@@ -126,7 +133,7 @@ $ gdb buggy.asan
 (gdb) break buggy.c:6
 ```
 
-3. After setting the breakpoint, run the program from inside gdb with 2 arguments (everything after `run` gets passed as command line args to your program)
+3. After setting the breakpoint, run the program from inside gdb with an argument (everything after `run` gets passed as command line args to your program)
 ``` 
 (gdb) run helloX
 ```
