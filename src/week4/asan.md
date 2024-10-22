@@ -121,7 +121,9 @@ Now, we can see exactly the path the code took before crashing, making our lives
 ## GDB
 
 Now that we've identified where the crash happens, let's use `gdb` to help us debug it further. 
-`gdb` (which you've already seen a bit of in lecture / discussion) is a command-line debugger that allows us to step through our program line by line and inspect the values of variables at each step. It can also give us backtraces through our program to show us where the error may have occurred.
+`gdb` (which you've already seen a bit of in lecture / discussion) is a command-line debugger that allows us to step through our program line by line and inspect the values of variables at each step. It can also give us backtraces through our program to show us where the error may have occurred. 
+
+For more GDB resources, see the [Week 3 Reading on GDB Debugging](https://diveintosystems.org/book/C3-C_debug/gdb.html), as well as the [GDB Quick Reference Guide](https://users.ece.utexas.edu/%7Eadnan/gdb-refcard.pdf) and [GDB Tips and Tricks](https://docs.google.com/document/d/1wiNoKEqqhx1YIIr4JhbLWu-8-5llhm4y4CN3vIMSs4k) linked under the [Week 3 Readings & Resources](https://ucsd-cse29.github.io/fa24/index.html#week-3--where-some-things-are-in-memory) :-)
 
 1. After compiling with the -g flag, load our program into gdb
 ``` 
