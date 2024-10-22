@@ -74,7 +74,7 @@ gcc -Wall -Wno-unused-variables -std=c11 buggy.c -o buggy
 
 ## Segfaults
 
-Now, we've found two bugs, but why is the program still crashing? If we provide a single argument (argc=2), our`for` loop iterates until `i <= argc`, which means it will try to access `argv[argc]`, which is out of bounds.
+Now, we've found two bugs, but why is the program still crashing? If we provide a single argument (`argc = 2`), our`for` loop iterates until `i <= argc`, which means it will try to access `argv[argc]`, which is out of bounds.
 
 Unfortunately, when we try to read this as a memory address (`char*`) , it ends up being an _invalid_ memory address (it happens to be `0`, though other values may give similar errors), so the program ended with a _segmentation fault_, which is a fancy term for “the program tried to access memory it shouldn't and was stopped by the operating system”. 
 
