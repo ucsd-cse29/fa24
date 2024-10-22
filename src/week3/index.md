@@ -181,10 +181,10 @@ Next, we want to add the public key to your Github account. This is like the ste
 Go back to the `ieng6` terminal and:
 
 13. **[I]** Run the following command to add github.com as a recognized host (this avoids the scary yes/no prompt about accepting new connections the first time you connect)
-    - `$ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
+    - `ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts`
     - `>>` means "append stdout of the command to file"
 14. **[I]** Check your connection by running the following command:
-    - `$ ssh -T git@github.com`
+    - `ssh -T git@github.com`
     - It will say something like "Hi *supercoolstudent1234*! You've successfully authenticated, but GitHub does not provide shell access."
   
 Now we have an SSH key which can be used to authenticate to GitHub! In addition to using `https` clone URLs, we can now use `SSH` clone URLs that look like this:
