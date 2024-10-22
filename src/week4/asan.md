@@ -40,14 +40,14 @@ curl -o buggy.c https://raw.githubusercontent.com/ucsd-cse29/fa24/refs/heads/mai
 2. Then run the following command to compile the program:
 
 ```
-$ gcc -std=c11 buggy.c -o buggy 
+gcc -std=c11 buggy.c -o buggy 
 ```
 Notice the new command-line flag introduced here! We use the `-std=c11` flag to tell `gcc` what version of C we want to compile with. This is necessary since the default version on `ieng6` would fail to compile this program due to us declaring `i` within the `for` loop.
 
 3. Now, try running the program with some string arguments:
 
 ```
-$ ./buggy helloX XOXO
+./buggy helloX XOXO
 ```
 
 Oh no! You should see it outputting far too many Y-s and zeroes, and then crashing (Segmentation Fault). Let's see if we can use -Wall to get to the bottom of this.
@@ -58,19 +58,13 @@ Many common errors can be caught by the compiler, but a lot of these checks aren
 
 1. Run the following command to recompile the program with warnings enabled:
 ```
-$ gcc -Wall -std=c11 buggy.c -o buggy
+gcc -Wall -std=c11 buggy.c -o buggy
 ```
 
 2. This time, gcc should have given you two warnings, read through them. Would they have helped you catch those two bugs?
 3. **In your notes**: Write down the warnings you got (`[-Wxxxxxx]`)
 
 In general, It's almost always a good idea to have `-Wall` enabled by default because it will helpfully warn you about many common C errors.
-
-**NOTE**: One unfortunate side effect of `-Wall` is that if you ever declare a variable but don't use it, the compiler will warn you about it. This can be helpful to find bugs sometimes, but often ends up being more
-annoying than helpful. You can disable this by with the `-Wno-unused-variables` flag:
-```
-gcc -Wall -Wno-unused-variables -std=c11 buggy.c -o buggy
-```
 
 ## Segfaults
 
