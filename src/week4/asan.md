@@ -123,27 +123,30 @@ For more GDB resources, see the [Week 3 Reading on GDB Debugging](https://divein
 ``` 
 $ gdb buggy.asan
 ```
-
-2. Before running the program, set a **breakpoint** in the code before the program reaches its error. Here, the error is on line 6, so type in your gdb terminal:
+2. To see our source code while in gdb, run the command:
+``` 
+(gdb) layout src
+```
+3. Before running the program, set a **breakpoint** in the code before the program reaches its error. Here, the error is on line 6, so type in your gdb terminal:
 ``` 
 (gdb) break buggy.c:6
 ```
 
-3. After setting the breakpoint, run the program from inside gdb with an argument (everything after `run` gets passed as command line args to your program)
+4. After setting the breakpoint, run the program from inside gdb with an argument (everything after `run` gets passed as command line args to your program)
 ``` 
 (gdb) run helloX
 ```
 
 If done correctly, `gdb` should print out the `for(int i=0...` line in the program. The breakpoint paused the execution before this line was executed.
 
-4. Try the following commands
+5. Try the following commands
     * `info args`: tells us what arguments were passed into this function,
     * `info locals`: tells the values of the local variables at this point of the execution.
     * `p s[3]`: this lets your print out the values of expressions, not just variables. Try some others!
         * Can also specify the format you want, e.g. `p/x var1` prints the value of `var1` in hex, `p/t` prints in binary).
     * `bt` should print out a stacktrace similar to what ASan did.
 
-5. Now, use the `c` command to continue executing until it hits the breakpoint a second time
-6. Use the commands you learned to print the variable that `buggy.c` is attempting to access (and crashing on).
-7. **In your notes:** Write the command you used, and what `gdb` printed out
+6. Now, use the `c` command to continue executing until it hits the breakpoint a second time
+7. Use the commands you learned to print the variable that `buggy.c` is attempting to access (and crashing on).
+8. **In your notes:** Write the command you used, and what `gdb` printed out
     * **NOTE**: If your program runs too far ahead, you can always ask gdb to restart it by using `run ARG1 ARG2 ...` again 
