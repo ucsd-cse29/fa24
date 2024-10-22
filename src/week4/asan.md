@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-1. Read through this program *without runnning it*.
+1. Read through this program **without runnning it**.
 2. **In your notes**, write down what you think it would output if ran as `./buggy helloX XOXO` 
 3. Discuss your thoughts with your group, and see if you notice any bugs in it. **In your notes**: Write down any bugs you think you've fonud.
 
