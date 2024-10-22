@@ -105,7 +105,7 @@ Finally, we will introduce a convenient way to compile our programs using `Makef
     You will note that this `main()` function serves two purposes:
     
     - It parses your command-line arguments to your program and runs your password cracker. In this lab, we will be demonstrating the use of command-line arguments to only test the `hex_to_byte` function but you will extend this to work for your complete password cracker implementation.
-    - The `if` statement at the beginning of the `main()` function is a way to unit test specific functions as you work on your PA. Setting the value of the `test` variable to `1` will run the code within the `if` statement that should have several `assert()` statements to test your individual functions (we have provided an example test for `hex_to_byte`). If all your tests pass, the program will print `ALL TESTS PASSED` and exit successfully. If not, you will receive an error when you run your program with `int test = 1;`.
+    - The `if` statement at the beginning of the `main()` function is a way to unit test specific functions as you work on your PA. Setting the value of the `test` variable to `1` will run the code within the `if` statement that should have several `assert()` statements to test your individual functions (we have provided an example test for `hex_to_byte`). If all your tests pass, the program will print `ALL TESTS PASSED!` and exit successfully. If not, you will receive an error when you run your program with `int test = 1;`.
 
 
     
