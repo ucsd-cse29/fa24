@@ -2,7 +2,7 @@
 
 Make sure your `ieng6` account has [Github access](https://ucsd-cse29.github.io/fa24/week3/index.html#42---git-cli-commands).
 
-0. Run `cs29fa24` after you are logged in. If you have already started working on your PA2 and had cloned the repository without running this command, you will need to reclone after running this command and continue working. This command sets up your working directory for CSE29 which is where you want to be working! 
+0. Run the corresponding prep command for your class (`cs29fa24` for Joe's, `cs29fa24b` for Aaron's) after you are logged in. If you have already started working on your PA2 and had cloned the repository without running this command, you will need to reclone after running this command and continue working. This command sets up your working directory for CSE29 which is where you want to be working! 
 
 1. Get your PA2 code onto ieng6; if you've already done a step, skip it
     - Follow the Github Classroom link from the [assignment page](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) to create it
