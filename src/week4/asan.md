@@ -31,10 +31,10 @@ int main(int argc, char *argv[]) {
 3. Discuss your thoughts with your group, and see if you notice any bugs in it. **In your notes**: Write down any bugs you think you've fonud.
 
 
-4. On `ieng6`, put this program in a file called `buggy.c`:
+4. On `ieng6`, use the following command to curl the above program into a file called `buggy.c`:
 
 ```
-curl -o buggy.c TODO_CURL_URL
+curl -o buggy.c https://raw.githubusercontent.com/ucsd-cse29/fa24/refs/heads/main/src/week4/buggy.c
 ```
 
 4. Then run the following command to compile the program:
