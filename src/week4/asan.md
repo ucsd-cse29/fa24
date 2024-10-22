@@ -61,7 +61,8 @@ Many common errors can be caught by the compiler, but a lot of these checks aren
 $ gcc -Wall -std=c11 buggy.c -o buggy
 ```
 
-2. This time, gcc should have given you two warnings, read through them. Would they have helped you catch those two bugs? **In your notes**: Write down the warnings you got (`[-Wxxxxxx]`)
+2. This time, gcc should have given you two warnings, read through them. Would they have helped you catch those two bugs?
+3. **In your notes**: Write down the warnings you got (`[-Wxxxxxx]`)
 
 In general, It's almost always a good idea to have `-Wall` enabled by default because it will helpfully warn you about many common C errors.
 
@@ -140,5 +141,6 @@ If done correctly, `gdb` should print out the `for(int i=0...` line in the progr
     * `bt` should print out a stacktrace similar to what ASan did.
 
 5. Now, use the `c` command to continue executing until it hits the breakpoint a second time
-6. Use the commands you learned to print the variable that `buggy.c` is attempting to access (and crashing on). **In your notes:** Write the command you used, and what `gdb` printed out
+6. Use the commands you learned to print the variable that `buggy.c` is attempting to access (and crashing on).
+7. **In your notes:** Write the command you used, and what `gdb` printed out
     * **NOTE**: If your program runs too far ahead, you can always ask gdb to restart it by using `run ARG1 ARG2 ...` again 
