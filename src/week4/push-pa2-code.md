@@ -8,17 +8,7 @@ Make sure your `ieng6` account has [Github access](https://ucsd-cse29.github.io/
     - Follow the [Github Classroom Link](https://classroom.github.com/a/Lo9vRhLG) to create your PA2 repository. See the [PA2 Assignment](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) for the actual functions to write and instructions for this PA. 
     - Log into ieng6 and clone the repository you just made using the [Github Classroom Link](https://classroom.github.com/a/Lo9vRhLG) with `git clone [your-repository-link]`
     - **IMPORTANT NOTE:** Make sure to clone the `SSH` URL and not the `HTTPS` URL! The Github link should start with `git@github.com`
-    ```
-    ~$ git clone git@github.com:ucsd-cse29/pa2-hashing-and-passwords.git
-    Cloning into 'pa2-hashing-and-passwords'...
-    remote: Enumerating objects: 34, done.
-    remote: Counting objects: 100% (34/34), done.
-    remote: Compressing objects: 100% (23/23), done.
-    remote: Total 34 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
-    Receiving objects: 100% (34/34), 16.35 KiB | 8.17 MiB/s, done.
-    Resolving deltas: 100% (10/10), done.
-    ```
-    - Change into the directory with your PA2 repository. In the example above, that would be `cd pa2-hashing-and-passwords`
+    - Change into the directory with your PA2 repository. In the example above, that would be `cd pa2-hashing-and-passwords-<your-github-username>`
 
 2. Check status by running `git status`. This will tell you (from the
 command-line) what's going in the copy of your code you have checked out in the current working directory. If you haven't done any work yet, you'll see something like:
