@@ -185,6 +185,6 @@ We now have a clean and simple way to compile our C programs with the correct fl
 
 
 ## If you are done early
-- Try adding a separate rule that would build pwcrack without address sanitizer enabled. Rename the rules so that one generates `pwcrack.asan`, and the other generates `pwcrack`. You may need to adjust `all` and `clean` as well to work correctly with this.
 - Work on PA2! Use the remaining time in lab to make progress on PA2 along with your group members and your tutor!
+- Try adding a separate rule that would build pwcrack without address sanitizer enabled. Rename the rules so that one generates `pwcrack.asan`, and the other generates `pwcrack`. You may need to adjust `all` and `clean` as well to work correctly with this.
 - If you are done with PA2 here is a fun extension you could work on: Extend your password cracker such that when given a hash, it will attempt to go through **all possible passwords of length 6** until the password is found.
