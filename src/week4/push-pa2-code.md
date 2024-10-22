@@ -6,7 +6,9 @@ Make sure your `ieng6` account has [Github access](https://ucsd-cse29.github.io/
 
 1. Get your PA2 code onto ieng6; if you've already done a step, skip it
     - Follow the [Github Classroom Link](https://classroom.github.com/a/Lo9vRhLG) to create your PA2 repository. See the [PA2 Assignment](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) for the actual functions to write and instructions for this PA. 
-    - Log into ieng6 and clone the repository you just made using the [Github Classroom Link](https://classroom.github.com/a/Lo9vRhLG) with `git clone [your-repository-link]`
+    - Log into ieng6 and clone the repository you just made using the [Github Classroom Link](https://classroom.github.com/a/Lo9vRhLG) with `git clone [your-repository-link]`. Remember to use the SSH clone link!
+   
+      ![Image](./../images/ssh_clone.png)
     - **IMPORTANT NOTE:** Make sure to clone the `SSH` URL and not the `HTTPS` URL! The Github link should start with `git@github.com`
     - Change into the directory with your PA2 repository. In the example above, that would be `cd pa2-hashing-and-passwords-<your-github-username>`
 
