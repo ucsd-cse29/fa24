@@ -154,7 +154,7 @@ Finally, we will introduce a convenient way to compile our programs using `Makef
 **In your notes:** Briefly explain what you had the `hex_to_byte` function return and why?
 
 ## Makefiles
-Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information, `-std=c99` to use the correct C version when compiling on `ieng6` and `-fsanitize` for memory errors. Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `make` comes in.
+Thus far, we have been typing out the various `gcc` commands needed to compile our C programs. We have also learned some command-line flags that can be useful when compiling our programs like `-g` for debugging information, `-std=c11` to use the correct C version when compiling on `ieng6` and `-fsanitize` for memory errors. Wouldn't it be nice if we could just type one command and have all the necessary files compiled with the correct flags? This is where `make` comes in.
 
 `make` is a utility for building C programs. A `Makefile` is a file that contains a set of rules that tell the `make` utility what commands it should run for that rule. We will be creating a `Makefile` with rules to compile our C programs with the correct flags and dependencies.
 
@@ -162,29 +162,29 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
 1. In your PA2 repository, create a new file named `Makefile` and add the following content to it:
     <!-- MAYBE WE HAVE THE STUDENTS ADD THE all RULE THEMSELVES AND ASK A QUESTION ABOUT IT AT THE END? -->
     ```
-    all: main
+    all: pwcrack
+      
+    pwcrack: pwcrack.c
+        gcc -std=c11 -Wall -Wno-unused-variables -fsanitize=address -g pwcrack.c -o pwcrack
     
-    main: pwcrack.c
-        gcc -std=c99 -fsanitize=address -g pwcrack.c -o pwcrack.out
-
     clean:
-        rm -rf *.out
+        rm -f pwcrack
     ```
     **IMPORTANT NOTE:** The indentation in the `Makefile` is done with a `TAB` character, not spaces. Make sure to use a `TAB` character when indenting the commands in the `Makefile`.
 
     **NOTE:** If your file names are different than what is given above at this point, change the rules to match the file names you are using.
 
-2. Now, in your terminal, run `make main`. This will perform the same operation as running `gcc -std=c99 -fsanitize=address -g pwcrack.c -o pwcrack.out` without needing to type or remember that command! You should see the `pwcrack.out` file in your directory. However, if you run `make main` again, you will see that `make` will not recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
+2. Now, in your terminal, run `make all`. This will perform the same operation as running `gcc -std=c11 -fsanitize=address -g pwcrack.c -o pwcrack.out` without needing to type or remember that command! You should see the `pwcrack` file in your directory. However, if you run `make all` again, you will see that it doesn't recompile the files because they have not changed since the last time they were compiled. This is one of the benefits of using `make` to compile your programs.
 
-3. Now run `make clean`. This will remove all the `.out` executable files in your directory.
-4. Next, run simply `make`. 
+3. Now run `make clean`. This should delete the executable file.
+4. Next, run just `make` with no arguments. 
 
-**In your notes:** What do you see when you run `make` without any arguments? Why do you think this is the case?
+**In your notes:** What happend when you ran `make` without any arguments? Why do you think this is the case?
 
 We now have a clean and simple way to compile our C programs with the correct flags and dependencies using `make`. This will be very useful as we continue to work on our PA2 project and need to compile our programs multiple times.
 
 
 ## If you are done early
-
+- Try adding a separate rule that would build pwcrack without address sanitizer enabled. Rename the rules so that one generates `pwcrack.asan`, and the other generates `pwcrack`. You may need to adjust `all` and `clean` as well to work correctly with this.
 - Work on PA2! Use the remaining time in lab to make progress on PA2 along with your group members and your tutor!
 - If you are done with PA2 here is a fun extension you could work on: Extend your password cracker such that when given a hash, it will attempt to go through **all possible passwords of length 6** until the password is found.
