@@ -96,7 +96,7 @@ export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer
 1. Compile the program again with the following option to enable the sanitizer:
 
 ```
-$ gcc -std=c11 -g -fsanitize=address buggy.c -o buggy.asan
+gcc -std=c11 -g -fsanitize=address buggy.c -o buggy.asan
 ```
 
 The `-fsanitize=address` part does extra work in the compiler to put special checks in to look for memory errors. The `-g` option we saw in lecture turns on some debugging information like line numbers in stack traces.
