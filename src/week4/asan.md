@@ -56,7 +56,7 @@ Oh no! You should see it outputting far too many Y-s and zeroes, and then crashi
 
 Many common errors can be caught by the compiler, but a lot of these checks aren't enabled by default. We can ask the compiler to warn us about them with the `-Wall` flag ("- W(arn) all")
 
-1. Run the following command to recompile the programm with warnings enabled:
+1. Run the following command to recompile the program with warnings enabled:
 ```
 $ gcc -Wall -std=c11 buggy.c -o buggy
 ```
