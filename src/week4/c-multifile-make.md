@@ -179,7 +179,7 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
 3. Now run `make clean`. This should delete the executable file.
 4. Next, run just `make` with no arguments. 
 
-**In your notes:** What happend when you ran `make` without any arguments? Why do you think this is the case?
+**In your notes:** What happened when you ran `make` without any arguments? Why do you think this is the case?
 
 We now have a clean and simple way to compile our C programs with the correct flags and dependencies using `make`. This will be very useful as we continue to work on our PA2 project and need to compile our programs multiple times.
 
