@@ -165,7 +165,7 @@ Thus far, we have been typing out the various `gcc` commands needed to compile o
     all: pwcrack
       
     pwcrack: pwcrack.c
-        gcc -std=c11 -Wall -Wno-unused-variables -fsanitize=address -g pwcrack.c -o pwcrack
+        gcc -std=c11 -Wall -Wno-unused-variable -fsanitize=address -g pwcrack.c -o pwcrack
     
     clean:
         rm -f pwcrack
