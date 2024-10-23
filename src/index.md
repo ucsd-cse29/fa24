@@ -68,7 +68,7 @@ you can see what's coming.
                   [Handout](https://github.com/ucsd-cse29/fa24-12-w4w-restr/blob/main/handout/lecture-06-w2w.pdf) | 
                   [Recording]()
     - <u>Aaron's Lecture:</u> 
-                  [Slides]() | 
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week3/29-fa24-l11.pdf) | 
                   [Recording]()
   - **Monday:**
     - Videos: [Strings/Pointers](https://youtu.be/t7ESfE0DywA) | [Endianness](https://youtu.be/HOY3tyZe9bc)
