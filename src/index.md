@@ -52,6 +52,7 @@ you can see what's coming.
 ### Week 4 – Representations and Memory
 
 - **Announcements**
+  - [Week 4 Quiz](https://us.prairielearn.com/pl/course_instance/160202/assessment_instance/8634020) is available on PrairieLearn
   - [PA1 grades](https://piazza.com/class/m0gwg9yze003k8/post/274) have been released; that Piazza post has information about grading process we'll use all quarter.
   - [PA2 - Hashing and Passwords](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is due this Friday, October 25, at 10PM
 
