@@ -56,7 +56,7 @@ you can see what's coming.
   - [PA2 - Hashing and Passwords](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is due this Friday, October 25, at 10PM
 
 - **Readings and Resources**
-  = [Pointer Variables](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
+  - [Pointer Variables](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
   - [Structs](https://diveintosystems.org/book/C2-C_depth/structs.html)
   - [Dynamic Memory Allocation](https://diveintosystems.org/book/C2-C_depth/dynamic_memory.html)
 
