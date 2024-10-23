@@ -66,6 +66,13 @@ gcc -Wall -std=c11 buggy.c -o buggy
 
 In general, It's almost always a good idea to have `-Wall` enabled by default because it will helpfully warn you about many common C errors.
 
+**NOTE**: One unfortunate side effect of `-Wall` is that if you ever declare a variable but don't use it, the compiler will warn you about it. This can be helpful to find bugs sometimes, but often ends up being more
+annoying than helpful. You can disable this by with the `-Wno-unused-variable` flag:
+```
+gcc -Wall -Wno-unused-variable -std=c11 buggy.c -o buggy
+```
+
+
 ## Segfaults
 
 Now, we've found two bugs, but why is the program still crashing? If we provide a single argument (`argc = 2`), our`for` loop iterates until `i <= argc`, which means it will try to access `argv[argc]`, which is out of bounds.
