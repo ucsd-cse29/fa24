@@ -74,6 +74,10 @@ you can see what's coming.
     - Videos: [Strings/Pointers](https://youtu.be/t7ESfE0DywA) | [Endianness](https://youtu.be/HOY3tyZe9bc)
     - [Repository](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/) | [Notes PDF](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/blob/main/lecture.pdf)
 
+- **Discussion Materials**
+  - **Wednesday:** [Code](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5-arunan.c) |
+                [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/3)
+
 ### Week 3 – Where (Some) Things are in Memory
 
 - **Announcements**
