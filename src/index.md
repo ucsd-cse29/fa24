@@ -53,7 +53,7 @@ you can see what's coming.
 
 - **Announcements**
   - [Week 4 Quiz](https://us.prairielearn.com/pl/course_instance/160202/assessment_instance/8634020) is available on PrairieLearn
-  - [PA1 grades](https://piazza.com/class/m0gwg9yze003k8/post/274) have been released; that Piazza post has information about grading process we'll use all quarter.
+  - [PA1 Grades](https://piazza.com/class/m0gwg9yze003k8/post/274) have been released; that Piazza post has information about grading process we'll use all quarter.
   - [PA2 - Hashing and Passwords](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is due this Friday, October 25, at 10PM
 
 - **Readings and Resources**
@@ -66,10 +66,10 @@ you can see what's coming.
     - [Repository](https://github.com/ucsd-cse29/fa24-12-w4w-restr)
     - <u>Joe's Lecture:</u>
                   [Handout](https://github.com/ucsd-cse29/fa24-12-w4w-restr/blob/main/handout/lecture-06-w2w.pdf) | 
-                  [Recording]()
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/11)
     - <u>Aaron's Lecture:</u> 
                   [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week3/29-fa24-l11.pdf) | 
-                  [Recording]()
+                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/11)
   - **Monday:**
     - Videos: [Strings/Pointers](https://youtu.be/t7ESfE0DywA) | [Endianness](https://youtu.be/HOY3tyZe9bc)
     - [Repository](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/) | [Notes PDF](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/blob/main/lecture.pdf)
