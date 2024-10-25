@@ -15,23 +15,17 @@ user-facing devices.
 It's useful to get experience with the format of HTTP, and with using system
 calls in C to manipulate HTTP requests.
 
-## Task – Chat Server and Client
+## Task – Chat Server
 
-In this programming assignment, you'll write two C programs to implement a _chat
-room_ (think a plain-text version of [Slack](https://slack.com/) or [Discord](https://discord.com/)).
+In this programming assignment, you'll write a C program to implement a _chat
+room_ (think a plain-text version of [Slack](https://slack.com/) or
+[Discord](https://discord.com/)).
 
-- A program `chat-server` that stores chats and listens for HTTP requests to add
-new messages to the chat room
-- A program `chat-client` that allows a user to connect to the chat room and
-send and read messages
-
-Your programs should compile with
+Your programs should compile and run with:
 
 ```
 $ make chat-server
 $ ./chat-server
-$ make chat-client
-$ ./chat-client
 ```
 
 ### Chat Server
