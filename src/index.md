@@ -62,20 +62,30 @@ you can see what's coming.
   - [Dynamic Memory Allocation](https://diveintosystems.org/book/C2-C_depth/dynamic_memory.html)
 
 - **Lecture Materials**
+  - **Friday:**
+    - [Repository](https://github.com/ucsd-cse29/fa24-12-w4w-restr)
+    - <u>Joe's Lecture:</u>
+                  [Handout](https://github.com/ucsd-cse29/fa24-12-w4w-restr/blob/main/handout/lecture-12-w4w.pdf) | 
+                  Annotated Handout |
+                  Recording
+    - <u>Aaron's Lecture:</u> 
+                  [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week3/29-fa24-l11.pdf) | 
+                  Recording
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-12-w4w-restr)
     - <u>Joe's Lecture:</u>
-                  [Handout](https://github.com/ucsd-cse29/fa24-12-w4w-restr/blob/main/handout/lecture-06-w2w.pdf) | 
+                  [Handout](https://github.com/ucsd-cse29/fa24-12-w4w-restr/blob/main/handout/lecture-12-w4w.pdf) | 
+                  [Annotated Handout](https://github.com/ucsd-cse29/fa24-12-w4w-restr/blob/main/handout/annotated-lecture-12-w4w.pdf) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/11)
     - <u>Aaron's Lecture:</u> 
                   [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week3/29-fa24-l11.pdf) | 
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/11)
   - **Monday:**
-    - Videos: [Strings/Pointers](https://youtu.be/t7ESfE0DywA) | [Endianness](https://youtu.be/HOY3tyZe9bc)
     - [Repository](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/) | [Notes PDF](https://github.com/ucsd-cse29/fa24-11-w4m-the-beginning-of-the-endian/blob/main/lecture.pdf)
-
+    - <u>Videos:</u> [Strings/Pointers](https://youtu.be/t7ESfE0DywA) | [Endianness](https://youtu.be/HOY3tyZe9bc)
+    
 - **Discussion Materials**
-  - **Wednesday:** [Code](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5-arunan.c) |
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5-arunan.c) |
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/3)
 
 ### Week 3 – Where (Some) Things are in Memory
