@@ -85,7 +85,7 @@ you can see what's coming.
     - <u>Videos:</u> [Strings/Pointers](https://youtu.be/t7ESfE0DywA) | [Endianness](https://youtu.be/HOY3tyZe9bc)
     
 - **Discussion Materials**
-  - **Friday:** [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/4)
+  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion4-yash) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/4)
   - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5-arunan.c) |
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/3)
 
