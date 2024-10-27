@@ -49,6 +49,18 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
+### Week 5 – Managing (Heap) Memory
+
+- **Readings & Resources**
+  - [Memory Layout and Scope](https://diveintosystems.org/book/C2-C_depth/scope_memory.html)
+  - [Debugging Memory with Valgrind](https://diveintosystems.org/book/C3-C_debug/valgrind.html)
+  - [GDB Commands in Detail](https://diveintosystems.org/book/C3-C_debug/gdb_commands.html)
+
+**Lecture Materials**
+  - **Monday**
+    - [Repository](https://diveintosystems.org/book/C2-C_depth/scope_memory.html)
+
+
 ### Week 4 – Representations and Memory
 
 - **Announcements**
