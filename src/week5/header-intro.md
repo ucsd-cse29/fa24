@@ -47,7 +47,7 @@ After getting the server running, open your browser and go to `localhost:<port>`
 
 Congrats, we got a working server running!
 
-## String functions
+### String functions
 
 For the purposes of this lab, we'll also need a few more functions from the C `<string>` library in order to build our backend.
 
@@ -60,3 +60,28 @@ For the purposes of this lab, we'll also need a few more functions from the C `<
 * `strncat`
 
 * `strncmp`
+
+## 
+
+
+
+The way our server works, a client (a browser, curl, or our fancy-client) sends a **request** to our server. The request is the client asking the server to do something. The server takes the request, completes it (if possible) and returns a **response** to the client.
+
+Right now, we can compile and run our numeric-server, but it doesn't serve anything because the functions have not yet been implemented. 
+
+As a placeholder, we can serve a 'Not Found' response to the client for all our unimplemented functions.
+
+To send this message across the network, we use the `write` system call:
+```c
+ssize_t write(int fd, const void buf[count], size_t count)
+```
+The `write` system call is used to write `count` bytes of `buf` to the `fd` file descriptor. In this case, writing our message to the `client_sock` fd will send the text to our client through its socket.
+
+To send the 'Not Found' response, we write the following:
+```
+"HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\n"
+```
+
+404 is a **status code** that tells the client that the URL request was not found. 
+
+If done correct, compiling and running `numeric-server` should change the browser page to a "Page cannot be found"

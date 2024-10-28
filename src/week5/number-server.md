@@ -2,6 +2,8 @@
 
 Now that we've completed our walkthrough of the basics of the http-server library. It's time to use the library to create our own server. 
 
+The number-server will implement 4 different routes:
+
 
 - `handle_shownum(int client_sock)`
 
@@ -9,12 +11,11 @@ Now that we've completed our walkthrough of the basics of the http-server librar
 
 - `handle_increment(int client_sock)`
 
-    This function increments the value of `num` by one and responds to the client with `Added <value> to num`
-
+    This function increments the value of `num` by one and responds to the client with the new value of `num`.
 
 - `handle_add(char* url, int client_sock)`
 
-    This function increments the value of `num` by the value encoded in `url` and responds to the client with `Number incremented`
+    This function increments the value of `num` by the value encoded in `url` and responds to the client with the new value of `num`.
 
 - `handle_response(char* request, int client_sock)`
 
@@ -24,24 +25,29 @@ Now that we've completed our walkthrough of the basics of the http-server librar
 For these functions, try implementing them on your own. Here, we'll implement the `handle_shownum()` function, with the other functions sharing a similar structure.
 
 ---
-1. We define a `char[]` to hold the HTTP response to send. In `http-server.h`, we define `BUFFER_SIZE` as 2048, which we can use as the size of all of our buffers.
+1. Every HTTP response first begins with headers, which include a **status code**. Every response to a successful request begins with:
+    ```
+    "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n"
+    ```
+The status code of 200 tells the client that the incoming response is valid. 
 
-2. Every HTTP response first begins with a **status code**. A status code of 200 means the server successfully completed the request. Let's first copy the `HTTP_200_OK` string to the start of our response.
+2. We define a `char[]` to hold the HTTP response to send. In `http-server.h`, we define `BUFFER_SIZE` as 2048, which we can use as the size of our response buffer.
 
-3. Next, we encode the message to return back to the client. For `handle_shownum()` the message should be `Number: X` where X is the value of our num from the server.
+3. Next, we encode the message to return back to the client. For `handle_shownum()` the current value of `global_num` should be encoded into the response message. Which C string function can we use to do this? (**Hint:** see the previous section of the lab)
 
-After fully formatting our response, we just need to send it back to the client. For that, we use:
-```c
-ssize_t write(int fd, const void buf[count], size_t count)
-```
-
-The `write` system call is used to write `count` bytes of `buf` to the `fd` file descriptor. In this case, writing to the `client_sock` fd will send the message to our client through its socket.
+4. After completing the logic for the route, we need to ensure that this code is only called on the correct url. In `handle_response`, the `url` only includes the path from `/` to the end. If we only want `handle_shownum()` to run when `/shownum` exists as a *substring* in the `url`. What C string function can we use to do this?
 
 After completing the `/shownum` route, curl the route with:
 
 ```
 curl localhost:<port>/shownum
 ```
+
+We should see 
+```
+Your number is 0
+```
+We officially got a web server running! Now, you have all the tools to implement the other functions of `number-server`.
 
 
 
@@ -52,7 +58,7 @@ This data is encoded as **query parameters** which follow a `?` in the url and u
 ```
 ?keyA=value&keyB=value&...
 ```
-To parse the query string to extract the necessary values, we'll use a new C function:
+<!-- To parse the query string to extract the necessary values, we'll use a new C function:
 ```c
 int sscanf(char* str, char* format, ...)`.
 ```
@@ -64,4 +70,4 @@ int add_val;
 sscanf(query, "value=%d", &add_val); 
 ```
 
-In this example, the query string is passed in, and the value of the query parameter is copied into the address of our variable `add_val`.
+In this example, the query string is passed in, and the value of the query parameter is copied into the address of our variable `add_val`. -->
