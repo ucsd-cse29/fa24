@@ -5,20 +5,20 @@ Now that we've completed our walkthrough of the basics of the http-server librar
 
 - `handle_shownum(int client_sock)`
 
-This function responds to the client socket with the current value of `num`.
+    This function responds to the client socket with the current value of `num`.
 
 - `handle_increment(int client_sock)`
 
-This function increments the value of `num` by one and responds to the client with `Number incremented!`
+    This function increments the value of `num` by one and responds to the client with `Added <value> to num`
 
 
 - `handle_add(char* url, int client_sock)`
 
-This function increments the value of `num` by the `value one and responds to the client with `Number incremented!`
+    This function increments the value of `num` by the value encoded in `url` and responds to the client with `Number incremented`
 
 - `handle_response(char* request, int client_sock)`
 
-This function takes in a `char*` of the request URL and an `int` id of the client socket, and directs the response to the corresponding route.
+    This function takes in a `char*` of the request URL and an `int` id of the client socket, and directs the response to the corresponding route.
 
 
 For these functions, try implementing them on your own. Here, we'll implement the `handle_shownum()` function, with the other functions sharing a similar structure.
@@ -32,10 +32,18 @@ For these functions, try implementing them on your own. Here, we'll implement th
 
 After fully formatting our response, we just need to send it back to the client. For that, we use:
 ```c
-    ssize_t write(int fd, const void buf[count], size_t count)
+ssize_t write(int fd, const void buf[count], size_t count)
 ```
 
 The `write` system call is used to write `count` bytes of `buf` to the `fd` file descriptor. In this case, writing to the `client_sock` fd will send the message to our client through its socket.
+
+After completing the `/shownum` route, curl the route with:
+
+```
+curl localhost:<port>/shownum
+```
+
+
 
 ### HTTP Query Parameters
 
