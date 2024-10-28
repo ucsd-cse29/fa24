@@ -59,6 +59,7 @@ you can see what's coming.
 **Lecture Materials**
   - **Monday**
     - [Repository](https://diveintosystems.org/book/C2-C_depth/scope_memory.html)
+      - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free/blob/main/handout/lecture-07-w5m.pdf)
 
 
 ### Week 4 – Representations and Memory

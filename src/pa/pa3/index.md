@@ -25,7 +25,7 @@ Your programs should compile and run with:
 
 ```
 $ make chat-server
-$ ./chat-server
+    $ ./chat-server <optional port number>
 ```
 
 ### Chat Server
@@ -37,8 +37,11 @@ $./chat-server
 Server started on port PPPPP
 ```
 
-It should continue running, listening for requests on that port, until it
-receives a `/shutdown` request.
+If a port number was provided, it should use that port, otherwise it should
+print an open port that was selected.
+
+It should continue running, listening for requests on that port, until shutdown
+with Ctrl-c.
 
 #### `/chats`
 
@@ -49,11 +52,13 @@ The rendered chat format is
 ```
 #NNNNN 20XX-MM-DD HH:MM  <username>: <message>
                       (<rusername>)  <reaction>
+                           ... [more reactions] ...
+... [more chats] ...
 ```
 
 Where:
 
-- `#NNNNN` is `#` followed by a number like `#5`, where the integer is the id of the
+- `#NNNNN` is `#` followed by a number like `#00005`, where the integer is the id of the
 chat (ids start at 1 and count up)
 - `YYYY-mm-dd HH:MM` is the _timestamp_ of the chat (when it was sent).
     - `YYYY` is the year, like `2024`
@@ -108,14 +113,15 @@ timestamp given by the time the request is received by the server.  Responds
 with the list of all chats (including the new one).
 
 This uses the standard format for [URL parameters and query
-strings](https://en.wikipedia.org/wiki/Query_string). You should not try to
-parse this yourself; see [FILL] for how to handle this.
+strings](https://en.wikipedia.org/wiki/Query_string). The username should always
+come first and the message second. If a parameter is missing or if other
+paramters are given, the behavior is undefined.
 
-If message is longer than 1000 bytes, only the first 1000 bytes are used as part
-of the message.
+If message is longer than 1000 bytes, only the first 1000 bytes are used as
+the message.
 
-If username is longer than 12 bytes, only the first 12 bytes are used as the
-username
+If username is longer than 7 bytes, only the first 7 bytes are used as the
+username.
 
 #### `/react`
 
@@ -141,3 +147,18 @@ starting from the empty initial state.
 It should be possible to `/reset` the room many times, and after resetting the
 memory usage of the program should be the same as in the empty initial
 state.
+
+## Design Questions
+
+- How much working memory do 10 chats take in your program, in between
+processing requests? How about 100? 1000? We can call this part of the memory
+your program uses the _chat storage_. How much additional working memory is
+used when handling the `/chats` request in your code for 10, 100, and 1000
+chats? Do you think there are ways to lower either the _chat storage_ or the
+memory used to process a request?
+
+## Implementation Guide
+
+This page is the entire _specification_ for the assignment; it's what you need
+to implement. You are free to make whatever choices you like. To help you on
+your way if you aren't sure
