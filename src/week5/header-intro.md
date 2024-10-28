@@ -3,6 +3,8 @@
 In the previous labs and PAs for the class, we've been localizing our source code into one C file, which includes the  `main()` function, as well as any other helper functions needed to properly execute the `main`.
 As programs get more complex and size of the codebase grows, it becomes more important to organize the code by seperating it into multiple files. In C, this is achieved through **header files**
 
+Before we begin, first clone the lab5 starter repo from [here](https://github.com/ucsd-cse29/lab5-starter).
+
 ## Header files
 
 Looking into the `lab5` repository, you'll find two files: `http-server.c` and `http-server.h`. The `.c` file extension is the source code file that we've been previously accustomed to. The `.h` file is its header file. `http-server.h` should look something like this:
