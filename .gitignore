@@ -1,1 +1,5 @@
 book/
+*.out
+*.fls
+*.aux
+*.log
