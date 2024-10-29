@@ -55,7 +55,7 @@ pulled in by `#include` statements.
     - (Note: You can refer to how we did this in the [last lab](../week4/c-multifile-make.html#makefiles))
     - You may find it useful to also include the debugging flags from last lab: `-Wall -Wno-unused-variable -fsanitize=address -g`
 6. Run the `number-server` you just compiled; it should say something like "Server started on port PPPPP".
-7. Open your browser and go to `localhost:PPPPP` where PPPPP is the port number from your server. Your browser will show an error page, but you should see some output from `number-server` in your terminal 
+7. Open your browser and go to `MACHINE.ucsd.edu:PPPPP` where `MACHINE` is the `ieng6` server you are on like `ieng6-201`, `ieng6-202`, or `ieng6-203`; `PPPPP` is the port number from your server like `8000`. Your browser will show an error page, but you should see some output from `number-server` in your terminal 
 8. **In your notes:** Add a screenshot of the terminal output from `number-server`
 
 Congrats, you've got a working server running!
