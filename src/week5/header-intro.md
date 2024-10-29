@@ -64,7 +64,9 @@ Congrats, you've got a working server running!
 
 For the purposes of this lab, we'll also need a few more functions from the C `<string>` library in order to build our backend.
 
-**In your notes**: For each of the following functions, look it up in the manpages (`man XXX`), add its signature and a brief description of what the function does.
+**In your notes**: For each of the following functions, add its signature and write a brief description of what the function does.
+You can look it up in the manpages by typing (`man XXX`) in the terminal, where `XXX` is a function name. 
+For example, typing `man strstr` in the terminal would give you the manual for the `strstr` function. 
 
 * `strstr`
 
