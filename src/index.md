@@ -56,10 +56,14 @@ you can see what's coming.
   - [Debugging Memory with Valgrind](https://diveintosystems.org/book/C3-C_debug/valgrind.html)
   - [GDB Commands in Detail](https://diveintosystems.org/book/C3-C_debug/gdb_commands.html)
 
-**Lecture Materials**
-  - **Monday**
+- **Lecture Materials**
+  - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free)
-      - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free/blob/main/handout/lecture-07-w5m.pdf)
+    - <u>Joe's Lecture:</u> [Handout](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free/blob/main/handout/lecture-07-w5m.pdf) |
+                            [Annotated Handout](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free/blob/main/annotated-lecture-14-w5m.pdf) |
+                            [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/13)
+    - <u>Aaron's Lecture:</u> 
+                [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/13)
 
 
 ### Week 4 – Representations and Memory
