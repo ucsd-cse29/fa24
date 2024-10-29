@@ -62,8 +62,6 @@ Congrats, you've got a working server running!
 
 ## 2.2 String Hunt
 
-### String functions
-
 For the purposes of this lab, we'll also need a few more functions from the C `<string>` library in order to build our backend.
 
 **In your notes**: For each of the following functions, look it up in the manpages (`man XXX`), add its signature and a brief description of what the function does.
