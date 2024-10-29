@@ -50,16 +50,16 @@ A request to `/chats` responds with the plain text rendering of all the chats.
 The rendered chat format is
 
 ```
-#NNNNN 20XX-MM-DD HH:MM  <username>: <message>
-                      (<rusername>)  <reaction>
-                           ... [more reactions] ...
+[#NNNNN 20XX-MM-DD HH:MM]   <username>: <message>
+                         (<rusername>)  <reaction>
+                        ... [more reactions] ...
 ... [more chats] ...
 ```
 
 Where:
 
-- `#NNNNN` is `#` followed by a number like `#00005`, where the integer is the id of the
-chat (ids start at 1 and count up)
+- `#NNNNN` is `#` followed by a number like `#    5`, where the integer is the id of the
+chat (ids start at 1 and count up). It is always 5 characters long, with leading spaces.
 - `YYYY-mm-dd HH:MM` is the _timestamp_ of the chat (when it was sent).
     - `YYYY` is the year, like `2024`
     - `mm` is the two-digit month, like `10` for October
@@ -67,25 +67,27 @@ chat (ids start at 1 and count up)
     - `HH` is the two-digit hour in 24-hour format, like `14` for 2pm
     - `MM` is the two-digit minute, like `55`
 - `<username>` is the username of the user who sent the chat (without the
-surrounding `<>`). It should always have the *last* character rendered in column 35 and the colon rendered at column 36
-- `<message>` is the text of the message the user entered. It should always start on column 38
-- `<rusername>` is the name of a user who reacted to the message. It should always be in parentheses with the close parenthesis in column 35
-- `<reaction>` is a _reaction_ to a message
+surrounding `<>`). There should always be whitespace between the closing `]` of the timestamp and the start of the username, and the colon should be immediately after the username.
+- `<message>` is the text of the message the user entered. It should always start after a single space after the colon
+- `<rusername>` is the name of a user who reacted to the message. It should
+always be in parentheses with the close parenthesis lined
+up with (in the same column as) the colon
+- `<reaction>` is a _reaction_ to a message, it should always be lined up with the start of the message
 
 So an example chats rendering might look like:
 
 ```
-#00001 2024-10-06 09:01         joe: hi aaron
-#00002 2024-10-06 09:02       aaron: sup
-#00003 2024-10-06 09:04         joe: working on the example chat for the PA
-#00004 2024-10-06 09:06       aaron: oh cool what should it say
-#00005 2024-10-06 09:07         joe: I dunno we could go pretty meta with it? I pushed an example go check it out. like a chat about the chat
-#00006 2024-10-06 09:10       aaron: eh kinda lame tbh
-#00007 2024-10-06 09:11         joe: whatever I already wrote it, going with it as-is
-#00008 2024-10-06 09:12       aaron: ok but make sure we don't look like jerks
-#00009 2024-10-06 09:12       aaron: or at least not me
+#    1 2024-10-06 09:01         joe: hi aaron
+#    2 2024-10-06 09:02       aaron: sup
+#    3 2024-10-06 09:04         joe: working on the example chat for the PA
+#    4 2024-10-06 09:06       aaron: oh cool what should it say
+#    5 2024-10-06 09:07         joe: I dunno we could go pretty meta with it? I pushed an example go check it out. like a chat about the chat
+#    6 2024-10-06 09:10       aaron: eh kinda lame tbh
+#    7 2024-10-06 09:11         joe: whatever I already wrote it, going with it as-is
+#    8 2024-10-06 09:12       aaron: ok but make sure we don't look like jerks
+#    9 2024-10-06 09:12       aaron: or at least not me
                               (joe)  👍🏻 
-#00010 2024-10-06 09:12         joe: good talk
+#   10 2024-10-06 09:12         joe: good talk
 ```
 
 
@@ -102,26 +104,22 @@ Here's another:
 #00002 2024-10-24 13:02        yash: OK we'll go with what joe said
 ```
 
-#### `/send`
+#### `/post`
 
-A `send` request looks like this:
+A `post` request looks like this:
 
-`/send?user=<username>&message=<message>`
+`/post?user=<username>&message=<message>`
 
 This creates a new chat with the given username and message string with a
 timestamp given by the time the request is received by the server.  Responds
 with the list of all chats (including the new one).
 
-This uses the standard format for [URL parameters and query
-strings](https://en.wikipedia.org/wiki/Query_string). The username should always
-come first and the message second. If a parameter is missing or if other
-paramters are given, the behavior is undefined.
-
-If message is longer than 1000 bytes, only the first 1000 bytes are used as
-the message.
-
-If username is longer than 7 bytes, only the first 7 bytes are used as the
-username.
+- If a parameter is missing or if other parameters are given, the program should
+_not_ crash, but instead respond with some kind of error.
+- If the path and query parameters starting with `/` is longer than 1000 bytes
+total, there is no effect and a 404 response is returned.
+- If username is longer than 12 bytes, only the first 12 bytes are used as the
+username
 
 #### `/react`
 
@@ -161,4 +159,11 @@ memory used to process a request?
 
 This page is the entire _specification_ for the assignment; it's what you need
 to implement. You are free to make whatever choices you like. To help you on
-your way if you aren't sure
+your way, we have an _implementation guide_:
+
+- A lot of the background you need is in Lab 5 [Part 2](https://ucsd-cse29.github.io/fa24/week5/header-intro.html) and [Part 3](https://ucsd-cse29.github.io/fa24/week5/number-server.html). Make sure you're comfortable with and have completed those ideas.
+- Discussion sections [this
+week](https://ucsd-cse29.github.io/fa24/index.html#week-5--managing-heap-memory)
+will cover examples related to parsing query parameters
+- [Representing Chats and Reactions]()
+- [Timestamps]()
