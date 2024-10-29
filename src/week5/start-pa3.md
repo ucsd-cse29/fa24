@@ -5,9 +5,9 @@ For the next PA, you'll be creating your own chatroom server, where users can se
 
 We've included a client on the `ieng6` machines that you can use to communicate in our chatroom.
 
-We can run our chat-client with: (where `<machine>` is `ieng6-201` for Joe's lab, or `ieng6-202` for Aaron's lab)
+We can run our chat-client with: (where `MACHINE` is `ieng6-201` for Joe's lab, or `ieng6-202` for Aaron's lab)
 ```
-/home/linux/ieng6/cs29fa24/public/chat-client <username> <machine> 8000
+/home/linux/ieng6/cs29fa24/public/chat-client USERNAME MACHINE 8000
 ```
 
 **Task:** 
@@ -20,13 +20,13 @@ The client is cool, but there are many other ways we can also interact with the 
 
 To see all the messages of the chat server we can curl the url:
 ```
-curl '<machine>.ucsd.edu:8000/chats'
+curl 'MACHINE.ucsd.edu:8000/chats'
 ```
 
 
 To send a message to the chat server, we can curl the url:
 ```
-curl '<machine>.ucsd.edu:8000/post?user=<username>&message=<message>'
+curl 'MACHINE.ucsd.edu:8000/post?user=USERNAME&message=MESSAGE'
 ```
 **Task:** 
 
@@ -35,11 +35,11 @@ curl '<machine>.ucsd.edu:8000/post?user=<username>&message=<message>'
 
 To react to another user's message, we can curl the url:
 ```
-curl '<machine>.ucsd.edu:8000/react?user=<username>&reaction=<reaction>&id=<id>'
+curl 'MACHINE.ucsd.edu:8000/react?user=USERNAME&reaction=REACTION&id=ID'
 ```
-\<reaction\> can be any 16 byte message and \<id\> is the id of the message you wish to react to. 
+`REACTION` can be any 16 byte message and `ID` is the id of the message you wish to react to. 
 
 **Task:** 
 
 3. Try reacting to your group member's message from your web browser (Chrome, Safari, Firefox, etc.)
-4. **In your notes:** Add a screenshot from your web browser of `<machine>.ucsd.edu:8000/chats`.
+4. **In your notes:** Add a screenshot from your web browser of `MACHINE.ucsd.edu:8000/chats`.
