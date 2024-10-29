@@ -75,7 +75,6 @@ For the purposes of this lab, we'll also need a few more functions from the C `<
 
 ## 2.3 HTTP 404 Response
 
-**WIP: NEED TO TRIM THIS SECTION DOWN**
 
 When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**. 
 When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**. 
