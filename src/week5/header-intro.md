@@ -1,4 +1,4 @@
-# Part 2: Number Server
+# Part 2: Headers and Servers
 
 In parts 2 and 3, you'll be writing your own simple webserver that keeps track of and lets you modify the value of a number (which should be a bit easier than writing a whole chat server).
 
