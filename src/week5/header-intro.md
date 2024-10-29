@@ -53,7 +53,7 @@ pulled in by `#include` statements.
     - (Note: You can refer to how we did this in the [last lab](../week4/c-multifile-make.html#makefiles))
     - You may find it useful to also include the debugging flags from last lab: `-Wall -Wno-unused-variable -fsanitize=address -g`
 6. Run the `number-server` you just compiled; it should say something like "Server started on port PPPPP".
-7. Open your browser and go to `localhost:PPPPP` where PPPPP is the port number from yourserver. Your browser will show an error page, but you should see some output from `number-server` in your terminal 
+7. Open your browser and go to `localhost:PPPPP` where PPPPP is the port number from your server. Your browser will show an error page, but you should see some output from `number-server` in your terminal 
 8. **In your notes:** Add a screenshot of the terminal output from `number-server`
 
 Congrats, you've got a working server running!
@@ -78,6 +78,9 @@ For the purposes of this lab, we'll also need a few more functions from the C `<
 **WIP: NEED TO TRIM THIS SECTION DOWN**
 
 When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**. 
+When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**. 
+Everything 
+When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**.  
 Everything 
 The request is the client asking the server to do something. The server takes the request, completes it (if possible) and returns a **response** to the client.
 
@@ -88,18 +91,19 @@ Host: localhost:37107
 ... many other headers
 ```
 
-More sophisticated web servers will process much more of the information here, but for now all we care about is the bit after `GET`, which is the target of the request.
-
 > NOTE 📝: There's a lot of names that refer to parts of this `HTTP target`.
 > It's not a url, as url refers to the full address, e.g. `http://address:port/path/to/page?query`.
 > It's also not just the path, as technically the path goes only up to the first '?', and anything after that is the "query-string"
 > The path would also sometimes be called an "endpoint" in the context of web-APIs or web-servers.
 
-In the next part of this lab, you will make your server handle three additional **endpoints**, `/shownum`
+Right now, we can compile and run our numeric-server, but it doesn't serve anything because the functions have not yet been implemented.
+#### **Task**
+1. Use `curl` to access `localhost:<port>` with the numeric server running. How does `curl` respond?
+2. **In your notes**: Add a screenshot of your browser accessing `localhost:<port>` with the numeric-server still running. How is this different than if the server was not running?
 
-Right now, we can compile and run our numeric-server, but it doesn't serve anything because the functions have not yet been implemented. 
 
-As a placeholder, we can serve a 'Not Found' response to the client for all our unimplemented functions.
+
+In the next part of this lab, you will make your server handle three additional **endpoints**. For now, we can serve a 'Not Found' response to the client for all our unimplemented functions.
 
 To send this message across the network, we use the `write` function:
 ```c
@@ -109,11 +113,6 @@ The `write` function is used to write `count` bytes of `buf` to the `fd` file de
 
 To send the 'Not Found' response, we first need to respond with an HTTP header (this tells the client what kind of response with this)
 ```
-
-```
-
-After sending the HTTP response header
-```
 // Define this at the top of your C file:
 const char HTTP_RESP_404 = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\n"
 //...
@@ -121,12 +120,12 @@ const char HTTP_RESP_404 = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r
 write(client_sock, HTTP_404_NOT_FOUND, strlen(HTTP_404_NOT_FOUND))
 ```
 
-404 is a **status code** that tells the client that the URL request was not found. 
+404 is a **status code** that tells the client that the URL request was not found. Optionally, we can include any other text we want to display on the client.
 
-#### Task
-1. Modify the handle_404 function to send a response back to the user, consisting of a 404 HTTP header, followed by the formatted message
-2. Once you've done this, connect to your server from a browser and make sure you can see the error message, including the path of the url you connected to.
-3. Try connecting to different paths on your server. Does it do anything interesting if you put in special characters? Spaces? Emoji?
-4. **In your notes:** Add a screenshot of the 404 page in your browser
+#### **Task**
+3. Once you've done this, connect to your server from a browser and make sure you can see the error message, including the path of the url you connected to.
+4. **In your notes:** Add a screenshot of the 'Not Found' page in your browser. How is this different from the previous error page?
+5. Try connecting to different paths on your server. Does you notice anything interesting if you put in add special characters to the path? Spaces? Emoji?
+ 
 
 

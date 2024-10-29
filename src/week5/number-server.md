@@ -31,7 +31,7 @@ The status code of 200 tells the client that the incoming response is valid.
 
 3. Next, we encode the message to return back to the client. For `handle_shownum()` the current value of `global_num` should be encoded into the response message. Which C string function can we use to do this? (**Hint:** see the previous section of the lab)
 
-4. After completing the logic for the route, we need to ensure that this code is only called on the correct url. In `handle_response`, the `url` only includes the path from `/` to the end. If we only want `handle_shownum()` to run when `/shownum` exists as a *substring* in the `url`. What C string function can we use to do this?
+4. After completing the logic for the route, we need to ensure that this code is only called on the correct url. In `handle_response`, the `url` only includes the path from `/` to the end. If we only want `handle_shownum()` to run when `/shownum` exists as a *substring* in the `url`, what C string function can we use to do this?
 
 After completing the `/shownum` route, curl the route with:
 
