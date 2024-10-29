@@ -35,7 +35,7 @@ curl 'MACHINE.ucsd.edu:8000/post?user=USERNAME&message=MESSAGE'
 
 To react to another user's message, we can curl the url:
 ```
-curl 'MACHINE.ucsd.edu:8000/react?user=USERNAME&reaction=REACTION&id=ID'
+curl 'MACHINE.ucsd.edu:8000/react?user=USERNAME&message=REACTION&id=ID'
 ```
 `REACTION` can be any 16 byte message and `ID` is the id of the message you wish to react to. 
 
