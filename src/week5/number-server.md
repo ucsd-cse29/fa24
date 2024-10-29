@@ -2,29 +2,25 @@
 
 Now that we've completed our walkthrough of the basics of the http-server library. It's time to use the library to create our own server. 
 
-The number-server will implement 4 different routes:
+The number-server needs handle 3 different routes:
 
 
-- `handle_shownum(int client_sock)`
+- `/shownum`
 
     This function responds to the client socket with the current value of `num`.
 
-- `handle_increment(int client_sock)`
+- `/increment`
 
     This function increments the value of `num` by one and responds to the client with the new value of `num`.
 
-- `handle_add(char* url, int client_sock)`
+- `/add?value=NNN`
 
-    This function increments the value of `num` by the value encoded in `url` and responds to the client with the new value of `num`.
+    This function increments the value of `num` by the value encoded in `NNN` (a decimal integer) and responds to the client with the new value of `num`
 
-- `handle_response(char* request, int client_sock)`
+We'll walk you through the first one, then you can try the others on your own.
 
-    This function takes in a `char*` of the request URL and an `int` id of the client socket, and directs the response to the corresponding route.
+## 3.1 `/shownum`
 
-
-For these functions, try implementing them on your own. Here, we'll implement the `handle_shownum()` function, with the other functions sharing a similar structure.
-
----
 1. Every HTTP response first begins with headers, which include a **status code**. Every response to a successful request begins with:
     ```
     "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n"
@@ -49,9 +45,14 @@ Your number is 0
 ```
 We officially got a web server running! Now, you have all the tools to implement the other functions of `number-server`.
 
+## 3.2 Query paramters:
 
 
-### HTTP Query Parameters
+
+## 3.3 `/add?value=NNN`
+
+
+**WIP: TODO:start with what they need to accomplish, that motivates the explanation** For the /add endpoint, we'll need to specify some additional info (the number to add)
 
 When sending a GET request in HTTP, the only data sent from the client to the server is the URL. This means that any data we need to include with the request must be encoded into the url.
 This data is encoded as **query parameters** which follow a `?` in the url and usually take the form of
@@ -69,5 +70,6 @@ In the case of `handle_add`, we can extract the query parameter from the URL lik
 int add_val;
 sscanf(query, "value=%d", &add_val); 
 ```
+** WIP TODO: we don't have a `query` in our starter, make this take path?**
 
 In this example, the query string is passed in, and the value of the query parameter is copied into the address of our variable `add_val`. -->
