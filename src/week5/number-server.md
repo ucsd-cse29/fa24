@@ -45,31 +45,27 @@ Your number is 0
 ```
 We officially got a web server running! Now, you have all the tools to implement the other functions of `number-server`.
 
-## 3.2 Query paramters:
+## 3.2 Query parameters:
 
 
+When sending a GET request in HTTP, the only data sent from the client to the server is the URL. This means that any data we need to include with the request must be encoded into the url. 
 
-## 3.3 `/add?value=NNN`
-
-
-**WIP: TODO:start with what they need to accomplish, that motivates the explanation** For the /add endpoint, we'll need to specify some additional info (the number to add)
-
-When sending a GET request in HTTP, the only data sent from the client to the server is the URL. This means that any data we need to include with the request must be encoded into the url.
 This data is encoded as **query parameters** which follow a `?` in the url and usually take the form of
 ```
 ?keyA=value&keyB=value&...
 ```
-<!-- To parse the query string to extract the necessary values, we'll use a new C function:
-```c
-int sscanf(char* str, char* format, ...)`.
-```
+The server can then extract the values it needs from this query string and use it in its execution.
 
-`sscanf()` is somewhat of a combination of the `fgets()` and `printf()` that we've previously used before. It reads formatted input (`format`) from a string `str` and stores the result at the provided addresses.
-In the case of `handle_add`, we can extract the query parameter from the URL like so:
-```c
-int add_val;
-sscanf(query, "value=%d", &add_val); 
-```
-** WIP TODO: we don't have a `query` in our starter, make this take path?**
 
-In this example, the query string is passed in, and the value of the query parameter is copied into the address of our variable `add_val`. -->
+For the case of the `/add` endpoint, we need to extract the addition operand from the url. A valid request to `/add` must have the path of
+```
+/add?value=<number>
+```
+Because this endpoint only takes in one argument, parsing is simple.
+
+
+**Task**:
+
+5. What string function could we use to *scan* through our path and extract the number?
+6. Try using this function to print out the value of `value` from the url path
+7. Implement the `/add` endpoint for your numeric-server
