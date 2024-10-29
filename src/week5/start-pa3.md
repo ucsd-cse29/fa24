@@ -26,7 +26,7 @@ curl '<machine>.ucsd.edu:8000/chats'
 
 To send a message to the chat server, we can curl the url:
 ```
-curl '<machine>.ucsd.edu:8000/send?user=<username>&message=<message>'
+curl '<machine>.ucsd.edu:8000/post?user=<username>&message=<message>'
 ```
 **Task:** 
 
