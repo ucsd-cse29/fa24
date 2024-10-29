@@ -5,17 +5,10 @@ For the next PA, you'll be creating your own chatroom server, where users can se
 
 We've included a client on the `ieng6` machines that you can use to communicate in our chatroom.
 
-We can run our chat-client with:
+We can run our chat-client with: (where `<machine>` is `ieng6-201` for Joe's lab, or `ieng6-202` for Aaron's lab)
 ```
-/home/linux/ieng6/<cse folder>/public/chat-client <username> <machine> 8000
+/home/linux/ieng6/cs29fa24/public/chat-client <username> <machine> 8000
 ```
-For Joe's lab use:
-* \<cse folder\> - cs29fa24
-* \<machine\> - ieng6-201
-
-For Aaron's lab use:
-* \<cse folder\> - cs29fa24b
-* \<machine\> - ieng6-202
 
 **Task:** 
 1. Choose a username and send a message to your lab room's chat server.
@@ -27,13 +20,13 @@ The client is cool, but there are many other ways we can also interact with the 
 
 To see all the messages of the chat server we can curl the url:
 ```
-curl <machine>.ucsd.edu:8000/chats
+curl '<machine>.ucsd.edu:8000/chats'
 ```
 
 
 To send a message to the chat server, we can curl the url:
 ```
-curl <machine>.ucsd.edu:8000/send?user=<username>&message=<message>
+curl '<machine>.ucsd.edu:8000/send?user=<username>&message=<message>'
 ```
 **Task:** 
 
@@ -42,7 +35,7 @@ curl <machine>.ucsd.edu:8000/send?user=<username>&message=<message>
 
 To react to another user's message, we can curl the url:
 ```
-curl <machine>.ucsd.edu:8000/react?user=<username>&reaction=<reaction>&id=<id>
+curl '<machine>.ucsd.edu:8000/react?user=<username>&reaction=<reaction>&id=<id>'
 ```
 \<reaction\> can be any 16 byte message and \<id\> is the id of the message you wish to react to. 
 
