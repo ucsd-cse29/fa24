@@ -1,51 +1,62 @@
-# Header Files and more string functions
+# Part 2: HTTP Server
 
-In the previous labs and PAs for the class, we've been localizing our source code into one C file, which includes the  `main()` function, as well as any other helper functions needed to properly execute the `main`.
-As programs get more complex and size of the codebase grows, it becomes more important to organize the code by seperating it into multiple files. In C, this is achieved through **header files**
+## 2.0 Getting started
+#### Task
 
-Before we begin, first clone the lab5 starter repo from [here](https://github.com/ucsd-cse29/lab5-starter).
+1. If you haven't done so already, log onto `ieng6`, then run the corresponding prep command for your class (`cs29fa24` for Joe's, `cs29fa24b` for Aaron's).
+2. Fork the [lab5 starter repo](https://github.com/ucsd-cse29/lab5-starter), then clone it. (If you're unsure how, you can refer back to how we did this in
+   [Lab 3](../week3/index.html#42---git-cli-commands) and [Lab 4](../week4/push-pa2-code.html#pushing-pa2-code-to-github-from-ieng6))
 
-## Header files
+### Header files
 
-Looking into the `lab5` repository, you'll find two files: `http-server.c` and `http-server.h`. The `.c` file extension is the source code file that we've been previously accustomed to. The `.h` file is its header file. `http-server.h` should look something like this:
+Looking into the `lab5` repository, you'll find two **source files** (`number-server.c`, `http-server.c`), and one **header file** (`http-server.h`). 
+In the previous labs and PAs for the class, our code has consisted of a single `.c` file, containing a `main()` and all associated functions.
+As programs get more complex, it becomes increasingly important to organize the code by seperating it into multiple files.
+
+`http-server.h` should look like this:
 ```c
 #ifndef HTTP_SERVER_H
 #define HTTP_SERVER_H
 
 #include <stdlib.h>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <stdio.h>
-#include <time.h>
-
+// ... more #includes
 
 void start_server(void(*handler)(char*, int), int port);
-
 #define BUFFER_SIZE 2048
 
 #endif
 ```
-Similar to an interface in Java, the header contains function signatures and other definitions that can be shared across multiple C files. In this instance, we only define the `start_server()` function, which we will use later in the lab to start our chatroom server. 
-It's not necessary to fully understand the implementation of `start_server`, but the idea behind the function is available in the pa3 [writeup](https://github.com/ucsd-cse29/fa24/blob/main/src/pa/pa3/http-server.md).
 
-The functions declared in the header will be defined in its corresponding `.c` file (`http-server.c` in this case). 
-Every function in a C file must have his visibility defined in one of two ways:
-- Public functions should be defined in the header file. These are the functions that will be accessed by any external source files.
-- Private functions (typically helpers or utilities) **must** include the `static` keyword in its declaration (in the source file) to specify its internal use only.
+This header file contains the **declaration** of `start_server`, which includes all info needed for C to call a function, which are its arguments and return type. However the **definition** of the function 
+(i.e. the actual code that it runs) are in `http-server.c`.
+To call this function, `number-server.c` needs the declaration, which it gets by including `http-server.h`.
 
-When compiling our program, all source files must be included as arguments to `gcc`.
+> EXTRA INFO 📝: 
+> 
+> - It's not necessary to fully understand the implementation of `start_server`, but the idea behind the function is available in the pa3 [writeup](https://github.com/ucsd-cse29/fa24/blob/main/src/pa/pa3/http-server.md).
+> - Every function in a C file should have its visibility defined in one of two ways:
+>     - Public functions (meant to be called from other source files) need to be declared in a header file.
+>     - Private functions (typically helpers or utilities) **should always** be declared as `static` (e.g, `static int foo() {...}`) to specify that they shouldn't be visible to other `.c` files.
+>
+> - The `ifndef/define/endif` at the start and end of a header are an [include guard](https://en.wikipedia.org/wiki/Include_guard)
 
-**Task**: Try compiling the `numeric_server` using gcc. Create a `Makefile` with your new compilation command. (HINT: Remember how we did that in the [last lab](../week4/c-multifile-make.html)?)
+## 2.1 Compiling with multiple files
 
-**In your notes:** Write down what happens when you don't include the `http-server` file in `gcc`.  What happens when you **ONLY** include the `http-server file` in `gcc`? 
+When compiling a program with multiple source files, all source (`.c`) files must be included as arguments to `gcc`. NOTE: you don't need to specify the header files to gcc; they are automatically
+pulled in by `#include` statements.
 
-After getting the server running, open your browser and go to `localhost:<port>` where port is the number defined in the terminal.
+#### Task
 
-**In your notes:** Add a screenshot of what you see.
+3. Try compiling the `number_server` using gcc. (Note: you may need to pass in the `-std=c11` flag)
+4. **In your notes:** Write down what happens when you don't include the `http-server.c` file in `gcc`.  What happens when you **ONLY** include the `http-server.c` file in `gcc`? 
+5. Once you're successfully able to compile this program, create a `Makefile` so that you can compile `number_server` just by typing `make`.
+    - (Note: You can refer to how we did this in the [last lab](../week4/c-multifile-make.html#makefiles))
+    - You may find it useful to also include the debugging flags from last lab: `-Wall -Wno-unused-variable -fsanitize=address -g`
+6. Run the `number-server` you just compiled; it should say something like "Server started on port PPPPP".
+7. Open your browser and go to `localhost:PPPPP` where PPPPP is the port number from yourserver. Your browser will show an error page, but you should see some output from `number-server` in your terminal 
+8. **In your notes:** Add a screenshot of the terminal output from `number-server`
 
-Congrats, we got a working server running!
+Congrats, you've got a working server running!
 
 ### String functions
 
