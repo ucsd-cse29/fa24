@@ -1,4 +1,4 @@
-# Introduction to PA3
+# Part 1: Let's Have a Chat
 
 Entering lab, you may have noticed something interesting running on the projector. We've started up a demonstration of the next PA to play around with.
 For the next PA, you'll be creating your own chatroom server, where users can send and react to other's messages.
