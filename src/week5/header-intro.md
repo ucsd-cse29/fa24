@@ -119,8 +119,8 @@ Content-Type: text/plain
 
 
 #### **Task**
-1. Use `curl` to access `localhost:<port>` with the numeric server running. How does `curl` respond?
-2. **In your notes**: Add a screenshot of your browser accessing `localhost:<port>` with the numeric-server still running. How is this different than if the server was not running?
+1. Use `curl` to access `MACHINE.ucsd.edu:PPPPP` with the numeric server running. How does `curl` respond?
+2. **In your notes**: Add a screenshot of your browser accessing `MACHINE.ucsd.edu:PPPPP` with the numeric-server still running. How is this different than if the server was not running?
 3. Modify `handle_404` to send an HTTP response back to the client. You'll need to call `write` twice, once to write the response header, and once to write out the body of the response.
 4. Once you've done this, connect to your server from a browser and make sure you can see the error message, including the path of the url you tried to connect to.
 5. **In your notes:** Add a screenshot of the 'Not Found' page in your browser. How is this different from the previous error page?
