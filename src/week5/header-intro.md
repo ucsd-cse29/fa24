@@ -1,4 +1,6 @@
-# Part 2: HTTP Server
+# Part 2: Number Server
+
+In parts 2 and 3, you'll be writing your own simple webserver that keeps track of and lets you modify the value of a number (which should be a bit easier than writing a whole chat server).
 
 ## 2.0 Getting started
 #### Task
@@ -58,7 +60,7 @@ pulled in by `#include` statements.
 
 Congrats, you've got a working server running!
 
-## 2.2 WIP: STRING HUNT
+## 2.2 String Hunt
 
 ### String functions
 
@@ -75,56 +77,52 @@ For the purposes of this lab, we'll also need a few more functions from the C `<
 
 ## 2.3 HTTP 404 Response
 
+Currently our number server isn't responding to requests at all. 
+In part 3 of the lab, you'll make your server handle three kinds of requests, but for now lets start by responding with a '404 Page Not Found'.
 
-When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**. 
-When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**. 
-Everything 
-When we want to view a given **url** e.g. "http://ieng6-201.ucsd.edu:8000/post?user=joe&message=hi", a client (a browser, curl, or our fancy-client) sends an **HTTP request**.  
-Everything 
-The request is the client asking the server to do something. The server takes the request, completes it (if possible) and returns a **response** to the client.
+### HTTP Requests
 
-An HTTP request looks something like this:
+When we request a given url e.g. `ieng6-201.ucsd.edu:8000/post?user=joe&message=hi`, our web-client (a browser, curl, or our fancy-client) does some work on our behalf.
+
+The start of the url gives us the address (`ieng6-201.ucsd.edu`) and port (`8000`) of the server our client connects to. Once connected, it sends an **HTTP request**, which looks something like this:
 ```
-GET /some/url/path?params=foo HTTP/1.1
-Host: localhost:37107
+GET /post?user=joe&message=hi HTTP/1.1
+User-Agent: curl/7.29.0
 ... many other headers
 ```
 
-> NOTE 📝: There's a lot of names that refer to parts of this `HTTP target`.
-> It's not a url, as url refers to the full address, e.g. `http://address:port/path/to/page?query`.
-> It's also not just the path, as technically the path goes only up to the first '?', and anything after that is the "query-string"
-> The path would also sometimes be called an "endpoint" in the context of web-APIs or web-servers.
+The string after GET is the **path** of the request, and that's the part that will change depending on the type of request. In part 3, you'll be examining this path to determine how to respond.
 
-Right now, we can compile and run our numeric-server, but it doesn't serve anything because the functions have not yet been implemented.
+### HTTP Responses
+
+Once we've decided what to do with a request, we can send a response back .
+The second argument to `handle_response` is an `int` that is a file descriptor (called the "client socket") for us to write a response to. To send data back to the client, we can use the `write` function:
+```c
+
+write(client_sock, message, message_size);
+//    int          char[]   size_t
+```
+
+An HTTP response for an unknown path should return a "404: Not Found" response that looks like the following:
+```
+HTTP/1.1 404 Not Found
+Content-Type: text/plain
+
+... 404 message to display to user ...
+```
+
+**Note:** A nuance of this is that the newlines in HTTP responses are not just `\n`; they are required to be `\r\n` (which, interestingly, is how line endings work on Windows). Some software will work with just a `\n` for line breaks, but the correct thing to do is use `\r\n`, so in a string literal the HTTP header above would look like
+
+```
+"HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\n"
+```
+
+
 #### **Task**
 1. Use `curl` to access `localhost:<port>` with the numeric server running. How does `curl` respond?
 2. **In your notes**: Add a screenshot of your browser accessing `localhost:<port>` with the numeric-server still running. How is this different than if the server was not running?
-
-
-
-In the next part of this lab, you will make your server handle three additional **endpoints**. For now, we can serve a 'Not Found' response to the client for all our unimplemented functions.
-
-To send this message across the network, we use the `write` function:
-```c
-ssize_t write(int fd, const void buf[count], size_t count)
-```
-The `write` function is used to write `count` bytes of `buf` to the `fd` file descriptor. In this case, writing our message to the `client_sock` fd will send the text to our client through its socket.
-
-To send the 'Not Found' response, we first need to respond with an HTTP header (this tells the client what kind of response with this)
-```
-// Define this at the top of your C file:
-const char HTTP_RESP_404 = "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain\r\n\r\n"
-//...
-// Once you've gotten a request:
-write(client_sock, HTTP_404_NOT_FOUND, strlen(HTTP_404_NOT_FOUND))
-```
-
-404 is a **status code** that tells the client that the URL request was not found. Optionally, we can include any other text we want to display on the client.
-
-#### **Task**
-3. Once you've done this, connect to your server from a browser and make sure you can see the error message, including the path of the url you connected to.
-4. **In your notes:** Add a screenshot of the 'Not Found' page in your browser. How is this different from the previous error page?
-5. Try connecting to different paths on your server. Does you notice anything interesting if you put in add special characters to the path? Spaces? Emoji?
- 
-
+3. Modify `handle_404` to send an HTTP response back to the client. You'll need to call `write` twice, once to write the response header, and once to write out the body of the response.
+4. Once you've done this, connect to your server from a browser and make sure you can see the error message, including the path of the url you tried to connect to.
+5. **In your notes:** Add a screenshot of the 'Not Found' page in your browser. How is this different from the previous error page?
+6. Try connecting to different paths on your server. Does you notice anything interesting if you put in add special characters to the path? Spaces? Emoji?
 
