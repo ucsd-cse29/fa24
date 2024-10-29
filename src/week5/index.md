@@ -9,7 +9,7 @@ Take a moment to ensure you have your group's Google Doc pulled up and answer th
 
 ## Lab Goals
 
-1. [Get Started with PA3](./start-pa3.html)
+1. [Introduction to PA3](./start-pa3.html)
 2. [Combining Multiple C Files](./header-intro.html)
 3. [Implementing the Number Server](./number-server.html)
 

@@ -66,6 +66,8 @@ Because this endpoint only takes in one argument, parsing is simple.
 
 **Task**:
 
-5. What string function could we use to *scan* through our path and extract the number?
-6. Try using this function to print out the value of `value` from the url path
-7. Implement the `/add` endpoint for your numeric-server
+1. What string function could we use to *scan* through our path and extract the number?
+2. Try using this function to print out the value of `value` from the url path
+3. Implement the `/add` endpoint for your numeric-server
+4. **In your notes:** Show your numeric-server working functionally
+5. **In your notes:** Write what you think might cause our numeric-server to crash?
