@@ -1,5 +1,8 @@
 # PA3 - Web Server
 
+- **Due 10pm Friday, October 8, 2024**
+- Github Classroom Assignment: [https://classroom.github.com/a/hlq9KJbK](https://classroom.github.com/a/hlq9KJbK)
+
 ## Web Servers and HTTP
 
 [HTTP](https://en.wikipedia.org/wiki/HTTP) is one of the most common protocols
@@ -28,7 +31,12 @@ $ make chat-server
 $ ./chat-server <optional port number>
 ```
 
-### Chat Server
+It's best to complete the PA on `ieng6`, because it gives a consistent testing
+environment for the live server.
+
+You can also use the client from [Lab 5](https://ucsd-cse29.github.io/fa24/week5/start-pa3.html) to try out your server.
+
+### Requests
 
 The server should start with `./chat-server` and print a single message:
 
@@ -200,7 +208,7 @@ these constraints. To help you on your way, we have an _implementation guide_:
 week](https://ucsd-cse29.github.io/fa24/index.html#week-5--managing-heap-memory)
 will cover examples related to parsing query parameters in requests
 - [HTTP](./http-server.md)
-- [Functions and Milestones](./data-vs-requests.md)
+- [Function-by-function Breakdown](./data-vs-requests.md)
 - [Representing Chats and Reactions](./representations.md)
 - [Other Useful Functions](./helpful-functions.md)
 
