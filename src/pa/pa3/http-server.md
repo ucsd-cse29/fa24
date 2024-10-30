@@ -68,13 +68,7 @@ Hello!
 ```
 
 Then, every time the server gets a request, it will call the `handle_request`
-function, which will print the contents of the request. This simple version
-won't send a response to the client that made the request (like `curl` or a web
-browser, hence the `curl` error mesage)! But it shows how the `handle_request`
-function is called repeatedly on each request.
-
-The section on HTTP [FILL link] shows how requests and responses should be
-formatted for the HTTP protocol.
+function, which will print the contents of the request, and then use the `write` system call to send a response back to the client (in this case with a constant string). This is the entry point to our program, and it's a good starting point for you to build up from!
 
 One other tip for using `start_server`:
 
