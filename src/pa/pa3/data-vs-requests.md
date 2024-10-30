@@ -120,3 +120,21 @@ This function can have several tasks:
 - Call `add_reaction` to do the data update
 - Call `respond_with_chats` to send the response 
 
+## Parsing Functions
+
+One crucial task is getting information out of requests. That is, given a string like this:
+
+```
+"GET /post?user=joe&message=hi HTTP/1.1\r\n"
+```
+
+How do we extract the parts that say `"joe"` and `"hi"`?
+
+There are a few substeps you might consider, whether as helper functions or just parts of an overall approach:
+
+- Isolate the path part (the part starting with `/` and up until the space before `HTTP`)
+- Search for known strings and delimiters like `user=` and `&`
+- Copy parts of the string into new character arrays, paying careful attention to the necessary lengths (some of the limits on requests may be helpful here!). Alternatively, create interior pointers into the path at the appropriate places for the username and message
+
+
+Remember that [Week 4 Monday](https://ucsd-cse29.github.io/fa24/#week-4--representations-and-memory) had a video specifically about strings and interior pointers
