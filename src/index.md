@@ -103,7 +103,7 @@ you can see what's coming.
     
 - **Discussion Materials**
   - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion4-yash) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/4)
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5-arunan.c) |
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion_4.c) |
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/3)
 
 ### Week 3 – Where (Some) Things are in Memory
@@ -151,7 +151,7 @@ you can see what's coming.
 - **Discussion Materials**
   - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion3-yash) |
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/3)
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion3-arunan/blob/main/discussion_3.c) |
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion_3.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/2)
 
 
@@ -202,7 +202,7 @@ you can see what's coming.
 - **Discussion Materials**
   - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion-week2-yash) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/1)
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion2-Arunan/blob/main/main.c) |
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion_2.c) |
                   [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/1) |
                   [GDB Quick Reference Guide](https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf)
 
@@ -250,7 +250,7 @@ you can see what's coming.
                       [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/1)
 
 - **Discussion Materials**
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/fa24/blob/main/src/discussion/discussion_ARUNAN.c) | [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing)
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion_1.c) | [Recording](https://drive.google.com/file/d/17ULGJwpimfNfkU7o8WTouEPml3u4xin6/view?usp=sharing)
 
 ### Week 0 – Welcome!
 
