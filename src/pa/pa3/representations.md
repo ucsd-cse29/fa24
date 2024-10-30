@@ -47,7 +47,7 @@ struct Chat {
 }
 ```
 
-These are ideas – some combination of them might work! Some things to think about:
+These are ideas – some combination of them might work, and they are not necessarily perfect or complete. Some things to think about:
 
 - Which fields are fixed-size?
 - Which fields can grow?
