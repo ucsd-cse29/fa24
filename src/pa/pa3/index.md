@@ -24,19 +24,17 @@ In this programming assignment, you'll write a C program to implement a _chat
 room_ (think a plain-text version of [Slack](https://slack.com/) or
 [Discord](https://discord.com/)).
 
+It's best to complete the PA on `ieng6`, because it gives a consistent testing
+environment for the live server.
+
+You can also use the client from [Lab 5](https://ucsd-cse29.github.io/fa24/week5/start-pa3.html) to try out your server.
+
 Your programs should compile and run with:
 
 ```
 $ make chat-server
 $ ./chat-server <optional port number>
 ```
-
-It's best to complete the PA on `ieng6`, because it gives a consistent testing
-environment for the live server.
-
-You can also use the client from [Lab 5](https://ucsd-cse29.github.io/fa24/week5/start-pa3.html) to try out your server.
-
-### Requests
 
 The server should start with `./chat-server` and print a single message:
 
@@ -52,9 +50,9 @@ It should continue running, listening for requests on that port, until shutdown
 with Ctrl-c. It can print any other logging messages or other output needed to
 the terminal.
 
-The behavior of the chat server is in responding to requests.
+The requests the chat server listens for are described in this section
 
-#### `/chats`
+### `/chats`
 
 A request to `/chats` responds with the plain text rendering of all the chats.
 
@@ -125,7 +123,7 @@ Here's another:
 [#2 2024-10-24 13:02]        yash: OK we'll go with what joe said
 ```
 
-#### `/post`
+### `/post`
 
 A `post` request looks like this:
 
@@ -146,7 +144,7 @@ code 400 or 500)
 - If a post would make there be more than 100000 (one hundred thousand) chats,
 the server should respond with an error (HTTP code 404 or 500)
 
-#### `/react`
+### `/react`
 
 ```
 /react?user=<username>&message=<reaction>&id=<id>
@@ -169,7 +167,7 @@ code 400 or 500) – reactions are intended to be short!
 - If a reaction would make a chat have more than 100 reactions, the server
 should respond with an error (HTTP code 404 or 500)
 
-#### `/reset`
+### `/reset`
 
 A `/reset` request _resets_ the chat server to have no chats or reactions,
 starting from the empty initial state.
