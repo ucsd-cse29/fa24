@@ -137,4 +137,4 @@ There are a few substeps you might consider, whether as helper functions or just
 - Copy parts of the string into new character arrays, paying careful attention to the necessary lengths (some of the limits on requests may be helpful here!). Alternatively, create interior pointers into the path at the appropriate places for the username and message
 
 
-Remember that [Week 4 Monday](https://ucsd-cse29.github.io/fa24/#week-4--representations-and-memory) had a video specifically about strings and interior pointers
+Remember that [Week 4 Monday](https://ucsd-cse29.github.io/fa24/#week-4--representations-and-memory) had a video specifically about strings and interior pointers, and [Week 5 Discussions](https://ucsd-cse29.github.io/fa24/#week-5--managing-heap-memory) are specifically about parsing requests!
