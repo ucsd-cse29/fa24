@@ -103,7 +103,7 @@ you can see what's coming.
     
 - **Discussion Materials**
   - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion4-yash) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/4)
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion_4.c) |
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion4.c) |
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/3)
 
 ### Week 3 – Where (Some) Things are in Memory
