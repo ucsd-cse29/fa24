@@ -8,7 +8,7 @@ using _system calls_ (usually in C) to tell the operating system to send bytes
 over a network.
 
 One nice feature of HTTP is that it is a primarily text-based protocol, which
-makes it easy for humans to read and debug. It is also well-understood by web
+makes it more straightforward for humans to read and debug. It is also well-understood by web
 browsers and programs like `curl`, making it easy to test and connect to
 user-facing devices.
 
