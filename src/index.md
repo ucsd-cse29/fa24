@@ -66,6 +66,7 @@ you can see what's coming.
                             [Annotated Handout](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free/blob/main/annotated-lecture-14-w5m.pdf) |
                             [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/13)
     - <u>Aaron's Lecture:</u> 
+                [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week5/29-fa24-l14.pdf) | 
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/13)
 
 
