@@ -19,7 +19,7 @@
 # Assignments
 
 - [PA3](./pa/pa3/index.md)
-  - [HTTP](.pa/pa3/http-server.md)
-  - [Function-by-function Breakdown](.pa/pa3/data-vs-requests.md)
-  - [Representing Chats and Reactions](.pa/pa3/representations.md)
-  - [Other Useful Functions](.pa/pa3/helpful-functions.md)
+  - [HTTP](./pa/pa3/http-server.md)
+  - [Function-by-function Breakdown](./pa/pa3/data-vs-requests.md)
+  - [Representing Chats and Reactions](./pa/pa3/representations.md)
+  - [Other Useful Functions](./pa/pa3/helpful-functions.md)
