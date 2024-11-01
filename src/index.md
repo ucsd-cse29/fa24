@@ -72,6 +72,10 @@ you can see what's coming.
                 [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week5/29-fa24-l14.pdf) | 
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/13)
 
+- **Discussion Materials**
+  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5.c) |
+                [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/4)
+
 
 ### Week 4 – Representations and Memory
 
