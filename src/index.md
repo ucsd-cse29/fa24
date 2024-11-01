@@ -57,6 +57,9 @@ you can see what's coming.
   - [GDB Commands in Detail](https://diveintosystems.org/book/C3-C_debug/gdb_commands.html)
 
 - **Lecture Materials**
+  - **Friday:**
+    - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week5/29-fa24-l16.pdf)
+
   - **Wednesday:**
     - [Reposotory](https://github.com/ucsd-cse29/fa24-15-w5w-arraylist)
 
