@@ -111,7 +111,7 @@ This function can have several tasks:
 
 ```
 // path is a string like "/react?user=joe&message=hi&id=3"
-void handle_post(char* path, int client)
+void handle_reaction(char* path, int client)
 ```
 
 This function can have several tasks:
