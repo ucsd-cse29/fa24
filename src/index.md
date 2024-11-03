@@ -58,10 +58,16 @@ you can see what's coming.
 
 - **Lecture Materials**
   - **Friday:**
-    - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week5/29-fa24-l16.pdf)
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/15)
+    - <u>Aaron's Lecture:</u> 
+                    [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week5/29-fa24-l16.pdf)
+                    [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/15)
 
   - **Wednesday:**
-    - [Reposotory](https://github.com/ucsd-cse29/fa24-15-w5w-arraylist)
+    - [Repository](https://github.com/ucsd-cse29/fa24-15-w5w-arraylist)
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/14)
+    - <u>Aaron's Lecture:</u> 
+              [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/14)
 
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free)
@@ -73,8 +79,10 @@ you can see what's coming.
                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/13)
 
 - **Discussion Materials**
-  - **Wednesday:** [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5.c) |
-                [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/4)
+  - **Friday:** [Repository](https://github.com/ucsd-cse29/discussion5-yash) |
+                [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/5)
+  - **Wednesday:**  [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion5.c) |
+                    [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/4)
 
 
 ### Week 4 – Representations and Memory
