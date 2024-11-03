@@ -60,7 +60,7 @@ you can see what's coming.
   - **Friday:**
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/15)
     - <u>Aaron's Lecture:</u> 
-                    [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week5/29-fa24-l16.pdf)
+                    [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week5/29-fa24-l16.pdf) | 
                     [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/15)
 
   - **Wednesday:**
