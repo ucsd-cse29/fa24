@@ -52,8 +52,10 @@ you can see what's coming.
 ### Week 6 – URLs, Servers, and a Bit of Everything
 
 - **Lecture Materials**
-  - **Monday**
+  - **Monday:**
     - [Repository (same as Lab 5)](https://github.com/ucsd-cse29/lab5-starter)
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/16)
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/16)
 
 ### Week 5 – Managing (Heap) Memory
 
@@ -72,8 +74,7 @@ you can see what's coming.
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-15-w5w-arraylist)
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/14)
-    - <u>Aaron's Lecture:</u> 
-              [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/14)
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/14)
 
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-14-w5m-join-for-free)
