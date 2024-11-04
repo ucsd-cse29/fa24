@@ -49,6 +49,12 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
+### Week 6 – URLs, Servers, and a Bit of Everything
+
+- **Lecture Materials**
+  - **Monday**
+    - [Repository (same as Lab 5)](https://github.com/ucsd-cse29/lab5-starter)
+
 ### Week 5 – Managing (Heap) Memory
 
 - **Readings & Resources**
