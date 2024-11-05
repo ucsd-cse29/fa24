@@ -6,9 +6,9 @@
 - [Joe Gibbs Politz](https://jpolitz.github.io) (Instructor)
 
 [Basics](#basics) -
+[Staff &amp; Resources](#staff-resources) -
 [Schedule](#schedule) -
 [Course Components](#syllabus) -
-[Staff &amp; Resources](#staff-resources) -
 [Grading](#grading) -
 [Policies](#policy)
 
@@ -35,13 +35,19 @@ students present as well.
     - Joe:
         - Tuesday 9-10am (prioritizes general advising, CSE office #3206)
         - Tuesday 1-2pm (prioritizes CSE29, CSE lab B250)
-- TA office hours – See the [office hours calendar](https://ucsd-cse29.github.io/fa24/index.html#office-hours-calendar)
+- Office Hours – See the [Office Hours Calendar](https://ucsd-cse29.github.io/fa24/index.html#office-hours-calendar)
 - Podcasts: [podcast.ucsd.edu](https://podcast.ucsd.edu)
 - Q&A forum: [Piazza](https://piazza.com/ucsd/fall2024/cse29/home)
 - Gradescope: [https://www.gradescope.com](https://www.gradescope.com)
 - Textbook/readings: [Dive Into Systems](https://diveintosystems.org/book/), plus additional readings we will assign (all free/online)
   - Free: [MIT Missing Semester](https://missing.csail.mit.edu/)
   - Not free but pretty cheap: [Julia Evans Zines](https://wizardzines.com/), especially [The Pocket Guide to Debugging](https://wizardzines.com/zines/debugging-guide/)
+
+## <a name="staff-resources"></a> Staff Resources
+
+### Office Hours Calendar
+
+<iframe src="https://calendar.google.com/calendar/embed?src=c_b354a60fd90d70b416c5ebd8a4c1997692dcad6b9ad42806997478e11386eb3d%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## <a name="schedule"></a> Schedule
 
@@ -295,13 +301,6 @@ you can see what's coming.
                     [Annotated Handout](https://github.com/ucsd-cse29/fa24-01-w0f-hello/blob/main/annotated-lecture-01-w0f.pdf) 
       - <u>Aaron's Lecture:</u> 
                     [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week0/29-fa24-l1.pdf)
-
-## <a name="staff-resources"></a> Staff Resources
-
-### Office Hours Calendar
-
-<iframe src="https://calendar.google.com/calendar/embed?src=c_b354a60fd90d70b416c5ebd8a4c1997692dcad6b9ad42806997478e11386eb3d%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
 
 ## Syllabus
 
