@@ -152,7 +152,9 @@ the server should respond with an error (HTTP code 404 or 500)
 
 Creates a new *reaction* to a chat by the given username with the given message
 string, reacting to the post with the given id (the ids are the `#N` at the
-beginning of posts)
+beginning of posts). It must
+respond with the list of all chats (including the new one).
+
 
 Limits and constraints:
 
@@ -170,7 +172,7 @@ should respond with an error (HTTP code 404 or 500)
 ### `/reset`
 
 A `/reset` request _resets_ the chat server to have no chats or reactions,
-starting from the empty initial state.
+starting from the empty initial state. Should respond with a successful HTTP response with an empty body.
 
 It should be possible to `/reset` the room many times, and after resetting the
 memory usage of the program should be the same as in the empty initial state.
