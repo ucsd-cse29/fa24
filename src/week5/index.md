@@ -1,6 +1,5 @@
 # Week 5 – Building a Simple Server
 
-<!-- **This is a DRAFT and may change before lab on Tuesday!** -->
 ## Welcome to Week 5!
 
 Take a moment to ensure you have your group's Google Doc pulled up and answer the following question as a group while also filling it out in the Google Doc!
