@@ -54,7 +54,7 @@ you can see what's coming.
 - **Lecture Materials**
   - **Monday:**
     - [Repository (same as Lab 5)](https://github.com/ucsd-cse29/lab5-starter)
-    - <u>Joe's Lecture:</u> [Code](https://github.com/ucsd-cse29/lab5-starter/blob/lecture/http-server.c) [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/16)
+    - <u>Joe's Lecture:</u> [Code](https://github.com/ucsd-cse29/lab5-starter/blob/lecture/number-server.c) [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/16)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/16)
 
 ### Week 5 – Managing (Heap) Memory
