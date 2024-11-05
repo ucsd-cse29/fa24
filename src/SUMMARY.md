@@ -15,6 +15,7 @@
   - [Let's Have a Chat](./week5/start-pa3.md)
   - [Headers and Servers](./week5/header-intro.md)
   - [Implementing the Number Server](./week5/number-server.md)
+- [Week 6 Lab](./week6/index.md)
 
 # Assignments
 
