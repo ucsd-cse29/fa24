@@ -14,7 +14,7 @@ In your notes doc, you should be able to show by the end of the lab:
 If you think you're all the way done with PA3, here are some suggestions:
 
 - Implement
-  [https://www.google.com/search?client=safari&rls=en&q=slack+threads&ie=UTF-8&oe=UTF-8](threads)
+  [threads](https://slack.com/help/articles/115000769927-Use-threads-to-organize-discussions)
   in your chat server.
 - Right now the chat server allows anyone to post with any username. Brainstorm
   ways to have a user who uses a username first “claim” it somehow, so others
