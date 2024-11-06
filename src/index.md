@@ -65,6 +65,10 @@ you can see what's coming.
               [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/16)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/16)
 
+- **Discussion Materials**
+  - **Wednesday:**  [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion6.c) |
+                    [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/5)
+
 ### Week 5 – Managing (Heap) Memory
 
 - **Readings & Resources**
