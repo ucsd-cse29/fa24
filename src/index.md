@@ -57,6 +57,8 @@ you can see what's coming.
 
 ### Week 6 – URLs, Servers, and a Bit of Everything
 
+- **Announcements**
+  - [Week 6 Quiz](https://us.prairielearn.com/pl/course_instance/160202/assessment_instance/8826046) is available on PrairieLearn
 - **Lecture Materials**
   - **Monday:**
     - [Repository (same as Lab 5)](https://github.com/ucsd-cse29/lab5-starter)
