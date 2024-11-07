@@ -1,6 +1,6 @@
 # PA3 - Web Server
 
-- **Due 10:10pm Friday, November 11, 2024**
+- **Due 10:10pm Monday, November 11, 2024**
 - Github Classroom Assignment: [https://classroom.github.com/a/hlq9KJbK](https://classroom.github.com/a/hlq9KJbK)
 
 ## Web Servers and HTTP
