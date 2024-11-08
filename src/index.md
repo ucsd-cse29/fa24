@@ -79,6 +79,7 @@ you can see what's coming.
 - **Discussion Materials**
   - **Wednesday:**  [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion6.c) |
                     [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/5)
+  - **Friday:**  [Repository](https://github.com/ucsd-cse29/discussion6-yash) |
 
 ### Week 5 – Managing (Heap) Memory
 
