@@ -72,6 +72,9 @@ you can see what's coming.
               [Annotated Repository](https://github.com/ucsd-cse29/lab5-starter/blob/lecture/number-server.c) | 
               [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/16)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/16)
+  - **Friday:**
+    - <u>Aaron's Lecture:</u> 
+                    [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week6/29-fa24-l19.pdf) | 
 
 - **Discussion Materials**
   - **Wednesday:**  [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion6.c) |
