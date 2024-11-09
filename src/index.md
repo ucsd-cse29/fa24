@@ -63,6 +63,9 @@ you can see what's coming.
   - [PA2 Resubmission](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is available and due Wednesday, November 13 at 10:10 pm
 
 - **Lecture Materials**
+  - **Friday:**
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/18)
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/18)
   - **Wednesday:**
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/17)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/17)
@@ -77,9 +80,10 @@ you can see what's coming.
                     [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week6/29-fa24-l19.pdf) | 
 
 - **Discussion Materials**
+  - **Friday:**  [Repository](https://github.com/ucsd-cse29/discussion6-yash) |
+                 [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/6)
   - **Wednesday:**  [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion6.c) |
                     [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/5)
-  - **Friday:**  [Repository](https://github.com/ucsd-cse29/discussion6-yash) |
 
 ### Week 5 – Managing (Heap) Memory
 
