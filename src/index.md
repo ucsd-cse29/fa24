@@ -55,6 +55,18 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
+### Week 7 – Implementing an Allocator
+
+- **Reading**
+  - [The `void*` Type](https://diveintosystems.org/book/C2-C_depth/advanced_voidstar.html)
+  - [Pointer Arithmetic](https://diveintosystems.org/book/C2-C_depth/advanced_pointer_arithmetic.html)
+  - [Virtual Memory](https://diveintosystems.org/book/C13-OS/vm.html)
+
+- **Lecture Materials**
+  - **Monday:** (No lecture)
+  - **Wednesday:**
+    - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
+
 ### Week 6 – URLs, Servers, and a Bit of Everything
 
 - **Announcements**
