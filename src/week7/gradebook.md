@@ -2,7 +2,7 @@
 
 The relevant file for this part of the lab is found within the `gradebook` directory in the `lab7-starter` repository you cloned at the start of lab.
 
-In this directory you will find a single executable file called `gradebook`. Running this program will display your (fictional) assignment grade for Assignment 1 and ask whether you would like to leave a comment for a regrade:
+In this directory you will find an executable file called `gradebook`. Running this program will display your (fictional) assignment grade for Assignment 1 and ask whether you would like to leave a comment for a regrade:
 ```
 ./gradebook
 Welcome to your gradebook!
