@@ -16,6 +16,10 @@
   - [Headers and Servers](./week5/header-intro.md)
   - [Implementing the Number Server](./week5/number-server.md)
 - [Week 6 Lab](./week6/index.md)
+- [Week 7 Lab](./week7/index.md)
+  - [Crack the Password](./week7/password-crack.md)
+  - [Change your Grade with Buffer Overflows](./week7/gradebook.md)
+  - [Addressing your Memory Errors](./week7/valgrind.md)
 
 # Assignments
 
