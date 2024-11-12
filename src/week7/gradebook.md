@@ -1,4 +1,4 @@
-# Change your Grade with Buffer Overflows (WIP name)
+# Change your Grade with Buffer Overflows
 
 The relevant file for this part of the lab is found within the `gradebook` directory in the `lab7-starter` repository you cloned at the start of lab.
 
@@ -36,7 +36,7 @@ If you'd like to edit your comment, please type your new comment here (or Ctrl +
 A confidential source has informed you of a **vulnerability** in this gradebook that allows you to change your grade for the assignment if you provide an appropriate comment. This source has also given you the following screenshot of the source code to help you:
 
 #### `gradebook.c` Source Code:
-![gradebook source code](../images/gradebook.png)
+![gradebook source code](../images/gradebook_src2.png)
 
 **TASK:**
 1. Using the information above and tools you have learned about in CSE 29, determine how you would **change your grade in Assignment 1 to an A**.
