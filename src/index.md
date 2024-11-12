@@ -70,7 +70,7 @@ you can see what's coming.
 ### Week 6 – URLs, Servers, and a Bit of Everything
 
 - **Announcements**
-  - [Week 6 Quiz](https://us.prairielearn.com/pl/course_instance/160202/assessment_instance/8826046) is available on PrairieLearn
+  - [Week 6 Quiz](https://us.prairielearn.com/pl/course_instance/160202/assessment_instance/8826046) is available on PrairieLearn, due Wed Nov 13 at 8am
   - [PA3 - Web Server](https://ucsd-cse29.github.io/fa24/pa/pa3/index.html) is available and due Monday, November 11 at 10:10 pm
   - [PA2 Resubmission](https://github.com/ucsd-cse29/pa2-hashing-and-passwords) is available and due Wednesday, November 13 at 10:10 pm
 
