@@ -8,8 +8,7 @@ In this directory you will find an executable file called `gradebook`. Running t
 Welcome to your gradebook!
 =========== ASSIGNMENT 1 SUBMISSION ===========
 Due Date : 10/24
-Grade    : D
-Percent  : 65
+Grade    : D (65/100)
 ===============================================
 
 If you'd like to leave a comment on your submission, please enter it here (or Ctrl + D to end):
@@ -23,8 +22,7 @@ If you'd like to leave a comment on your submission, please enter it here (or Ct
 > please regrade my submission
 =========== UPDATED ASSIGNMENT 1 SUBMISSION ===========
 Due Date : 10/24
-Grade    : D
-Percent  : 65
+Grade    : D (65/100)
 Comment  : please regrade my submission
 =======================================================
 
