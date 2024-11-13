@@ -66,9 +66,14 @@ you can see what's coming.
   - [Virtual Memory](https://diveintosystems.org/book/C13-OS/vm.html)
 
 - **Lecture Materials**
-  - **Monday:** (No lecture)
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
+    - <u>Joe's Lecture:</u> 
+              [Annotated Handout](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/annotated-lecture-18-w7w.pdf) | 
+              [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/19)
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/19)
+  - **Monday:** (No lecture)
+
 
 ### Week 6 – URLs, Servers, and a Bit of Everything
 
@@ -79,7 +84,9 @@ you can see what's coming.
 
 - **Lecture Materials**
   - **Friday:**
-    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/18)
+    - <u>Joe's Lecture:</u> 
+      [Annotated Handout](https://drive.google.com/file/d/1naQFWTSb7POHc6J_Iji6bCUIkfQ8NYz1/view?usp=share_link) | 
+      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/18)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/18)
   - **Wednesday:**
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/17)
