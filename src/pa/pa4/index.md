@@ -107,6 +107,6 @@ We will compile your program using the provided `Makefile`s, which you should
 not change.
 
 To get started read through the next few sections about the PA:
-  - [Starter Code](./pa/pa4/starter-code.md)
-  - [Implementation Guide and Milestones](./pa/pa4/guide.md)
-  - [Testing](./pa/pa4/testing.md)
+  - [Starter Code](./starter-code.md)
+  - [Implementation Guide and Milestones](./guide.md)
+  - [Testing](./testing.md)
