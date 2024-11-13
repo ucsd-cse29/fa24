@@ -57,6 +57,9 @@ you can see what's coming.
 
 ### Week 7 – Implementing an Allocator
 
+- **Announcements**
+  - [Week 7 Quiz](https://us.prairielearn.com/pl/course_instance/160202/assessment_instance/8888148) is available on PrairieLearn, due Tue Nov 19 at 8am
+
 - **Reading**
   - [The `void*` Type](https://diveintosystems.org/book/C2-C_depth/advanced_voidstar.html)
   - [Pointer Arithmetic](https://diveintosystems.org/book/C2-C_depth/advanced_pointer_arithmetic.html)
