@@ -87,7 +87,9 @@ you can see what's coming.
     - <u>Joe's Lecture:</u> 
       [Annotated Handout](https://drive.google.com/file/d/1naQFWTSb7POHc6J_Iji6bCUIkfQ8NYz1/view?usp=share_link) | 
       [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/18)
-    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/18)
+    - <u>Aaron's Lecture:</u> 
+      [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week6/29-fa24-l19.pdf) | 
+      [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/18)
   - **Wednesday:**
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/17)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/17)
@@ -97,10 +99,7 @@ you can see what's coming.
               [Annotated Repository](https://github.com/ucsd-cse29/lab5-starter/blob/lecture/number-server.c) | 
               [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/16)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/16)
-  - **Friday:**
-    - <u>Aaron's Lecture:</u> 
-                    [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week6/29-fa24-l19.pdf) | 
-
+                    
 - **Discussion Materials**
   - **Friday:**  [Repository](https://github.com/ucsd-cse29/discussion6-yash) |
                  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/6)
