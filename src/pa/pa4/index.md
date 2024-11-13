@@ -1,5 +1,7 @@
 # PA4 – Malloc
 
+_This assignment is thanks to [Gerald Soosairaj](https://geraldsoosairaj.github.io), Jerry Yu, and the [staff of CSE29 spring 2024](https://cse29sp24.github.io/docs/instructors.html)._
+
 - **Due Monday, Nov 25, 10pm**
 - Github Classroom: [https://classroom.github.com/a/ngxgHFB3](https://classroom.github.com/a/ngxgHFB3)
 
