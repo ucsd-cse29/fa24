@@ -28,3 +28,8 @@
   - [Function-by-function Breakdown](./pa/pa3/data-vs-requests.md)
   - [Representing Chats and Reactions](./pa/pa3/representations.md)
   - [Other Useful Functions](./pa/pa3/helpful-functions.md)
+- [PA4](./pa/pa4/index.md)
+  - [Starter Code](./pa/pa4/starter-code.md)
+  - [Implementation Guide and Milestones](./pa/pa4/guide.md)
+  - [Testing](./pa/pa4/testing.md)
+
