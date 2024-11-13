@@ -5,9 +5,9 @@ For this PA we provide you with some local testing code to help you make sure yo
 
 ## Test Programs
 
-In the repository, you will find the `tests/` directory, where we have privided some small testing programs that test your library function.
+In the repository, you will find the `tests/` directory, where we have provided some small testing programs that test your library function.
 
-By cding in to the `tests/` directory and running make, you can compile all these test programs and run them yourself. These programs are what we will be using in the autograder as well.
+By coding in to the `tests/` directory and running make, you can compile all these test programs and run them yourself. These programs are what we will be using in the autograder as well.
 
 For example, here’s the code for the very first test: `alloc_basic.c`:
 
