@@ -1,5 +1,8 @@
 # PA4 – Malloc
 
+- **Due Monday, Nov 25, 10pm**
+- Github Classroom: [https://classroom.github.com/a/ngxgHFB3](https://classroom.github.com/a/ngxgHFB3)
+
 In class, quizzes, and PAs we've _used_ `malloc` and `free` to manage memory.
 These are functions [written in
 C](https://sourceware.org/git/?p=glibc.git;a=blob;f=malloc/malloc.c)! `glibc`
