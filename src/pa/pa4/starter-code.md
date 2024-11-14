@@ -30,7 +30,7 @@ To compile, run `make` in the terminal from the root directory of the repository
 
 - `libvm.so`: This is a dynamically linked library, i.e., our own memory allocation system that can be linked to other programs (e.g., vmtest). The interface for this library is defined in `vmlib.h`. The `Makefile`s handle compiling with a `.so` for you; we set it up this way to match how production systems include libraries like `stdlib`
 - `vmtest`: This executable is compiled from vmtest.c with libvm.so linked together. It uses your memory management library to allocate/free memory.
-- The starter code in `vmtest.c` is very simple: it calls `vminit()` to initialize our simulated “heap”, and calls the vminfo() function to print out the contents of the heap in a neatly readable format. Run the vmtest executable to find out what the heap looks like rgith after it’s been initialize! (Hint: it’s just one giant free block.)
+- The starter code in `vmtest.c` is very simple: it calls `vminit()` to initialize our simulated “heap”, and calls the vminfo() function to print out the contents of the heap in a neatly readable format. Run the vmtest executable to find out what the heap looks like right after it’s been initialized! (Hint: it’s just one giant free block.)
 
 ### Reading the Starter Code
 
