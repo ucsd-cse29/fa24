@@ -66,6 +66,8 @@ you can see what's coming.
   - [Virtual Memory](https://diveintosystems.org/book/C13-OS/vm.html)
 
 - **Lecture Materials**
+  - **Friday:**
+    - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week7/29-fa24-l21.pdf)
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
     - <u>Joe's Lecture:</u> 
