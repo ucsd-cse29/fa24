@@ -71,7 +71,7 @@ you can see what's coming.
     - <u>Joe's Lecture:</u> 
               [Annotated Handout](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/annotated-lecture-18-w7w.pdf) | 
               [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/19)
-    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/19)
+    - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week7/29-fa24-l20.pdf) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/19)
   - **Monday:** (No lecture)
 
 
