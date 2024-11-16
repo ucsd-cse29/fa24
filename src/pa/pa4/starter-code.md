@@ -3,6 +3,7 @@
 
 The starter code for this assignment is hosted on GitHub Classroom. Use the
 following link to accept the GitHub Classroom assignment:
+[https://classroom.github.com/a/ngxgHFB3](https://classroom.github.com/a/ngxgHFB3)
 
 Just like on PA2/3, clone the repository to ieng6 server.
 
