@@ -60,23 +60,31 @@ you can see what's coming.
 - **Announcements**
   - [Week 7 Quiz](https://us.prairielearn.com/pl/course_instance/160202/assessment_instance/8888148) is available on PrairieLearn, due Tue Nov 19 at 8am
 
-- **Reading**
+- **Readings & Resources**
   - [The `void*` Type](https://diveintosystems.org/book/C2-C_depth/advanced_voidstar.html)
   - [Pointer Arithmetic](https://diveintosystems.org/book/C2-C_depth/advanced_pointer_arithmetic.html)
   - [Virtual Memory](https://diveintosystems.org/book/C13-OS/vm.html)
 
 - **Lecture Materials**
   - **Friday:**
-    - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week7/29-fa24-l21.pdf)
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/20)
+    - <u>Aaron's Lecture:</u>
+              [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week7/29-fa24-l21.pdf) |
+              [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/20)
   - **Wednesday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
     - <u>Joe's Lecture:</u> 
               [Annotated Handout](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/annotated-lecture-18-w7w.pdf) | 
               [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/19)
-    - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week7/29-fa24-l20.pdf) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/19)
+    - <u>Aaron's Lecture:</u> 
+              [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week7/29-fa24-l20.pdf) | 
+              [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/19)
   - **Monday:** (No lecture)
 
-
+  - **Discussion Materials**
+    - **Friday:**  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b01/7)        
+    - **Wednesday:**  [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/6)
+                      
 ### Week 6 – URLs, Servers, and a Bit of Everything
 
 - **Announcements**
