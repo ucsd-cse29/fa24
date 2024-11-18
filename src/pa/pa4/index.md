@@ -59,8 +59,8 @@ block that is large enough for the allocation, then `vmalloc` should return
 Your implementation of `vmalloc` must:
 
 - Use a “best fit” allocation policy
-- Always return an address that is a multiple of 8
-- Always allocate space on 8-byte boundaries
+- Always return an address that is a multiple of **16**
+- Always allocate space on **16-byte** boundaries
 
 More details are in the implementation guide.
 
@@ -70,7 +70,7 @@ More details are in the implementation guide.
 void vmfree(void* ptr)
 ```
 
-The `vmfree` function expects a 8-byte aligned address obtained by a previous
+The `vmfree` function expects a **16-byte** aligned address obtained by a previous
 call to `vmalloc`. If the address ptr is `NULL`, then vmfree does not perform any
 action and returns directly. If the block appears to be a free block, then
 `vmfree` does not perform any action and returns.
