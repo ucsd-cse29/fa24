@@ -57,11 +57,11 @@ you can see what's coming.
 
 ### Week 8 – Allocators and Virtual Memory
 
-**Reading**
+- **Readings & Resources**
   - [C Libraries](https://diveintosystems.org/book/C2-C_depth/advanced_libraries.html)
   - [C Libraries Continued](https://diveintosystems.org/book/C2-C_depth/advanced_writing_libraries.html#_c_libraries_)
 
-**Lecture Materials**
+- **Lecture Materials**
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
 
