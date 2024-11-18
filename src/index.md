@@ -64,6 +64,8 @@ you can see what's coming.
 - **Lecture Materials**
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/21)
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21)
 
 
 ### Week 7 – Implementing an Allocator
