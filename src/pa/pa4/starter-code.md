@@ -35,7 +35,9 @@ To compile, run `make` in the terminal from the root directory of the repository
 
 ### Reading the Starter Code
 
-In this programming assignment, the metadata (header and footer information) is 8 bytes in size, and all blocks are 16-byte aligned. This means the smallest unit of allocation is 16.
+For this programming assignment, we want the addresses returned by `vmalloc` to always be 16-byte aligned (i.e., at an address ending in `0x0`). Since the metadata (block header) is 8 bytes in size, block headers will therefore always be placed at addresses ending in `0x8`. To maintain this alignment, the first block header (`*heapstart`) starts at an offset of 8, and all blocks going forward must have sizes that are multiples of 16 bytes.
+
+Block sizes here refer to the size of the block **including** the header. The smallest possible block is 16 bytes, and would consist of an 8 byte header followed by 8 bytes of allocatable memory. When free, the last 8 bytes of the block would instead contain the block footer, to be used for coalescing free blocks.
 
 The `size_t` data type, which you will see frequently throughout this PA, is a 64-bit (8-byte) unsigned integer type.
 
