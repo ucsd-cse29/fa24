@@ -11,10 +11,12 @@ This provides detailed implementation information and a suggested workflow.
   - write and test the size calculation code.
   - write and test the best-fit policy. (A helper function would be great here.) See later section for testing images.
   - write and test splitting free blocks.
-Begin writing the vmfree() function:
-- Update `vmalloc()` implementation to include block footers.
-- write and test a basic `vmfree()` implementation that only frees one block.
-- write and test coalescing with the previous/next block.
+- Begin writing the vmfree() function:
+  - write and test a basic `vmfree()` implementation that only frees one block.
+  - write and test coalescing with the next block if it is also free.
+- Add block footers / coalescing backwards
+  - update and test `vmfree()` and `vmalloc()` to write block footers into free blocks.
+  - update and test `vmfree()` to coalesce with the previous block if it is free.
 - Test everything!
 
 Consider some helper functions along the way:
@@ -64,15 +66,18 @@ After updating all the relevant metadata, vmalloc should return a pointer to the
 
 ## Implementing vmfree
 
-To free a block, the following actions must be taken (not necessarily in this order):
+The simplest version of `vmfree` just finds the header for the given block and resets the block status bit to 0.
 
-- unset the status bit to 0,
-- create a block footer,
-- unset the next block’s previous bit,
-- coalesce with the next block if it is also free, and
-- coalesce with the previous block if it is also free.
+### Coalescing freed blocks
+
+Just freeing a block is not necessarily enough, since this may leave us with many small free blocks that can't hold a large allocation. When freeing, we also want to check if the next / previous block in the heap are free, and coalesce with them to make one large free block.
 
 If you are coalescing two blocks, remember to update both the header and the footer!
 
-You will also need to revisit your `vmalloc` implementation to add code for creating footers once.
+### Block footers / Previous Bit
 
+Since a block's header contains its size, we know how far forward to move to get to the next block's header. However, when coalescing backwards, we need to know the size of the **previous** block to get to **its** header. To be able to do this without walking the entire list of blocks from the beginning, we write the block size to a footer in the last 8 bytes of the block.
+
+Since footers are only needed during coalescing, we only need to add footers to free blocks; this means that footers don't take up extra space in allocated blocks, and free blocks weren't using that space anyway. However, we then need to make sure we update the "previous block busy" bit correctly so that we don't confuse user data in an allocated block with footer data in a free block.
+
+You will need to update both your `vmalloc` and your `vmfree` implementation to add code for creating/updating accurate footers, and making sure the "previous block busy"  bit is correct.
