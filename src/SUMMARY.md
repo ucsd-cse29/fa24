@@ -20,6 +20,7 @@
   - [Crack the Password](./week7/password-crack.md)
   - [Change your Grade with Buffer Overflows](./week7/gradebook.md)
   - [Addressing your Memory Errors](./week7/valgrind.md)
+- [Week 8 Lab](./week8/index.md)
 
 # Assignments
 
