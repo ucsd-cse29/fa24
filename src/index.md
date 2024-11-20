@@ -63,6 +63,8 @@ you can see what's coming.
   - [C Libraries Continued](https://diveintosystems.org/book/C2-C_depth/advanced_writing_libraries.html#_c_libraries_)
 
 - **Lecture Materials**
+  - **Wednesday:**
+    - <u>Joe's Lecture:</u> [Code so far](https://github.com/ucsd-cse29/fa24-18-malloc/tree/main/lecture)
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/21)
