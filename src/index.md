@@ -70,6 +70,10 @@ you can see what's coming.
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/21)
     - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21)
 
+- **Discussion Materials**
+  - **Wednesday:**  [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion8) |
+                     [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a01/7)
+
 
 ### Week 7 – Implementing an Allocator
 
