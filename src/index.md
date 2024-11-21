@@ -64,11 +64,16 @@ you can see what's coming.
 
 - **Lecture Materials**
   - **Wednesday:**
-    - <u>Joe's Lecture:</u> Code [(Before)](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem.c) [(After)](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem-after-wed.c) | [Handout](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/lecture.pdf)
+    - <u>Joe's Lecture:</u> [Code Before](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem.c) | 
+                        [Code After](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem-after-wed.c) | 
+                        [Handout](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/lecture.pdf) | 
+                        [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/22)
+    - <u>Aaron's Lecture:</u> [Audio Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/22)
+    - *Note:* No Video for Aaron's Lecture, ITS has already contacted; hopefully it will be fixed for future lectures!
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/21)
-    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21)
+    - <u>Aaron's Lecture:</u> [Audio Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21)
 
 - **Discussion Materials**
   - **Wednesday:**  [Repository](https://github.com/ucsd-cse29/discussion-arunan/blob/main/discussion8) |
