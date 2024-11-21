@@ -64,7 +64,7 @@ you can see what's coming.
 
 - **Lecture Materials**
   - **Wednesday:**
-    - <u>Joe's Lecture:</u> [Code so far](https://github.com/ucsd-cse29/fa24-18-malloc/tree/main/lecture)
+    - <u>Joe's Lecture:</u> Code [(Before)](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem.c) [(After)](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem-after-wed.c) | [Handout](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/lecture.pdf)
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/21)
