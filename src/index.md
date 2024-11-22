@@ -64,7 +64,7 @@ you can see what's coming.
 
 - **Lecture Materials**
   - **Friday:**
-    - <u>Joe's Lecture:</u> [jstr.c using my\_malloc](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/jstr.c)
+    - <u>Joe's Lecture:</u> [jstr.c using my\_malloc](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/jstr.c) | [Code After](https://github.com/ucsd-cse29/fa24-18-malloc/tree/main/coalesce)
   - **Wednesday:**
     - <u>Joe's Lecture:</u> [Code Before](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem.c) | 
                         [Code After](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem-after-wed.c) | 
