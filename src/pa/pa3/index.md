@@ -3,6 +3,38 @@
 - **Due 10:10pm Monday, November 11, 2024**
 - Github Classroom Assignment: [https://classroom.github.com/a/hlq9KJbK](https://classroom.github.com/a/hlq9KJbK)
 
+<!--
+## Resubmission instructions
+**If you want to resubmit PA3, please read this section carefully. You need to pass all the tests in the original PA3, while also implementing an extra functionality and answering a new design question described below.**
+
+In addition to `/chats`, `/post`, `/react`, `/reset` requests, the chat server also listens for the following request:
+### `/edit`
+
+```
+`/edit?id=<id>&message=<message>`
+```
+
+Edits the message in the post with the given id (the ids are the `#N` at the
+beginning of posts) by replacing it with the new message. It must
+respond with the list of all chats (including the new one).
+
+
+Limits and constraints:
+
+- If the id is not the ID of some existing chat, respond with some kind of error
+(HTTP code 400 or 500)
+- If a parameter ( `id` or `message`) is missing, respond with some kind of
+error (HTTP code 400 or 500)
+- If message is longer than 255 bytes, respond with some kind of error (HTTP
+code 400 or 500)
+
+## Updated DESIGN questions for the resubmission
+
+1. We recommended representing chats and reactions as structs. Another option would be to just represent every chat as the string of text that gets printed – a single `char*` per chat. Then the list of all chats would be a `char**`. Adding a reaction would just append a new reaction to the string for that chat. What is one good and one bad thing about this alternate design? For this part, consider only the original implementation without `/edit`.
+
+2. How would this `char**` design make it harder to add the `/edit` feature?
+-->
+
 ## Web Servers and HTTP
 
 [HTTP](https://en.wikipedia.org/wiki/HTTP) is one of the most common protocols
@@ -181,6 +213,7 @@ After a `reset`, it should be possible to immediately shut down the program and
 have `valgrind` report no memory leaks.
 
 ## Design Questions
+**You do not need to answer these for the resubmission**
 
 1. How much working memory do 10 chats take in your program, in between
 processing requests (assume no one has reacted to them)? How about 100? 1000? We
