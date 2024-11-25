@@ -55,6 +55,14 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
+### Week 9 – Process Creation and Control
+
+**Readings & Resources**
+  - [Processes](https://diveintosystems.org/book/C13-OS/processes.html)
+
+**Monday**
+  - [Repository](https://github.com/ucsd-cse29/fa24-25-w9m-fork/tree/master)
+
 ### Week 8 – Allocators and Virtual Memory
 
 - **Readings & Resources**
