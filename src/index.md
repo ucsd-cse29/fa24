@@ -57,11 +57,15 @@ you can see what's coming.
 
 ### Week 9 – Process Creation and Control
 
-**Readings & Resources**
+- **Readings & Resources**
   - [Processes](https://diveintosystems.org/book/C13-OS/processes.html)
 
-**Monday**
-  - [Repository](https://github.com/ucsd-cse29/fa24-25-w9m-fork/tree/master)
+- **Lecture Materials**
+  - **Monday:**
+    - [Repository](https://github.com/ucsd-cse29/fa24-25-w9m-fork/tree/master)
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/24) |
+                            [Annotated Handout](https://github.com/ucsd-cse29/fa24-25-w9m-fork/blob/master/annotated-lecture-23-w9m.pdf)
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/24)
 
 ### Week 8 – Allocators and Virtual Memory
 
