@@ -1,5 +1,7 @@
 # Flow like Water with Pipes
 
+Before starting, revert the `fprintf()` line in `problem.c` back to the `printf()` that you commented out!
+
 The searching and filtering methods we have seen thus far require that the output of a program be saved to a file before we can manipulate it. However, there are times when we want to filter the output of a program without saving it to a file. This is where pipes come in!
 
 Within UNIX, the pipe operator (`|`) is used to directly feed output from one program as input into another program. We can pipe directly from the problem program into either `less` or `grep` to accomplish the same result as running these commands on the `problem.txt` file:
