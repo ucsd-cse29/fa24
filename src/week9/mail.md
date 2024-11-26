@@ -51,7 +51,11 @@ $ echo “email body here” | mail -s “subject here” friendname@ieng6-203.u
 
 ### Trading Pokemon
 
-For this section, you will be using the files within the `pokemon` directory of the starter code. This directory contains a `pokeget.sh` file which will generate a Pokemon when given its Pokedex number (don't worry if you don't know what that is, it's just a unique number for each Pokemon).
+For this section, you will be using the files within the `pokemon` directory of the starter code. This directory contains a `pokeget.sh` file which will generate a Pokemon when given its Pokedex number (don't worry if you don't know what that is, it's just a unique number for each Pokemon). The format to use the script is as follows:
+
+```
+$ ./pokeget.sh <Pokedex number> > <filename>.pk
+```
 
 #### Sender Tasks
 1. Use the `pokeget.sh` script to generate a Pokemon of your choice and save it to a file. You can do this by running the script with the Pokedex number of the Pokemon you want to generate. For example, to generate Pikachu, you would run `./pokeget.sh 25 > pikachu.pk`.
