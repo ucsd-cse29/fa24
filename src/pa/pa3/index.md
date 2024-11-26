@@ -1,9 +1,8 @@
-# PA3 - Web Server
+# PA3 Resubmission - Web Server
 
-- **Due 10:10pm Monday, November 11, 2024**
+- **Resubmission Due 10:10pm Wednesday, December 4, 2024**
 - Github Classroom Assignment: [https://classroom.github.com/a/hlq9KJbK](https://classroom.github.com/a/hlq9KJbK)
 
-<!--
 ## Resubmission instructions
 **If you want to resubmit PA3, please read this section carefully. You need to pass all the tests in the original PA3, while also implementing an extra functionality and answering a new design question described below.**
 
@@ -32,8 +31,7 @@ code 400 or 500)
 
 1. We recommended representing chats and reactions as structs. Another option would be to just represent every chat as the string of text that gets printed – a single `char*` per chat. Then the list of all chats would be a `char**`. Adding a reaction would just append a new reaction to the string for that chat. What is one good and one bad thing about this alternate design? For this part, consider only the original implementation without `/edit`.
 
-2. How would this `char**` design make it harder to add the `/edit` feature?
--->
+2. How would this `char**` design make it harder to add the `/edit` feature in your code?
 
 ## Web Servers and HTTP
 
