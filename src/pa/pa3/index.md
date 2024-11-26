@@ -210,8 +210,7 @@ memory usage of the program should be the same as in the empty initial state.
 After a `reset`, it should be possible to immediately shut down the program and
 have `valgrind` report no memory leaks.
 
-## Design Questions
-**You do not need to answer these for the resubmission**
+## Design Questions (You do not need to answer these for the resubmission)
 
 1. How much working memory do 10 chats take in your program, in between
 processing requests (assume no one has reacted to them)? How about 100? 1000? We
