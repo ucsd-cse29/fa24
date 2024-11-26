@@ -15,7 +15,7 @@ In addition to `/chats`, `/post`, `/react`, `/reset` requests, the chat server a
 
 Edits the message in the post with the given id (the ids are the `#N` at the
 beginning of posts) by replacing it with the new message. It must
-respond with the list of all chats (including the new one).
+respond with the list of all chats (including the chat with the replaced message).
 
 
 Limits and constraints:
