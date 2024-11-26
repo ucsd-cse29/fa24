@@ -106,6 +106,3 @@ $ ./problem | grep error | tee errors.txt
                                                     | v |
                                                   errors.txt
 ```
-
-## Exploring `grep`
-<!-- Some kind of exercise involving a corpus that they need to use grep to filter through, maybe include the use of some flags as well? -->
