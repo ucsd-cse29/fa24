@@ -10,7 +10,7 @@ In addition to `/chats`, `/post`, `/react`, `/reset` requests, the chat server a
 ### `/edit`
 
 ```
-`/edit?id=<id>&message=<message>`
+/edit?id=<id>&message=<message>
 ```
 
 Edits the message in the post with the given id (the ids are the `#N` at the
@@ -29,9 +29,9 @@ code 400 or 500)
 
 ## Updated DESIGN questions for the resubmission
 
-1. We recommended representing chats and reactions as structs. Another option would be to just represent every chat as the string of text that gets printed – a single `char*` per chat. Then the list of all chats would be a `char**`. Adding a reaction would just append a new reaction to the string for that chat. What is one good and one bad thing about this alternate design? For this part, consider only the original implementation without `/edit`.
-
-2. How would this `char**` design make it harder to add the `/edit` feature in your code?
+We recommended representing chats and reactions as structs. Another option would be to just represent every chat as the string of text that gets printed (including the id number, timestamp, username, message, any reactions, etc). This representation would be a single `char*` per chat. Then, the list of all chats would be a `char**`. Adding a reaction would append a new reaction to the string for that chat.
+  1. What is one good and one bad thing about this alternate design? For this part, consider only the original implementation without `/edit`.
+  2. How would this `char**` design make it harder to add the `/edit` feature in your code?
 
 ## Web Servers and HTTP
 
