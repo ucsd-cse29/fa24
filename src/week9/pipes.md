@@ -75,7 +75,7 @@ We can compound indirection, redirection, and pipe operators to create helpful c
 
 Redirection lets us write to a file. Not having redirection lets us directly see the output in the terminal. Why don’t we have both?
 
-By using the tee command, we can simultaneously write output to a file and and continue flowing data rightward, usually to the terminal. tee is a command, not an operator like redirection and piping, so we must pipe into tee first. tee takes a filename as an argument, which it outputs to.
+By using the `tee` command, we can simultaneously write output to a file and and continue flowing data rightward, usually to the terminal. `tee` is a command, not an operator like redirection and piping, so we must pipe into `tee` first. `tee` takes a filename as an argument, which it outputs to.
 ```
 $ ./problem | tee problem.txt
 ```
@@ -91,7 +91,7 @@ $ ./problem | tee problem.txt
                          problem.txt
 ```
 
-We can continue to construct longer pipe systems to feed output through multiple commands. This command runs problem, filters its output with grep, then outputs to both a file and the terminal.
+We can continue to construct longer pipe systems to feed output through multiple commands. This command runs problem, filters its output with `grep`, then outputs to both a file and the terminal.
 ```
 $ ./problem | grep error | tee errors.txt
 ```
