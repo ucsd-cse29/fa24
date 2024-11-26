@@ -21,6 +21,10 @@
   - [Change your Grade with Buffer Overflows](./week7/gradebook.md)
   - [Addressing your Memory Errors](./week7/valgrind.md)
 - [Week 8 Lab](./week8/index.md)
+- [Week 9 Lab](./week9/index.md)
+  - [Searching and Filtering Program Output](./week9/redirect.md)
+  - [Flow like Water with Pipes](./week9/pipes.md)
+  - [Pokemon Mailtime!](./week9/mail.md)
 
 # Assignments
 
