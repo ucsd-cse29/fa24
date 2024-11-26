@@ -66,7 +66,7 @@ $ echo "email body here" | mail -s "subject here" -a pikachu.pk friendname@ieng6
 
 #### Receiver Tasks
 1. Open your `mail` shell from within the `pokemon` directory and check for new mail. You should see the email with the Pokemon file attached.
-2. Save the attached Pokemon file to your directory by typing `save <message number> pikachu.email`. For example, if the message number is 3, you would type `save 3 pikachu.email`.
+2. Save the email to a file in the `pokemon` directory by typing `save <message number> pikachu.email`. For example, if the message number is 3, you would type `save 3 pikachu.email`.
 3. Extract the attachment to retrieve the Pokemon that you were sent using the provided script:
 ```
 $ ./extract_pokemon.sh pikachu.email > pikachu.pk
