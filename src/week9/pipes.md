@@ -71,7 +71,41 @@ We can compound indirection, redirection, and pipe operators to create helpful c
                                          errors.txt
     ```
 
+## Having your `tee` and Drinking it too
+
+Redirection lets us write to a file. Not having redirection lets us directly see the output in the terminal. Why don’t we have both?
+
+By using the tee command, we can simultaneously write output to a file and and continue flowing data rightward, usually to the terminal. tee is a command, not an operator like redirection and piping, so we must pipe into tee first. tee takes a filename as an argument, which it outputs to.
+```
+$ ./problem | tee problem.txt
+```
+
+```
++-----------+   pipe    +-----------+
+|           |==-------==|           |==
+| ./problem | ~ ~ ~ ~ ~>|   tee     | ~ ~ ~ ~ ~> terminal
+|           |==-------==|           |==
++-----------+           +-----------+
+                            | $ |
+                            | v |
+                         problem.txt
+```
+
+We can continue to construct longer pipe systems to feed output through multiple commands. This command runs problem, filters its output with grep, then outputs to both a file and the terminal.
+```
+$ ./problem | grep error | tee errors.txt
+```
+
+```
++-----------+   pipe    +-----------+   pipe    +-----------+
+|           |==-------==|           |==-------==|           |==
+| ./problem | ~ ~ ~ ~ ~>|   grep    | ~ ~ ~ ~ ~>|   tee     | ~ ~ ~ ~ ~> terminal
+|           |==-------==|           |==-------==|           |==
++-----------+           +-----------+           +-----------+
+                                                    | $ |
+                                                    | v |
+                                                  errors.txt
+```
+
 ## Exploring `grep`
-
-<!-- Want to put some kind of grep exercise that involves pipes here, need to come up with something -->
-
+<!-- Some kind of exercise involving a corpus that they need to use grep to filter through, maybe include the use of some flags as well? -->
