@@ -61,6 +61,9 @@ you can see what's coming.
   - [Processes](https://diveintosystems.org/book/C13-OS/processes.html)
 
 - **Lecture Materials**
+  - **Wednesday:**
+    - <u>Joe's Lecture:</u> [shell.c](https://github.com/ucsd-cse29/fa24-25-w9m-fork/blob/master/proc/shell.c) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/25)
+    
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-25-w9m-fork/tree/master)
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/24) |
