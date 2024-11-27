@@ -134,7 +134,7 @@ And running this program gives us:
 'D'
 'E'
 'FGH'
-
+```
 Note again that we try to break down (tokenize) the string using three possible
 delimiter characters: `'|'`, `' '`, or `'\n'`, the `delim` string we pass to `strtok()`
 has these three characters: `" |\n"`.
