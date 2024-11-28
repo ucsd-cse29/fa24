@@ -2,7 +2,7 @@
 # Project 5: The Pioneer Shell
 
 This assignment is from [CSE29
-FA24](https://cse29sp24.github.io/docs/pas/pa6.html#acknowledgements), which has
+SP24](https://cse29sp24.github.io/docs/pas/pa6.html#acknowledgements), which has
 its own list of acknowledgments!
 
 ## Learning Goals
@@ -196,7 +196,7 @@ all the contents of our history file, adding a counter to each line:
 ▶  history
 1 history
 ▶  pwd
-/home/jerry/cse29sp24/pa6/Simple-Shell
+/home/jpolitz/cse29fa24/pa5/Simple-Shell
 ▶  ls
 Makefile  script.sh  pish  pish.c  pish.h	pish_history.c  pish_history.o  pish.o
 ▶  history
