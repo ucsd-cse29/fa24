@@ -12,9 +12,11 @@ previous PAs.  Specfically, we will practice the following concepts in C:
 
 - string manipulation using library functions,
 - command line arguments,
-- opening, reading from, and writing to files,
 - process management using fork(), exec(), and wait(), and of course,
 - using the terminal and vim.
+
+We'll also get practice with a new set of library functions for opening, reading from, and writing to files.
+
 
 ## Introduction
 
