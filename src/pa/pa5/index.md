@@ -78,7 +78,7 @@ number of spaces (` `) and tabs (`\t`) between arguments.
 
 For example, your shell should be able to handle the following input: `" \tls\t\t-a -l "`, and still run the ls program with the correct `argv` array.
 
-To split the arguments is very much like what you did in PA3 parsing URLs. We give a
+Splitting the arguments is very much like what you did in PA3 parsing URLs. We give a
 specific suggestion of a function for this PA:
 
 ### The `strtok()` function
