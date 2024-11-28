@@ -57,6 +57,8 @@ you can see what's coming.
 
 ### Week 9 – Process Creation and Control
 
+- **Announcements**
+  - [Quiz 9](https://us.prairielearn.com/pl/course_instance/160202) is available on PrairieLearn, due Tue Dec 3 at 8am.
 - **Readings & Resources**
   - [Processes](https://diveintosystems.org/book/C13-OS/processes.html)
 
