@@ -1,6 +1,8 @@
 
 # Project 5: The Pioneer Shell
 
+**Due Friday, December 6, 10:00PM**
+
 This assignment is from [CSE29
 SP24](https://cse29sp24.github.io/docs/pas/pa6.html#acknowledgements), which has
 its own list of acknowledgments!
