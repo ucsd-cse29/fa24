@@ -55,6 +55,13 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
+### Week 10 - File I/O and Goodbye 👋🥲
+
+- **Readings & Resources**
+  - [File Input/Output](https://diveintosystems.org/book/C2-C_depth/IO.html#_file_inputoutput)
+  - [Using Text Files in C](https://diveintosystems.org/book/C2-C_depth/IO.html#_using_text_files_in_c)
+  - [File I/O Functions in stdio.h](https://diveintosystems.org/book/C2-C_depth/IO.html#_standard_and_file_io_functions_in_stdio_h)
+
 ### Week 9 – Process Creation and Control
 
 - **Announcements**
