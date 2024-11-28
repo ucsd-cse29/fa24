@@ -37,4 +37,5 @@
   - [Starter Code](./pa/pa4/starter-code.md)
   - [Implementation Guide and Milestones](./pa/pa4/guide.md)
   - [Testing](./pa/pa4/testing.md)
+- [PA5](./pa/pa5/index.md)
 
