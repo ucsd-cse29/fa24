@@ -11,3 +11,4 @@ You are welcome to work with your classmates, share ideas, and so on.
 
 along with your understanding of these functions.
 
+[Week 8 Lab Quiz Answers](https://piazza.com/class/m0gwg9yze003k8/post/753)
