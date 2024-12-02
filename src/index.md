@@ -85,6 +85,9 @@ you can see what's coming.
   - [Virtual Memory, Malloc, and Free](https://drive.google.com/file/d/1bBV6LI-GcPjO8U0fyIOcrPKrsweWPd64/view)
   - [C Libraries](https://diveintosystems.org/book/C2-C_depth/advanced_libraries.html)
   - [C Libraries Continued](https://diveintosystems.org/book/C2-C_depth/advanced_writing_libraries.html#_c_libraries_)
+ 
+- **Lab Quiz**
+  - [Link to Answers](https://piazza.com/class/m0gwg9yze003k8/post/753)
 
 - **Lecture Materials**
   - **Friday:**
