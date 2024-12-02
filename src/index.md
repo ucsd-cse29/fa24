@@ -91,7 +91,7 @@ you can see what's coming.
     - <u>Joe's Lecture:</u> [jstr.c using my\_malloc](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/jstr.c) | 
                             [Code After](https://github.com/ucsd-cse29/fa24-18-malloc/tree/main/coalesce) | 
                             [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/23)
-    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/23)
+    - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week8/29-fa24-l23.pdf) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/23) 
   - **Wednesday:**
     - <u>Joe's Lecture:</u> [Code Before](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem.c) | 
                         [Code After](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/lecture/mem-after-wed.c) | 
@@ -102,7 +102,7 @@ you can see what's coming.
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/21)
-    - <u>Aaron's Lecture:</u> [Audio Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21)
+    - <u>Aaron's Lecture:</u> [Audio Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21) )
 
 - **Discussion Materials**
   - **Friday:**  [Repository](https://github.com/ucsd-cse29/discussion8-yash) |
