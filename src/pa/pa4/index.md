@@ -1,9 +1,52 @@
-# PA4 – Malloc
+# PA4 Resubmission – Malloc
 
 _This assignment is thanks to the [staff of CSE29 spring 2024](https://cse29sp24.github.io/docs/instructors.html), especially [Gerald Soosairaj](https://geraldsoosairaj.github.io) and Jerry Yu._
 
-- **Due Monday, Nov 25, 10pm**
+- **Resubmission Due Tuesday, Dec 10, 10pm**
 - GitHub Classroom: [https://classroom.github.com/a/ngxgHFB3](https://classroom.github.com/a/ngxgHFB3)
+
+## Resubmission instructions
+**If you want to resubmit PA4, please read this section carefully. You need to pass all the tests in the original PA4, while also implementing an extra functionality and answering a new design question described below.**
+
+### `vminfo`
+
+In `utils.c`, we have implemented the function vminfo(), which traverses through the heap blocks and prints out the metadata in each block header.
+Update the function so that at the end of its output, it prints details about the largest available block as follows:
+```
+The largest free block is #x with size y.
+```
+where `x` is the blockid starting from 0, and `y` is the size (including header) of the largest available block for allocation.
+If there are multiple candidates for the largest block, `x` should be the smallest blockid of the candidates.
+Refer the following updated output of `vminfo` as an example:
+```
+vminit: heap created at 0x707df3026000 (4096 bytes).
+vminit: heap initialization done.
+---------------------------------------
+ #      stat    offset   size     prev   
+---------------------------------------
+ 0      BUSY    8        48       BUSY   
+ 1      FREE    56       32       BUSY   
+ 2      BUSY    88       112      FREE   
+ 3      BUSY    200      96       BUSY   
+ 4      FREE    296      208      BUSY   
+ 5      BUSY    504      64       FREE   
+ 6      BUSY    568      320      BUSY   
+ 7      FREE    888      208      BUSY   
+ 8      BUSY    1096     160      FREE   
+ 9      BUSY    1256     368      BUSY   
+ 10     BUSY    1624     272      BUSY   
+ 11     FREE    1896     672      BUSY   
+ 12     BUSY    2568     128      FREE   
+ 13     BUSY    2696     464      BUSY   
+ 14     FREE    3160     672      BUSY   
+ 15     BUSY    3832     160      FREE   
+ 16     FREE    3992     96       BUSY   
+ END    N/A     4088     N/A      N/A    
+---------------------------------------
+Total: 4080 bytes, Free: 6, Busy: 11, Total: 17
+The largest free block is #11 with size 672
+```
+In this example, there are six `FREE` blocks with the two largest `FREE` blocks being 672 bytes in size: the output line shows the index of the 672 sized block that comes first.
 
 In class, quizzes, and PAs we've _used_ `malloc` and `free` to manage memory.
 These are functions [written in
