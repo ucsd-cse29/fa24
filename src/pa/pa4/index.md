@@ -48,6 +48,13 @@ The largest free block is #11 with size 672
 ```
 In this example, there are six `FREE` blocks with the two largest `FREE` blocks being 672 bytes in size: the output line shows the index of the 672 sized block that comes first.
 
+## Updated DESIGN questions for the resubmission
+
+In our implementation, when freeing an allocated block, we coalesce it with the previous and next blocks in the heap if they are free - to make one larger free block.
+
+Consider an updated implementation where in case of freeing, we only coalesce it with **exactly 1 next block** in the heap if it is free. Give an example of a program (in C or pseudocode) where all the allocations succeed in the current design (like in this PA), but some allocations would fail with the updated freeing strategy.
+
+<hr>
 In class, quizzes, and PAs we've _used_ `malloc` and `free` to manage memory.
 These are functions [written in
 C](https://sourceware.org/git/?p=glibc.git;a=blob;f=malloc/malloc.c)! `glibc`
@@ -124,7 +131,7 @@ free.
 
 More details are in the implementation guide.
 
-## Design Questions
+## Design Questions (You do not need to answer these for the resubmission)
 
 _Heap fragmentation_ occurs when there are many available blocks that are
 small-sized and not adjacent (so they cannot be coalesced).
