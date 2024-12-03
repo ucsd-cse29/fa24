@@ -48,11 +48,11 @@ The largest free block is #11 with size 672
 ```
 In this example, there are six `FREE` blocks with the two largest `FREE` blocks being 672 bytes in size: the output line shows the index of the 672 sized block that comes first.
 
-## Updated DESIGN questions for the resubmission
+## Updated DESIGN question for the resubmission
 
 In our implementation, when freeing an allocated block, we coalesce it with the previous and next blocks in the heap if they are free - to make one larger free block.
 
-Consider an updated implementation where in case of freeing, we only coalesce it with **exactly 1 next block** in the heap if it is free. Give an example of a program (in C or pseudocode) where all the allocations succeed in the current design (like in this PA), but some allocations would fail with the updated freeing strategy.
+1. Consider an updated implementation where in case of freeing, we only coalesce it with **exactly 1 next block** in the heap if it is free. Give an example of a program (in C or pseudocode) where all the allocations succeed in the current design (like in this PA), but some allocations would fail with the updated freeing strategy.
 
 <hr>
 In class, quizzes, and PAs we've _used_ `malloc` and `free` to manage memory.
