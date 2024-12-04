@@ -2,7 +2,7 @@
 
 _This assignment is thanks to the [staff of CSE29 spring 2024](https://cse29sp24.github.io/docs/instructors.html), especially [Gerald Soosairaj](https://geraldsoosairaj.github.io) and Jerry Yu._
 
-- **Resubmission Due Tuesday, Dec 10, 10pm**
+- **Resubmission Due Tuesday, Dec 10, 10:10pm**
 - GitHub Classroom: [https://classroom.github.com/a/ngxgHFB3](https://classroom.github.com/a/ngxgHFB3)
 
 ## Resubmission instructions
