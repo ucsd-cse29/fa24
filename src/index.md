@@ -55,28 +55,38 @@ The schedule below outlines topics, due dates, and links to assignments. We'll
 typically update the material for the upcoming week before Monday's lecture so
 you can see what's coming.
 
-### Week 10 - File I/O and Goodbye 👋🥲
+### Week 10 – File I/O and Goodbye 👋🥲
 
 - **Readings & Resources**
   - [File Input/Output](https://diveintosystems.org/book/C2-C_depth/IO.html#_file_inputoutput)
   - [Using Text Files in C](https://diveintosystems.org/book/C2-C_depth/IO.html#_using_text_files_in_c)
   - [File I/O Functions in stdio.h](https://diveintosystems.org/book/C2-C_depth/IO.html#_standard_and_file_io_functions_in_stdio_h)
 
-### Week 9 – Process Creation and Control
+- **Lecture Materials**
+  - **Wednesday:**
+    - <u>Joe's Lecture:</u> [Annotated Handout](https://drive.google.com/file/d/1OBI6f1fZGoGmyqWwWX2KTRZsVmWa4OhU/view?usp=share_link) |
+                            [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/27) 
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/27)
+  - **Monday:**
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/26)             
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/26)
+
+### Week 9 – Process Creation and Control 🦃
 
 - **Announcements**
   - [Quiz 9](https://us.prairielearn.com/pl/course_instance/160202) is available on PrairieLearn, due Tue Dec 3 at 8am.
+
 - **Readings & Resources**
   - [Processes](https://diveintosystems.org/book/C13-OS/processes.html)
 
 - **Lecture Materials**
   - **Wednesday:**
     - <u>Joe's Lecture:</u> [shell.c](https://github.com/ucsd-cse29/fa24-25-w9m-fork/blob/master/proc/shell.c) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/25)
-    
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/25)
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-25-w9m-fork/tree/master)
-    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/24) |
-                            [Annotated Handout](https://github.com/ucsd-cse29/fa24-25-w9m-fork/blob/master/annotated-lecture-23-w9m.pdf)
+    - <u>Joe's Lecture:</u> [Annotated Handout](https://github.com/ucsd-cse29/fa24-25-w9m-fork/blob/master/annotated-lecture-23-w9m.pdf) |
+                            [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/24)                   
     - <u>Aaron's Lecture:</u> [Slides](https://github.com/ucsd-cse29/fa24/blob/main/src/lec/week9/29-fa24-l24.pdf) | [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/24)
 
 ### Week 8 – Allocators and Virtual Memory
@@ -105,7 +115,7 @@ you can see what's coming.
   - **Monday:**
     - [Repository](https://github.com/ucsd-cse29/fa24-18-malloc/blob/main/mem.c)
     - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/21)
-    - <u>Aaron's Lecture:</u> [Audio Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21) )
+    - <u>Aaron's Lecture:</u> [Audio Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/21) 
 
 - **Discussion Materials**
   - **Friday:**  [Repository](https://github.com/ucsd-cse29/discussion8-yash) |
