@@ -63,6 +63,9 @@ you can see what's coming.
   - [File I/O Functions in stdio.h](https://diveintosystems.org/book/C2-C_depth/IO.html#_standard_and_file_io_functions_in_stdio_h)
 
 - **Lecture Materials**
+  - **Friday:**
+    - <u>Joe's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/28) 
+    - <u>Aaron's Lecture:</u> [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_b00/28)
   - **Wednesday:**
     - <u>Joe's Lecture:</u> [Annotated Handout](https://drive.google.com/file/d/1OBI6f1fZGoGmyqWwWX2KTRZsVmWa4OhU/view?usp=share_link) |
                             [Recording](https://podcast.ucsd.edu/watch/fa24/cse29_a00/27) 
